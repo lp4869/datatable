@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="ea7476c8-754a-4993-8e23-57c1b168241a" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://172.16.24.30/MFA_BackOfficeWebService/VDCBackOfficeService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="VDCBackOfficeService.xsd" MetadataType="Schema" ID="f488ab55-b4a3-4528-9ffc-2da53eca83c9" SourceId="1" SourceUrl="http://172.16.24.30/MFA_BackOfficeWebService/VDCBackOfficeService.svc?xsd=xsd7" />
+    <MetadataFile FileName="VDCBackOfficeService1.xsd" MetadataType="Schema" ID="29ccd4cf-ff12-4a59-a6eb-5f2682e9714c" SourceId="1" SourceUrl="http://172.16.24.30/MFA_BackOfficeWebService/VDCBackOfficeService.svc?xsd=xsd5" />
+    <MetadataFile FileName="VDCBackOfficeService2.xsd" MetadataType="Schema" ID="2ac67f2b-7e1d-4bc3-97de-89040951b4ad" SourceId="1" SourceUrl="http://172.16.24.30/MFA_BackOfficeWebService/VDCBackOfficeService.svc?xsd=xsd4" />
+    <MetadataFile FileName="VDCBackOfficeService.wsdl" MetadataType="Wsdl" ID="d21f4d69-214c-4c24-a745-259736b5cf99" SourceId="1" SourceUrl="http://172.16.24.30/MFA_BackOfficeWebService/VDCBackOfficeService.svc?wsdl" />
+    <MetadataFile FileName="VDCBackOfficeService3.xsd" MetadataType="Schema" ID="9d72664f-e8af-48f1-b433-9c21d01b342f" SourceId="1" SourceUrl="http://172.16.24.30/MFA_BackOfficeWebService/VDCBackOfficeService.svc?xsd=xsd6" />
+    <MetadataFile FileName="VDCBackOfficeService4.xsd" MetadataType="Schema" ID="8044f716-8f0d-4cfe-b8cd-09584d5c50a4" SourceId="1" SourceUrl="http://172.16.24.30/MFA_BackOfficeWebService/VDCBackOfficeService.svc?xsd=xsd1" />
+    <MetadataFile FileName="VDCBackOfficeService5.xsd" MetadataType="Schema" ID="699ba794-919c-440a-9af2-782d510d54ba" SourceId="1" SourceUrl="http://172.16.24.30/MFA_BackOfficeWebService/VDCBackOfficeService.svc?xsd=xsd0" />
+    <MetadataFile FileName="VDCBackOfficeService6.xsd" MetadataType="Schema" ID="6e38922b-11a9-4f52-a461-4ce263a03545" SourceId="1" SourceUrl="http://172.16.24.30/MFA_BackOfficeWebService/VDCBackOfficeService.svc?xsd=xsd3" />
+    <MetadataFile FileName="VDCBackOfficeService7.xsd" MetadataType="Schema" ID="c88fb865-7589-4cca-b717-234257f26574" SourceId="1" SourceUrl="http://172.16.24.30/MFA_BackOfficeWebService/VDCBackOfficeService.svc?xsd=xsd2" />
+    <MetadataFile FileName="VDCBackOfficeService.disco" MetadataType="Disco" ID="041f9ef6-dc8e-4d09-b92d-56a71d5b9211" SourceId="1" SourceUrl="http://172.16.24.30/MFA_BackOfficeWebService/VDCBackOfficeService.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

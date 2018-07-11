@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Request" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Request" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfVDCApplicationRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VDCApplicationRequest" nillable="true" type="tns:VDCApplicationRequest" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVDCApplicationRequest" nillable="true" type="tns:ArrayOfVDCApplicationRequest" />
+  <xs:complexType name="VDCApplicationRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="APPLICATION_ID" type="xs:int" />
+      <xs:element minOccurs="0" name="BIRTH_PLACE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CREATED_BY" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DATE_OF_BIRTH" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EXPIREY_DATE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FAMILY_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FIRST_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FORMAL_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MARITAL_STATUS_ID" type="xs:int" />
+      <xs:element minOccurs="0" name="MIDDLE_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MINOR_CHILDREN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NATIONALITY_AT_BIRTH" type="xs:int" />
+      <xs:element minOccurs="0" name="NATIONALITY_ID" type="xs:int" />
+      <xs:element minOccurs="0" name="OCCUPATION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PASSPORT_DATE_OF_ISSUE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PASSPORT_ISSUED_AT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PASSPORT_NO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PAYMENT_STATUS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="REFERENCE_NO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RETURN_STATUS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="STATUS_ID" type="xs:int" />
+      <xs:element minOccurs="0" name="SUBMISSION_ID" type="xs:int" />
+      <xs:element minOccurs="0" name="TITLE_ID" type="xs:int" />
+      <xs:element minOccurs="0" name="TYPE_OF_TRAVEL_DOCUMENT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VISA_TYPE_ID" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VDCApplicationRequest" nillable="true" type="tns:VDCApplicationRequest" />
+  <xs:complexType name="VDCDocumentDataRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="applicationID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="consularCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="documentId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="moduleCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="noOfEntry" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="purposeOfVisit" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="visaSubTypeId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="visaTypeId" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VDCDocumentDataRequest" nillable="true" type="tns:VDCDocumentDataRequest" />
+  <xs:complexType name="VDCDataRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="REFERENCE_NO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="STATUS_ID" type="xs:int" />
+      <xs:element minOccurs="0" name="STATUS_NAME" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VDCDataRequest" nillable="true" type="tns:VDCDataRequest" />
+</xs:schema>

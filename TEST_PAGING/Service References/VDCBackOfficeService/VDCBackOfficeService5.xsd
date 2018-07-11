@@ -1,0 +1,3539 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://172.16.24.30/MFA_BackOfficeWebService/VDCBackOfficeService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" />
+  <xs:import schemaLocation="http://172.16.24.30/MFA_BackOfficeWebService/VDCBackOfficeService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/System" />
+  <xs:import schemaLocation="http://172.16.24.30/MFA_BackOfficeWebService/VDCBackOfficeService.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+  <xs:import schemaLocation="http://172.16.24.30/MFA_BackOfficeWebService/VDCBackOfficeService.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Request" />
+  <xs:import schemaLocation="http://172.16.24.30/MFA_BackOfficeWebService/VDCBackOfficeService.svc?xsd=xsd7" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:element name="VMstMaximumControlPeriod">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="MctrlPeriodId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VMstMaximumControlPeriodResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="VMstMaximumControlPeriodResult" nillable="true" type="q1:CollectionResponseOfVDC_ATV_MST_MAXIMUM_CONTROL_PERIOD_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SMstMaximumControlPeriod">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="MctrlPeriodId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SMstMaximumControlPeriodResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="SMstMaximumControlPeriodResult" nillable="true" type="q2:ItemResponseOfVDC_ATS_MST_MAXIMUM_CONTROL_PERIOD_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DMstMaximumControlPeriod">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="MctrlPeriodId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DMstMaximumControlPeriodResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="DMstMaximumControlPeriodResult" nillable="true" type="q3:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IMstMaximumControlPeriod">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AvailableQty" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="FinishTime" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MaxQty" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="MconfigPeriodId" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="MctrlId" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="StartTime" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="UsedQty" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IMstMaximumControlPeriodResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="IMstMaximumControlPeriodResult" nillable="true" type="q4:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UMstMaximumControlPeriod">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="MctrlPeriodId" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="AvailableQty" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="FinishTime" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MaxQty" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="MconfigPeriodId" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="MctrlId" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="StartTime" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="UsedQty" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UMstMaximumControlPeriodResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="UMstMaximumControlPeriodResult" nillable="true" type="q5:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VMstOccupationType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="OccupationTypeId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VMstOccupationTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="VMstOccupationTypeResult" nillable="true" type="q6:CollectionResponseOfVDC_ATV_MST_OCCUPATION_TYPE_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SMstOccupationType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="OccupationTypeId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SMstOccupationTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="SMstOccupationTypeResult" nillable="true" type="q7:ItemResponseOfVDC_ATS_MST_OCCUPATION_TYPE_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DMstOccupationType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="OccupationTypeId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DMstOccupationTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="DMstOccupationTypeResult" nillable="true" type="q8:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IMstOccupationType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="OccupationTypeName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="IsActive" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="CreatedDate" nillable="true" type="q9:DateTimeOffset" />
+        <xs:element minOccurs="0" name="CreatedIp" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IMstOccupationTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="IMstOccupationTypeResult" nillable="true" type="q10:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UMstOccupationType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="OccupationTypeId" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="OccupationTypeName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="IsActive" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="LastUpdatedBy" nillable="true" type="xs:string" />
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="LastUpdatedDate" nillable="true" type="q11:DateTimeOffset" />
+        <xs:element minOccurs="0" name="LastUpdatedIp" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UMstOccupationTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="UMstOccupationTypeResult" nillable="true" type="q12:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VMstPurposeOfVisit">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="PurposeOfVisitId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VMstPurposeOfVisitResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="VMstPurposeOfVisitResult" nillable="true" type="q13:CollectionResponseOfVDC_ATV_MST_PURPOSE_OF_VISIT_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SMstPurposeOfVisit">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="PurposeOfVisitId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SMstPurposeOfVisitResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="SMstPurposeOfVisitResult" nillable="true" type="q14:ItemResponseOfVDC_ATS_MST_PURPOSE_OF_VISIT_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DMstPurposeOfVisit">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="PurposeOfVisitId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DMstPurposeOfVisitResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="DMstPurposeOfVisitResult" nillable="true" type="q15:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IMstPurposeOfVisit">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="PurposeOfVisitName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="IsActive" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="CreatedDate" nillable="true" type="q16:DateTimeOffset" />
+        <xs:element minOccurs="0" name="CreatedIp" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IMstPurposeOfVisitResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="IMstPurposeOfVisitResult" nillable="true" type="q17:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UMstPurposeOfVisit">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="PurposeOfVisitId" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="PurposeOfVisitName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="IsActive" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="LastUpdatedBy" nillable="true" type="xs:string" />
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="LastUpdatedDate" nillable="true" type="q18:DateTimeOffset" />
+        <xs:element minOccurs="0" name="LastUpdatedIp" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UMstPurposeOfVisitResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="UMstPurposeOfVisitResult" nillable="true" type="q19:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VMstRelationship">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Relationshiid" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VMstRelationshipResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="VMstRelationshipResult" nillable="true" type="q20:CollectionResponseOfVDC_ATV_MST_RELATIONSHIP_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SMstRelationship">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Relationshiid" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SMstRelationshipResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="SMstRelationshipResult" nillable="true" type="q21:ItemResponseOfVDC_ATS_MST_RELATIONSHIP_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DMstRelationship">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Relationshiid" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DMstRelationshipResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="DMstRelationshipResult" nillable="true" type="q22:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IMstRelationship">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Relationshiname" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="IsActive" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="CreatedDate" nillable="true" type="q23:DateTimeOffset" />
+        <xs:element minOccurs="0" name="CreatedIp" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IMstRelationshipResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="IMstRelationshipResult" nillable="true" type="q24:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UMstRelationship">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Relationshiid" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Relationshiname" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="IsActive" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="LastUpdatedBy" nillable="true" type="xs:string" />
+        <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="LastUpdatedDate" nillable="true" type="q25:DateTimeOffset" />
+        <xs:element minOccurs="0" name="LastUpdatedIp" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UMstRelationshipResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q26="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="UMstRelationshipResult" nillable="true" type="q26:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VMstTitle">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TitleId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VMstTitleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q27="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="VMstTitleResult" nillable="true" type="q27:CollectionResponseOfVDC_ATV_MST_TITLE_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SMstTitle">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TitleId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SMstTitleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q28="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="SMstTitleResult" nillable="true" type="q28:ItemResponseOfVDC_ATS_MST_TITLE_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DMstTitle">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TitleId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DMstTitleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q29="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="DMstTitleResult" nillable="true" type="q29:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IMstTitle">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Gender" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="IsActive" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+        <xs:element xmlns:q30="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="CreatedDate" nillable="true" type="q30:DateTimeOffset" />
+        <xs:element minOccurs="0" name="CreatedIp" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IMstTitleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q31="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="IMstTitleResult" nillable="true" type="q31:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UMstTitle">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TitleId" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Gender" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="IsActive" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="LastUpdatedBy" nillable="true" type="xs:string" />
+        <xs:element xmlns:q32="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="LastUpdatedDate" nillable="true" type="q32:DateTimeOffset" />
+        <xs:element minOccurs="0" name="LastUpdatedIp" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UMstTitleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q33="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="UMstTitleResult" nillable="true" type="q33:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VMstTravelDocType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TravelDocTypeId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VMstTravelDocTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q34="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="VMstTravelDocTypeResult" nillable="true" type="q34:CollectionResponseOfVDC_ATV_MST_TRAVEL_DOC_TYPE_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SMstTravelDocType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TravelDocTypeId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SMstTravelDocTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q35="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="SMstTravelDocTypeResult" nillable="true" type="q35:ItemResponseOfVDC_ATS_MST_TRAVEL_DOC_TYPE_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DMstTravelDocType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TravelDocTypeId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DMstTravelDocTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q36="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="DMstTravelDocTypeResult" nillable="true" type="q36:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IMstTravelDocType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Tdtcd" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Tdtenm" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Tdttnm" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="IsActive" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+        <xs:element xmlns:q37="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="CreatedDate" nillable="true" type="q37:DateTimeOffset" />
+        <xs:element minOccurs="0" name="CreatedIp" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IMstTravelDocTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q38="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="IMstTravelDocTypeResult" nillable="true" type="q38:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UMstTravelDocType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TravelDocTypeId" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="Tdtcd" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Tdtenm" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Tdttnm" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="IsActive" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="LastUpdatedBy" nillable="true" type="xs:string" />
+        <xs:element xmlns:q39="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="LastUpdatedDate" nillable="true" type="q39:DateTimeOffset" />
+        <xs:element minOccurs="0" name="LastUpdatedIp" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UMstTravelDocTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q40="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="UMstTravelDocTypeResult" nillable="true" type="q40:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VMstTravelType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TravelTypeId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VMstTravelTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q41="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="VMstTravelTypeResult" nillable="true" type="q41:CollectionResponseOfVDC_ATV_MST_TRAVEL_TYPE_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SMstTravelType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TravelTypeId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SMstTravelTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q42="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="SMstTravelTypeResult" nillable="true" type="q42:ItemResponseOfVDC_ATS_MST_TRAVEL_TYPE_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DMstTravelType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TravelTypeId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DMstTravelTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q43="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="DMstTravelTypeResult" nillable="true" type="q43:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IMstTravelType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Travcd" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Travenm" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Travtnm" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="IsActive" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+        <xs:element xmlns:q44="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="CreatedDate" nillable="true" type="q44:DateTimeOffset" />
+        <xs:element minOccurs="0" name="CreatedIp" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IMstTravelTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q45="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="IMstTravelTypeResult" nillable="true" type="q45:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UMstTravelType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TravelTypeId" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="Travcd" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Travenm" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Travtnm" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="IsActive" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="LastUpdatedBy" nillable="true" type="xs:string" />
+        <xs:element xmlns:q46="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="LastUpdatedDate" nillable="true" type="q46:DateTimeOffset" />
+        <xs:element minOccurs="0" name="LastUpdatedIp" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UMstTravelTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q47="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="UMstTravelTypeResult" nillable="true" type="q47:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VMstVisaFee">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="VisaFeeId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VMstVisaFeeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q48="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="VMstVisaFeeResult" nillable="true" type="q48:CollectionResponseOfVDC_ATV_MST_VISA_FEE_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SMstVisaFee">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="VisaFeeId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SMstVisaFeeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q49="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="SMstVisaFeeResult" nillable="true" type="q49:ItemResponseOfVDC_ATS_MST_VISA_FEE_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DMstVisaFee">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="VisaFeeId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DMstVisaFeeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q50="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="DMstVisaFeeResult" nillable="true" type="q50:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IMstVisaFee">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ConsularCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CurrencyCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="NoOfEntriesType" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="PaymentRate" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="VisaFeeTypeId" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="VisaTypeId" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="IsActive" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+        <xs:element xmlns:q51="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="CreatedDate" nillable="true" type="q51:DateTimeOffset" />
+        <xs:element minOccurs="0" name="CreatedIp" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IMstVisaFeeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q52="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="IMstVisaFeeResult" nillable="true" type="q52:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UMstVisaFee">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="VisaFeeId" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="ConsularCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CurrencyCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="NoOfEntriesType" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="PaymentRate" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="VisaFeeTypeId" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="VisaTypeId" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="IsActive" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="LastUpdatedBy" nillable="true" type="xs:string" />
+        <xs:element xmlns:q53="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="LastUpdatedDate" nillable="true" type="q53:DateTimeOffset" />
+        <xs:element minOccurs="0" name="LastUpdatedIp" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UMstVisaFeeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q54="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="UMstVisaFeeResult" nillable="true" type="q54:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VMstVisaFeeType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="VisaFeeTypeId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VMstVisaFeeTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q55="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="VMstVisaFeeTypeResult" nillable="true" type="q55:CollectionResponseOfVDC_ATV_MST_VISA_FEE_TYPE_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SMstVisaFeeType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="VisaFeeTypeId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SMstVisaFeeTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q56="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="SMstVisaFeeTypeResult" nillable="true" type="q56:ItemResponseOfVDC_ATS_MST_VISA_FEE_TYPE_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DMstVisaFeeType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="VisaFeeTypeId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DMstVisaFeeTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q57="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="DMstVisaFeeTypeResult" nillable="true" type="q57:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IMstVisaFeeType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="VisaFeeTypeName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="IsActive" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+        <xs:element xmlns:q58="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="CreatedDate" nillable="true" type="q58:DateTimeOffset" />
+        <xs:element minOccurs="0" name="CreatedIp" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IMstVisaFeeTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q59="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="IMstVisaFeeTypeResult" nillable="true" type="q59:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UMstVisaFeeType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="VisaFeeTypeId" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="VisaFeeTypeName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="IsActive" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="LastUpdatedBy" nillable="true" type="xs:string" />
+        <xs:element xmlns:q60="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="LastUpdatedDate" nillable="true" type="q60:DateTimeOffset" />
+        <xs:element minOccurs="0" name="LastUpdatedIp" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UMstVisaFeeTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q61="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="UMstVisaFeeTypeResult" nillable="true" type="q61:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VMstVisaSubType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="VisaSubTypeId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VMstVisaSubTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q62="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="VMstVisaSubTypeResult" nillable="true" type="q62:CollectionResponseOfVDC_ATV_MST_VISA_SUB_TYPE_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SMstVisaSubType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="VisaSubTypeId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SMstVisaSubTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q63="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="SMstVisaSubTypeResult" nillable="true" type="q63:ItemResponseOfVDC_ATS_MST_VISA_SUB_TYPE_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DMstVisaSubType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="VisaSubTypeId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DMstVisaSubTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q64="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="DMstVisaSubTypeResult" nillable="true" type="q64:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IMstVisaSubType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Category" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="VisaSubTypeName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="VisaTypeId" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="IsActive" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+        <xs:element xmlns:q65="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="CreatedDate" nillable="true" type="q65:DateTimeOffset" />
+        <xs:element minOccurs="0" name="CreatedIp" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IMstVisaSubTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q66="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="IMstVisaSubTypeResult" nillable="true" type="q66:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UMstVisaSubType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="VisaSubTypeId" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="Category" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="VisaSubTypeName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="VisaTypeId" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="IsActive" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="LastUpdatedBy" nillable="true" type="xs:string" />
+        <xs:element xmlns:q67="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="LastUpdatedDate" nillable="true" type="q67:DateTimeOffset" />
+        <xs:element minOccurs="0" name="LastUpdatedIp" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UMstVisaSubTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q68="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="UMstVisaSubTypeResult" nillable="true" type="q68:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VMstVisaType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="VisaTypeId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VMstVisaTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q69="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="VMstVisaTypeResult" nillable="true" type="q69:CollectionResponseOfVDC_ATV_MST_VISA_TYPE_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SMstVisaType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="VisaTypeId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SMstVisaTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q70="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="SMstVisaTypeResult" nillable="true" type="q70:ItemResponseOfVDC_ATS_MST_VISA_TYPE_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DMstVisaType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="VisaTypeId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DMstVisaTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q71="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="DMstVisaTypeResult" nillable="true" type="q71:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IMstVisaType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="VisaTypePermitDay" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="IsActive" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+        <xs:element xmlns:q72="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="CreatedDate" nillable="true" type="q72:DateTimeOffset" />
+        <xs:element minOccurs="0" name="CreatedIp" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IMstVisaTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q73="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="IMstVisaTypeResult" nillable="true" type="q73:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UMstVisaType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="VisaTypeId" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="VisaTypePermitDay" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="IsActive" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="LastUpdatedBy" nillable="true" type="xs:string" />
+        <xs:element xmlns:q74="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="LastUpdatedDate" nillable="true" type="q74:DateTimeOffset" />
+        <xs:element minOccurs="0" name="LastUpdatedIp" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UMstVisaTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q75="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="UMstVisaTypeResult" nillable="true" type="q75:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VMstWorkDay">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="WorkDayId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VMstWorkDayResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q76="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="VMstWorkDayResult" nillable="true" type="q76:CollectionResponseOfVDC_ATV_MST_WORK_DAY_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SMstWorkDay">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="WorkDayId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SMstWorkDayResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q77="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="SMstWorkDayResult" nillable="true" type="q77:ItemResponseOfVDC_ATS_MST_WORK_DAY_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DMstWorkDay">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="WorkDayId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DMstWorkDayResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q78="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="DMstWorkDayResult" nillable="true" type="q78:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IMstWorkDay">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ConsularCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="WorkDayDescription" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="WorkFr" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="WorkMo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="WorkSa" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="WorkSu" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="WorkTh" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="WorkWe" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="WorkTu" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="IsActive" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+        <xs:element xmlns:q79="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="CreatedDate" nillable="true" type="q79:DateTimeOffset" />
+        <xs:element minOccurs="0" name="CreatedIp" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IMstWorkDayResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q80="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="IMstWorkDayResult" nillable="true" type="q80:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UMstWorkDay">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="WorkDayId" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="ConsularCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="WorkDayDescription" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="WorkFr" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="WorkMo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="WorkSa" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="WorkSu" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="WorkTh" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="WorkWe" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="WorkTu" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="IsActive" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="LastUpdatedBy" nillable="true" type="xs:string" />
+        <xs:element xmlns:q81="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="LastUpdatedDate" nillable="true" type="q81:DateTimeOffset" />
+        <xs:element minOccurs="0" name="LastUpdatedIp" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UMstWorkDayResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q82="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="UMstWorkDayResult" nillable="true" type="q82:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VMstYearlyIncome">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="YearlyIncomeId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VMstYearlyIncomeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q83="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="VMstYearlyIncomeResult" nillable="true" type="q83:CollectionResponseOfVDC_ATV_MST_YEARLY_INCOME_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SMstYearlyIncome">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="YearlyIncomeId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SMstYearlyIncomeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q84="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="SMstYearlyIncomeResult" nillable="true" type="q84:ItemResponseOfVDC_ATS_MST_YEARLY_INCOME_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DMstYearlyIncome">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="YearlyIncomeId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DMstYearlyIncomeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q85="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="DMstYearlyIncomeResult" nillable="true" type="q85:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IMstYearlyIncome">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RangeDesc" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="RangeValue" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="IsActive" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+        <xs:element xmlns:q86="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="CreatedDate" nillable="true" type="q86:DateTimeOffset" />
+        <xs:element minOccurs="0" name="CreatedIp" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IMstYearlyIncomeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q87="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="IMstYearlyIncomeResult" nillable="true" type="q87:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UMstYearlyIncome">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="YearlyIncomeId" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="RangeDesc" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="RangeValue" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="IsActive" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="LastUpdatedBy" nillable="true" type="xs:string" />
+        <xs:element xmlns:q88="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="LastUpdatedDate" nillable="true" type="q88:DateTimeOffset" />
+        <xs:element minOccurs="0" name="LastUpdatedIp" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UMstYearlyIncomeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q89="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="UMstYearlyIncomeResult" nillable="true" type="q89:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRoleInfoByUserId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRoleInfoByUserIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q90="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="GetRoleInfoByUserIdResult" nillable="true" type="q90:CollectionResponseOfVDC_TYPE_ROLE_INFO_LIST_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRolePermissionByRoleId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RoleId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRolePermissionByRoleIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q91="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="GetRolePermissionByRoleIdResult" nillable="true" type="q91:CollectionResponseOfVDC_TYPE_PERMISSIONS_LIST_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRoleInfoByRoleId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RoleId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRoleInfoByRoleIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q92="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="GetRoleInfoByRoleIdResult" nillable="true" type="q92:ItemResponseOfVDC_TYPE_ROLE_INFO_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetRolePermission">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q93="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="objInfo" nillable="true" type="q93:VDC_TYPE_ROLE_INFO_DTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetRolePermissionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q94="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="SetRolePermissionResult" nillable="true" type="q94:ItemResponseOfVDC_RETURNED_OUTPUT_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DelRole">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RoleId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DelRoleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q95="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="DelRoleResult" nillable="true" type="q95:CollectionResponseOfVDC_TYPE_SET_TRANSACTION_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserId" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="ConsularCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q96="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="GetUserListResult" nillable="true" type="q96:CollectionResponseOfVDC_TYPE_USER_LIST_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRoleList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRoleListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q97="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="GetRoleListResult" nillable="true" type="q97:CollectionResponseOfVDC_TYPE_ROLE_LIST_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserInfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserInfoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q98="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="GetUserInfoResult" nillable="true" type="q98:ItemResponseOfVDC_TYPE_USER_INFO_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetUserInfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q99="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="objInfo" nillable="true" type="q99:VDC_TYPE_USER_INFO_DTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetUserInfoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q100="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="SetUserInfoResult" nillable="true" type="q100:ItemResponseOfVDC_RETURNED_OUTPUT_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DelUserInfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DelUserInfoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q101="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="DelUserInfoResult" nillable="true" type="q101:CollectionResponseOfVDC_TYPE_SET_TRANSACTION_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SP_CHECK_APPLY_DUPLICATE">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="FIRST_NAME" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="FAMILY_NAME" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="TRAVEL_DOC_NO" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="p_NATION_CODE" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SP_CHECK_APPLY_DUPLICATEResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q102="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="SP_CHECK_APPLY_DUPLICATEResult" nillable="true" type="q102:ItemResponseOfVDC_RETURNED_OUTPUT_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VMstMessage">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="MessageId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VMstMessageResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q103="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="VMstMessageResult" nillable="true" type="q103:CollectionResponseOfVDC_ATV_MST_MESSAGE_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SMstMessage">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="MessageId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SMstMessageResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q104="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="SMstMessageResult" nillable="true" type="q104:ItemResponseOfVDC_ATS_MST_MESSAGE_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DMstMessage">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="MessageId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DMstMessageResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q105="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="DMstMessageResult" nillable="true" type="q105:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IMstMessage">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="MessageTypeId" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="MessageName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="IsActive" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+        <xs:element xmlns:q106="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="CreatedDate" nillable="true" type="q106:DateTimeOffset" />
+        <xs:element minOccurs="0" name="CreatedIp" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IMstMessageResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q107="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="IMstMessageResult" nillable="true" type="q107:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UMstMessage">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="MessageId" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="MessageTypeId" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="MessageName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="IsActive" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="LastUpdatedBy" nillable="true" type="xs:string" />
+        <xs:element xmlns:q108="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="LastUpdatedDate" nillable="true" type="q108:DateTimeOffset" />
+        <xs:element minOccurs="0" name="LastUpdatedIp" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UMstMessageResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q109="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="UMstMessageResult" nillable="true" type="q109:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getMstMessageTypeList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="isActive" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getMstMessageTypeListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q110="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="getMstMessageTypeListResult" nillable="true" type="q110:CollectionResponseOfMST_MESSAGE_TYPE_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VMstConsularMapping">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ConsularMappingId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VMstConsularMappingResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q111="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="VMstConsularMappingResult" nillable="true" type="q111:CollectionResponseOfVDC_ATV_MST_CONSULAR_MAPPING_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SMstConsularMapping">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ConsularMappingId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SMstConsularMappingResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q112="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="SMstConsularMappingResult" nillable="true" type="q112:ItemResponseOfVDC_ATS_MST_CONSULAR_MAPPING_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DMstConsularMapping">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ConsularMappingId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DMstConsularMappingResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q113="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="DMstConsularMappingResult" nillable="true" type="q113:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IMstConsularMapping">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="PassportCountryCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CountryOfResidence" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ConsularCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="InfoMessageId" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="ApproveMessageId" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="IsActive" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+        <xs:element xmlns:q114="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="CreatedDate" nillable="true" type="q114:DateTimeOffset" />
+        <xs:element minOccurs="0" name="CreatedIp" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IMstConsularMappingResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q115="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="IMstConsularMappingResult" nillable="true" type="q115:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UMstConsularMapping">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ConsularMappingId" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="PassportCountryCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CountryOfResidence" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ConsularCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="InfoMessageId" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="ApproveMessageId" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="IsActive" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="LastUpdatedBy" nillable="true" type="xs:string" />
+        <xs:element xmlns:q116="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="LastUpdatedDate" nillable="true" type="q116:DateTimeOffset" />
+        <xs:element minOccurs="0" name="LastUpdatedIp" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UMstConsularMappingResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q117="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="UMstConsularMappingResult" nillable="true" type="q117:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getServiceAlive">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getServiceAliveResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q118="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="getServiceAliveResult" nillable="true" type="q118:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getRegisterAgentList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="registerName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="registerStatusCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getRegisterAgentListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q119="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="getRegisterAgentListResult" nillable="true" type="q119:CollectionResponseOfMST_AGENT_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getRegisterAgentById">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="registerId" type="xs:long" />
+        <xs:element minOccurs="0" name="userId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getRegisterAgentByIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q120="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="getRegisterAgentByIdResult" nillable="true" type="q120:ItemResponseOfMST_AGENT_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="setRegisterStatusAgent">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="registerId" type="xs:long" />
+        <xs:element minOccurs="0" name="registerStatus" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="registerComment" nillable="true" type="xs:string" />
+        <xs:element xmlns:q121="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="registerInterviewDate" nillable="true" type="q121:DateTimeOffset" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="setRegisterStatusAgentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q122="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="setRegisterStatusAgentResult" nillable="true" type="q122:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="updateAgent">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q123="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="objVdcMstRegisterDto" nillable="true" type="q123:VDC_MST_REGISTER_DTO" />
+        <xs:element xmlns:q124="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="vdcMstRegisterDocDtoList" nillable="true" type="q124:ArrayOfVDC_MST_REGISTER_DOC_DTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="updateAgentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q125="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="updateAgentResult" nillable="true" type="q125:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="createApplication">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q126="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Request" minOccurs="0" name="request" nillable="true" type="q126:ArrayOfVDCApplicationRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="createApplicationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q127="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="createApplicationResult" nillable="true" type="q127:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getFullName">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="firstName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="middleName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="lastName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getFullNameResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q128="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="getFullNameResult" nillable="true" type="q128:ItemResponseOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getFIleFromVDCApplication">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="fileUrl" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="fileType" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getFIleFromVDCApplicationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q129="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="getFIleFromVDCApplicationResult" nillable="true" type="q129:ItemResponseOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getMstDocumentList">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getMstDocumentListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q130="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="getMstDocumentListResult" nillable="true" type="q130:CollectionResponseOfMST_DOCUMENT_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getDocumentList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="isActive" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getDocumentListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q131="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="getDocumentListResult" nillable="true" type="q131:CollectionResponseOfMST_DOCUMENT_LIST_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getDocumentListById">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="documentId" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="isActive" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getDocumentListByIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q132="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="getDocumentListByIdResult" nillable="true" type="q132:CollectionResponseOfMST_DOCUMENT_LIST_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getMaritalStatusList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="isActive" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getMaritalStatusListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q133="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="getMaritalStatusListResult" nillable="true" type="q133:CollectionResponseOfMST_MARITAL_STATUS_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getMaritalStatusListById">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="maritalStatusId" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="isActive" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getMaritalStatusListByIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q134="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="getMaritalStatusListByIdResult" nillable="true" type="q134:CollectionResponseOfMST_MARITAL_STATUS_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getCountryList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="continentCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="isActive" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getCountryListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q135="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="getCountryListResult" nillable="true" type="q135:CollectionResponseOfMST_COUNTRY_LIST_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getCountryListByCode">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="countryCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="continentCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="isActive" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getCountryListByCodeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q136="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="getCountryListByCodeResult" nillable="true" type="q136:CollectionResponseOfMST_COUNTRY_LIST_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getCountryListByETA">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="countryCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="continentCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="isETA" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="isActive" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getCountryListByETAResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q137="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="getCountryListByETAResult" nillable="true" type="q137:CollectionResponseOfMST_COUNTRY_LIST_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getNationList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="isActive" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getNationListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q138="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="getNationListResult" nillable="true" type="q138:CollectionResponseOfMST_NATION_LIST_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getNationListByCode">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nationCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="isActive" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getNationListByCodeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q139="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="getNationListByCodeResult" nillable="true" type="q139:CollectionResponseOfMST_NATION_LIST_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getNationListByETA">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nationCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="isETA" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="isActive" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getNationListByETAResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q140="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="getNationListByETAResult" nillable="true" type="q140:CollectionResponseOfMST_NATION_LIST_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getVisaTypeList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="isActive" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getVisaTypeListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q141="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="getVisaTypeListResult" nillable="true" type="q141:CollectionResponseOfVDC_MST_VISA_TYPE_LIST_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getVisaTypeListForChangeVisa">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="applicationId" type="xs:long" />
+        <xs:element minOccurs="0" name="consularCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getVisaTypeListForChangeVisaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q142="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="getVisaTypeListForChangeVisaResult" nillable="true" type="q142:CollectionResponseOfVDC_MST_VISA_TYPE_LIST_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getVisaTypeListById">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="visaTypeId" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="isActive" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getVisaTypeListByIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q143="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="getVisaTypeListByIdResult" nillable="true" type="q143:CollectionResponseOfVDC_MST_VISA_TYPE_LIST_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getConsularList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="countryCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="consularParentCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="consularTypeID" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="isActive" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getConsularListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q144="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="getConsularListResult" nillable="true" type="q144:CollectionResponseOfMST_CONSULAR_LIST_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getConsularListByCode">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="consularCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="countryCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="consularParentCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="consularTypeID" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="isActive" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getConsularListByCodeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q145="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="getConsularListByCodeResult" nillable="true" type="q145:CollectionResponseOfMST_CONSULAR_LIST_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getConsularListOnline">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="countryCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="consularParentCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="consularTypeID" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="isActive" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="isOnline" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getConsularListOnlineResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q146="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="getConsularListOnlineResult" nillable="true" type="q146:CollectionResponseOfMST_CONSULAR_LIST_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getConsularListOnlineByCode">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="consularCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="countryCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="consularParentCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="consularTypeID" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="isActive" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="isOnline" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getConsularListOnlineByCodeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q147="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="getConsularListOnlineByCodeResult" nillable="true" type="q147:CollectionResponseOfMST_CONSULAR_LIST_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getConsularByCountryList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="consularCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="passportCountryCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="countryOfRescidence" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="isActive" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getConsularByCountryListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q148="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="getConsularByCountryListResult" nillable="true" type="q148:CollectionResponseOfMST_CONSULAR_LIST_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getYearlyIncomeList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="isActive" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getYearlyIncomeListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q149="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="getYearlyIncomeListResult" nillable="true" type="q149:CollectionResponseOfMST_YEARLY_INCOME_LIST_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getYearlyIncomeListById">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="yearlyIncomeId" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="isActive" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getYearlyIncomeListByIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q150="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="getYearlyIncomeListByIdResult" nillable="true" type="q150:CollectionResponseOfMST_YEARLY_INCOME_LIST_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getOccupationTypeList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="isActive" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getOccupationTypeListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q151="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="getOccupationTypeListResult" nillable="true" type="q151:CollectionResponseOfMST_OCCUPATION_TYPE_LIST_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getOccupationTypeListById">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="occupationId" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="isActive" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getOccupationTypeListByIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q152="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="getOccupationTypeListByIdResult" nillable="true" type="q152:CollectionResponseOfMST_OCCUPATION_TYPE_LIST_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getDocumentMappingList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q153="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Request" minOccurs="0" name="request" nillable="true" type="q153:VDCDocumentDataRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getDocumentMappingListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q154="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="getDocumentMappingListResult" nillable="true" type="q154:CollectionResponseOfMST_DOCUMENT_MAPPING_LIST_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getRelationshipList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="isActive" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getRelationshipListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q155="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="getRelationshipListResult" nillable="true" type="q155:CollectionResponseOfMST_RELATIONSHIP_LIST_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getRelationshipListById">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="relationshipId" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="isActive" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getRelationshipListByIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q156="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="getRelationshipListByIdResult" nillable="true" type="q156:CollectionResponseOfMST_RELATIONSHIP_LIST_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getTitleList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="isActive" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getTitleListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q157="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="getTitleListResult" nillable="true" type="q157:CollectionResponseOfMST_TITLE_LIST_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getTitleListById">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="titleId" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="isActive" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getTitleListByIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q158="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="getTitleListByIdResult" nillable="true" type="q158:CollectionResponseOfMST_TITLE_LIST_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getPurposeOfVisitList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="isActive" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getPurposeOfVisitListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q159="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="getPurposeOfVisitListResult" nillable="true" type="q159:CollectionResponseOfMST_PURPOSE_OF_VISIT_LIST_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getPurposeOfVisitListById">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="purposeOfVisitId" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="isActive" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getPurposeOfVisitListByIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q160="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="getPurposeOfVisitListByIdResult" nillable="true" type="q160:CollectionResponseOfMST_PURPOSE_OF_VISIT_LIST_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getPurposeOfVisitListByPassportTypeId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="purposeOfVisitId" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="isActive" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="passportTypeId" nillable="true" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getPurposeOfVisitListByPassportTypeIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q161="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="getPurposeOfVisitListByPassportTypeIdResult" nillable="true" type="q161:CollectionResponseOfMST_PURPOSE_OF_VISIT_LIST_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getTravelDocTypeList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="isActive" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getTravelDocTypeListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q162="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="getTravelDocTypeListResult" nillable="true" type="q162:CollectionResponseOfMST_TRAVEL_DOC_TYPE_LIST_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getTravelDocTypeListById">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="travelDocTypeId" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="isActive" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getTravelDocTypeListByIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q163="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="getTravelDocTypeListByIdResult" nillable="true" type="q163:CollectionResponseOfMST_TRAVEL_DOC_TYPE_LIST_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getContinentList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="isActive" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getContinentListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q164="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="getContinentListResult" nillable="true" type="q164:CollectionResponseOfMST_CONTINENT_LIST_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getContinentListByCode">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="continentCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="isActive" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getContinentListByCodeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q165="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="getContinentListByCodeResult" nillable="true" type="q165:CollectionResponseOfMST_CONTINENT_LIST_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getTravelTypeList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="isActive" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getTravelTypeListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q166="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="getTravelTypeListResult" nillable="true" type="q166:CollectionResponseOfMST_TRAVEL_TYPE_LIST_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getTravelTypeListById">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="travelTypeId" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="isActive" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getTravelTypeListByIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q167="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="getTravelTypeListByIdResult" nillable="true" type="q167:CollectionResponseOfMST_TRAVEL_TYPE_LIST_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getVisaSubTypeList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="visaTypeId" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="isActive" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getVisaSubTypeListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q168="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="getVisaSubTypeListResult" nillable="true" type="q168:CollectionResponseOfMST_VISA_SUB_TYPE_LIST_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getVisaSubTypeListById">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="visaSubTypeId" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="visaTypeId" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="isActive" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getVisaSubTypeListByIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q169="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="getVisaSubTypeListByIdResult" nillable="true" type="q169:CollectionResponseOfMST_VISA_SUB_TYPE_LIST_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getProcessStatusList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="processId" nillable="true" type="xs:int" />
+        <xs:element minOccurs="0" name="isActive" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getProcessStatusListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q170="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="getProcessStatusListResult" nillable="true" type="q170:CollectionResponseOfMST_PROCESS_STATUS_LIST_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetWatchlistType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="WatchlistTypeId" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="IsActive" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetWatchlistTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q171="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="GetWatchlistTypeResult" nillable="true" type="q171:CollectionResponseOfMST_WATCHLIST_TYPE_LIST_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAccommodation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="accommodationId" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="IsActive" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAccommodationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q172="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="GetAccommodationResult" nillable="true" type="q172:CollectionResponseOfMST_ACCOMMODATION_LIST_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getPassportTypeList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="passportTypeId" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="IsActive" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getPassportTypeListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q173="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="getPassportTypeListResult" nillable="true" type="q173:CollectionResponseOfMST_PASSPORT_TYPE_LIST_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TrackVisaStatus">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="travelDocNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="registerID" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TrackVisaStatusResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q174="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="TrackVisaStatusResult" nillable="true" type="q174:CollectionResponseOfVISA_TRACK_STATUS_LIST_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getEmailTemplateList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="emailCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getEmailTemplateListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q175="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="getEmailTemplateListResult" nillable="true" type="q175:CollectionResponseOfMST_EMAIL_LIST_DTO7DnQPvLx" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SentEmail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="emailTo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="emailSubject" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="emailBody" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SentEmailResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q176="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="SentEmailResult" nillable="true" type="q176:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SentEmailWithattachment">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q177="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="emailTo" nillable="true" type="q177:ArrayOfstring" />
+        <xs:element xmlns:q178="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="emailCC" nillable="true" type="q178:ArrayOfstring" />
+        <xs:element minOccurs="0" name="emailSubject" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="emailBody" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="attachmentfile" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="attachmentName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SentEmailWithattachmentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q179="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="SentEmailWithattachmentResult" nillable="true" type="q179:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getVDCApplication">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q180="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Request" minOccurs="0" name="request" nillable="true" type="q180:VDCDataRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getVDCApplicationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q181="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="getVDCApplicationResult" nillable="true" type="q181:ItemResponseOfVDC_APPLICATION_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getApplicationList">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getApplicationListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q182="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="getApplicationListResult" nillable="true" type="q182:CollectionResponseOfVDC_APPLICATION_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetApplicationById">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ApplicationId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetApplicationByIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q183="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="GetApplicationByIdResult" nillable="true" type="q183:ItemResponseOfVDC_TYPE_APPLICATION_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFullApplicationById">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ApplicationId" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="getAddr" type="xs:boolean" />
+        <xs:element minOccurs="0" name="getDoc" type="xs:boolean" />
+        <xs:element minOccurs="0" name="getPayment" type="xs:boolean" />
+        <xs:element minOccurs="0" name="getApprove" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFullApplicationByIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q184="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="GetFullApplicationByIdResult" nillable="true" type="q184:ItemResponseOfVDC_TYPE_APPLICATION_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetApplicationDocByDocId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ApplicationId" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="ApplicationDocId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetApplicationDocByDocIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q185="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="GetApplicationDocByDocIdResult" nillable="true" type="q185:ItemResponseOfVDC_TYPE_APPLICATION_DOC_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBookingList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RegisterType" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ConsularCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MconfigType" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ApplicantNum" nillable="true" type="xs:int" />
+        <xs:element xmlns:q186="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="BookingDate" nillable="true" type="q186:DateTimeOffset" />
+        <xs:element minOccurs="0" name="MctrlPeriodId" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="ConfirmBooking" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBookingListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q187="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="GetBookingListResult" nillable="true" type="q187:CollectionResponseOfVDC_TYPE_BOOKING_LIST_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBookingPost">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RegisterType" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ConsularCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ApplicantNum" nillable="true" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBookingPostResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q188="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="GetBookingPostResult" nillable="true" type="q188:CollectionResponseOfVDC_TYPE_BOOKING_LIST_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCheckingApplicationList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="consularCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="referenceNo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="processStatusId" nillable="true" type="xs:long" />
+        <xs:element xmlns:q189="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="applyFrom" nillable="true" type="q189:DateTimeOffset" />
+        <xs:element xmlns:q190="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="applyTo" nillable="true" type="q190:DateTimeOffset" />
+        <xs:element minOccurs="0" name="applicantName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="traveDocNo" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCheckingApplicationListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q191="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="GetCheckingApplicationListResult" nillable="true" type="q191:CollectionResponseOfVDC_TYPE_APPLICATION_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetCheckingApplication">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q192="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="appInfo" nillable="true" type="q192:VDC_APPLICATION_INFO_DTO" />
+        <xs:element minOccurs="0" name="mode" type="xs:int" />
+        <xs:element minOccurs="0" name="checkingStatus" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="checkingComment" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetCheckingApplicationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q193="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="SetCheckingApplicationResult" nillable="true" type="q193:ItemResponseOfVDC_RETURNED_OUTPUT_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AtGetAutomaticInput">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TableName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AtGetAutomaticInputResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q194="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="AtGetAutomaticInputResult" nillable="true" type="q194:CollectionResponseOfVDC_REC_AT_DATA_TABLE_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AtGetAutomaticTableList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TableName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AtGetAutomaticTableListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q195="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="AtGetAutomaticTableListResult" nillable="true" type="q195:CollectionResponseOfVDC_REC_DATA_TABLE_LIST_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AtGetRefTableList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TableName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AtGetRefTableListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q196="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="AtGetRefTableListResult" nillable="true" type="q196:CollectionResponseOfVDC_REC_REF_DATA_TABLE_LIST_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AtGetAutomaticTableInput">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TableName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AtGetAutomaticTableInputResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q197="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="AtGetAutomaticTableInputResult" nillable="true" type="q197:CollectionResponseOfVDC_REC_TABLE_INPUT_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VMstCountry">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CountId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VMstCountryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q198="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="VMstCountryResult" nillable="true" type="q198:CollectionResponseOfVDC_ATV_MST_COUNTRY_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SMstCountry">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CountId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SMstCountryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q199="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="SMstCountryResult" nillable="true" type="q199:ItemResponseOfVDC_ATS_MST_COUNTRY_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DMstCountry">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CountId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DMstCountryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q200="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="DMstCountryResult" nillable="true" type="q200:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IMstCountry">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Continentcd" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Countenm" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Counttnm" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Healthctl" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Visaflag" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Nationenm" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Nationtnm" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Salary" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="IsActive" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Abbcount" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Countcd" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+        <xs:element xmlns:q201="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="CreatedDate" nillable="true" type="q201:DateTimeOffset" />
+        <xs:element minOccurs="0" name="CreatedIp" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IMstCountryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q202="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="IMstCountryResult" nillable="true" type="q202:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UMstCountry">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CountId" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="Continentcd" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Countenm" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Counttnm" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Healthctl" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Visaflag" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Nationenm" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Nationtnm" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Salary" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="IsActive" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Abbcount" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Countcd" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="LastUpdatedBy" nillable="true" type="xs:string" />
+        <xs:element xmlns:q203="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="LastUpdatedDate" nillable="true" type="q203:DateTimeOffset" />
+        <xs:element minOccurs="0" name="LastUpdatedIp" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UMstCountryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q204="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="UMstCountryResult" nillable="true" type="q204:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VMstConsular">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ConsularId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VMstConsularResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q205="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="VMstConsularResult" nillable="true" type="q205:CollectionResponseOfVDC_ATV_MST_CONSULAR_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SMstConsular">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ConsularId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SMstConsularResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q206="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="SMstConsularResult" nillable="true" type="q206:ItemResponseOfVDC_ATS_MST_CONSULAR_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DMstConsular">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ConsularId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DMstConsularResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q207="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="DMstConsularResult" nillable="true" type="q207:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IMstConsular">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CountryCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="TimezoneCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ConsularNameEn" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ConsularNameTh" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ConsularAddress" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ConsularCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ConsularEmail" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ConsularPostCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ConsularFax" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ConsularTel" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="IsActive" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ConsularAddressFormat" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ConsularCloseService" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ConsularMap" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="ConsularNameCity" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ConsularOpenService" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ConsularParentCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ConsularTypeId" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+        <xs:element xmlns:q208="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="CreatedDate" nillable="true" type="q208:DateTimeOffset" />
+        <xs:element minOccurs="0" name="CreatedIp" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MinVisaSticker" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="IsApplyOnline" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="IsPost" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="PostAddress" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IMstConsularResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q209="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="IMstConsularResult" nillable="true" type="q209:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UMstConsular">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ConsularId" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="CountryCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="TimezoneCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ConsularNameEn" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ConsularNameTh" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ConsularAddress" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ConsularCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ConsularEmail" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ConsularPostCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ConsularFax" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ConsularTel" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="IsActive" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ConsularAddressFormat" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ConsularCloseService" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ConsularMap" nillable="true" type="xs:base64Binary" />
+        <xs:element minOccurs="0" name="ConsularNameCity" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ConsularOpenService" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ConsularParentCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ConsularTypeId" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="LastUpdatedBy" nillable="true" type="xs:string" />
+        <xs:element xmlns:q210="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="LastUpdatedDate" nillable="true" type="q210:DateTimeOffset" />
+        <xs:element minOccurs="0" name="LastUpdatedIp" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MinVisaSticker" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="IsApplyOnline" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="IsPost" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="PostAddress" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UMstConsularResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q211="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="UMstConsularResult" nillable="true" type="q211:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VMstConsularType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ConsularTypeId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VMstConsularTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q212="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="VMstConsularTypeResult" nillable="true" type="q212:CollectionResponseOfVDC_ATV_MST_CONSULAR_TYPE_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SMstConsularType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ConsularTypeId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SMstConsularTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q213="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="SMstConsularTypeResult" nillable="true" type="q213:ItemResponseOfVDC_ATS_MST_CONSULAR_TYPE_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DMstConsularType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ConsularTypeId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DMstConsularTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q214="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="DMstConsularTypeResult" nillable="true" type="q214:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IMstConsularType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ConsularTypeCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ConsularTypeDesc" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ConsularTypeName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="TypePrefix" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="IsActive" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+        <xs:element xmlns:q215="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="CreatedDate" nillable="true" type="q215:DateTimeOffset" />
+        <xs:element minOccurs="0" name="CreatedIp" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IMstConsularTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q216="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="IMstConsularTypeResult" nillable="true" type="q216:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UMstConsularType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ConsularTypeId" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="ConsularTypeCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ConsularTypeDesc" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ConsularTypeName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="TypePrefix" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="IsActive" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="LastUpdatedBy" nillable="true" type="xs:string" />
+        <xs:element xmlns:q217="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="LastUpdatedDate" nillable="true" type="q217:DateTimeOffset" />
+        <xs:element minOccurs="0" name="LastUpdatedIp" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UMstConsularTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q218="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="UMstConsularTypeResult" nillable="true" type="q218:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VMstContinent">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ContinentId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VMstContinentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q219="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="VMstContinentResult" nillable="true" type="q219:CollectionResponseOfVDC_ATV_MST_CONTINENT_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SMstContinent">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ContinentId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SMstContinentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q220="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="SMstContinentResult" nillable="true" type="q220:ItemResponseOfVDC_ATS_MST_CONTINENT_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DMstContinent">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ContinentId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DMstContinentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q221="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="DMstContinentResult" nillable="true" type="q221:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IMstContinent">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Continentcd" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Continentenm" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Continenttnm" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="IsActive" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+        <xs:element xmlns:q222="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="CreatedDate" nillable="true" type="q222:DateTimeOffset" />
+        <xs:element minOccurs="0" name="CreatedIp" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IMstContinentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q223="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="IMstContinentResult" nillable="true" type="q223:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UMstContinent">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ContinentId" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="Continentcd" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Continentenm" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Continenttnm" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="IsActive" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="LastUpdatedBy" nillable="true" type="xs:string" />
+        <xs:element xmlns:q224="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="LastUpdatedDate" nillable="true" type="q224:DateTimeOffset" />
+        <xs:element minOccurs="0" name="LastUpdatedIp" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UMstContinentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q225="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="UMstContinentResult" nillable="true" type="q225:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VMstCurrency">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CurrencyId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VMstCurrencyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q226="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="VMstCurrencyResult" nillable="true" type="q226:CollectionResponseOfVDC_ATV_MST_CURRENCY_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SMstCurrency">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CurrencyId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SMstCurrencyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q227="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="SMstCurrencyResult" nillable="true" type="q227:ItemResponseOfVDC_ATS_MST_CURRENCY_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DMstCurrency">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CurrencyId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DMstCurrencyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q228="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="DMstCurrencyResult" nillable="true" type="q228:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IMstCurrency">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CountryCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CurrencyCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CurrencyName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CurrencySymbol" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="IsActive" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+        <xs:element xmlns:q229="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="CreatedDate" nillable="true" type="q229:DateTimeOffset" />
+        <xs:element minOccurs="0" name="CreatedIp" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IMstCurrencyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q230="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="IMstCurrencyResult" nillable="true" type="q230:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UMstCurrency">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CurrencyId" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="CountryCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CurrencyCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CurrencyName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CurrencySymbol" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="IsActive" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="LastUpdatedBy" nillable="true" type="xs:string" />
+        <xs:element xmlns:q231="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="LastUpdatedDate" nillable="true" type="q231:DateTimeOffset" />
+        <xs:element minOccurs="0" name="LastUpdatedIp" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UMstCurrencyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q232="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="UMstCurrencyResult" nillable="true" type="q232:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VMstDocument">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DocumentId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VMstDocumentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q233="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="VMstDocumentResult" nillable="true" type="q233:CollectionResponseOfVDC_ATV_MST_DOCUMENT_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SMstDocument">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DocumentId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SMstDocumentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q234="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="SMstDocumentResult" nillable="true" type="q234:ItemResponseOfVDC_ATS_MST_DOCUMENT_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DMstDocument">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DocumentId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DMstDocumentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q235="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="DMstDocumentResult" nillable="true" type="q235:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IMstDocument">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DocumentName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="IsActive" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+        <xs:element xmlns:q236="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="CreatedDate" nillable="true" type="q236:DateTimeOffset" />
+        <xs:element minOccurs="0" name="CreatedIp" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IMstDocumentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q237="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="IMstDocumentResult" nillable="true" type="q237:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UMstDocument">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DocumentId" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DocumentName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="IsActive" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="LastUpdatedBy" nillable="true" type="xs:string" />
+        <xs:element xmlns:q238="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="LastUpdatedDate" nillable="true" type="q238:DateTimeOffset" />
+        <xs:element minOccurs="0" name="LastUpdatedIp" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UMstDocumentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q239="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="UMstDocumentResult" nillable="true" type="q239:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VMstDocumentMapping">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DocumentMappingId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VMstDocumentMappingResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q240="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="VMstDocumentMappingResult" nillable="true" type="q240:CollectionResponseOfVDC_ATV_MST_DOCUMENT_MAPPING_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SMstDocumentMapping">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DocumentMappingId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SMstDocumentMappingResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q241="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="SMstDocumentMappingResult" nillable="true" type="q241:ItemResponseOfVDC_ATS_MST_DOCUMENT_MAPPING_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DMstDocumentMapping">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DocumentMappingId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DMstDocumentMappingResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q242="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="DMstDocumentMappingResult" nillable="true" type="q242:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IMstDocumentMapping">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ConsularCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DocumentId" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="ModuleCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="VisaTypeId" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="IsActive" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+        <xs:element xmlns:q243="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="CreatedDate" nillable="true" type="q243:DateTimeOffset" />
+        <xs:element minOccurs="0" name="CreatedIp" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="VisaSubTypeId" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="NoOfEntries" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="documentDesc" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="purposeOfVisitId" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="orderNo" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IMstDocumentMappingResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q244="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="IMstDocumentMappingResult" nillable="true" type="q244:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UMstDocumentMapping">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DocumentMappingId" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="ConsularCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DocumentId" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="ModuleCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="VisaTypeId" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="IsActive" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="LastUpdatedBy" nillable="true" type="xs:string" />
+        <xs:element xmlns:q245="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="LastUpdatedDate" nillable="true" type="q245:DateTimeOffset" />
+        <xs:element minOccurs="0" name="LastUpdatedIp" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="VisaSubTypeId" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="NoOfEntries" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="documentDesc" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="purposeOfVisitId" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="orderNo" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UMstDocumentMappingResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q246="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="UMstDocumentMappingResult" nillable="true" type="q246:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VMstHoliday">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="HolidayId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VMstHolidayResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q247="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="VMstHolidayResult" nillable="true" type="q247:CollectionResponseOfVDC_ATV_MST_HOLIDAY_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SMstHoliday">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="HolidayId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SMstHolidayResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q248="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="SMstHolidayResult" nillable="true" type="q248:ItemResponseOfVDC_ATS_MST_HOLIDAY_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DMstHoliday">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="HolidayId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DMstHolidayResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q249="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="DMstHolidayResult" nillable="true" type="q249:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IMstHoliday">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ConsularCode" nillable="true" type="xs:string" />
+        <xs:element xmlns:q250="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="HolidayDate" nillable="true" type="q250:DateTimeOffset" />
+        <xs:element minOccurs="0" name="HolidayDescription" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="HolidayName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="HolidayYear" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="IsActive" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+        <xs:element xmlns:q251="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="CreatedDate" nillable="true" type="q251:DateTimeOffset" />
+        <xs:element minOccurs="0" name="CreatedIp" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IMstHolidayResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q252="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="IMstHolidayResult" nillable="true" type="q252:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UMstHoliday">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="HolidayId" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="ConsularCode" nillable="true" type="xs:string" />
+        <xs:element xmlns:q253="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="HolidayDate" nillable="true" type="q253:DateTimeOffset" />
+        <xs:element minOccurs="0" name="HolidayDescription" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="HolidayName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="HolidayYear" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="IsActive" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="LastUpdatedBy" nillable="true" type="xs:string" />
+        <xs:element xmlns:q254="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="LastUpdatedDate" nillable="true" type="q254:DateTimeOffset" />
+        <xs:element minOccurs="0" name="LastUpdatedIp" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UMstHolidayResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q255="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="UMstHolidayResult" nillable="true" type="q255:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VMstMaritalStatus">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="MaritalStatusId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VMstMaritalStatusResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q256="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="VMstMaritalStatusResult" nillable="true" type="q256:CollectionResponseOfVDC_ATV_MST_MARITAL_STATUS_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SMstMaritalStatus">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="MaritalStatusId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SMstMaritalStatusResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q257="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="SMstMaritalStatusResult" nillable="true" type="q257:ItemResponseOfVDC_ATS_MST_MARITAL_STATUS_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DMstMaritalStatus">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="MaritalStatusId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DMstMaritalStatusResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q258="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="DMstMaritalStatusResult" nillable="true" type="q258:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IMstMaritalStatus">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="IsActive" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+        <xs:element xmlns:q259="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="CreatedDate" nillable="true" type="q259:DateTimeOffset" />
+        <xs:element minOccurs="0" name="CreatedIp" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IMstMaritalStatusResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q260="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="IMstMaritalStatusResult" nillable="true" type="q260:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UMstMaritalStatus">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="MaritalStatusId" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="IsActive" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="LastUpdatedBy" nillable="true" type="xs:string" />
+        <xs:element xmlns:q261="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="LastUpdatedDate" nillable="true" type="q261:DateTimeOffset" />
+        <xs:element minOccurs="0" name="LastUpdatedIp" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UMstMaritalStatusResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q262="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="UMstMaritalStatusResult" nillable="true" type="q262:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VMstMaximumConfig">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="MconfigId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VMstMaximumConfigResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q263="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="VMstMaximumConfigResult" nillable="true" type="q263:CollectionResponseOfVDC_ATV_MST_MAXIMUM_CONFIG_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SMstMaximumConfig">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="MconfigId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SMstMaximumConfigResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q264="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="SMstMaximumConfigResult" nillable="true" type="q264:ItemResponseOfVDC_ATS_MST_MAXIMUM_CONFIG_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DMstMaximumConfig">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="MconfigId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DMstMaximumConfigResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q265="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="DMstMaximumConfigResult" nillable="true" type="q265:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IMstMaximumConfig">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ConsularCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MaxQty" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="MconfigType" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="IsActive" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+        <xs:element xmlns:q266="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="CreatedDate" nillable="true" type="q266:DateTimeOffset" />
+        <xs:element minOccurs="0" name="CreatedIp" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IMstMaximumConfigResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q267="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="IMstMaximumConfigResult" nillable="true" type="q267:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UMstMaximumConfig">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="MconfigId" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="ConsularCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MaxQty" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="MconfigType" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="IsActive" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="LastUpdatedBy" nillable="true" type="xs:string" />
+        <xs:element xmlns:q268="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="LastUpdatedDate" nillable="true" type="q268:DateTimeOffset" />
+        <xs:element minOccurs="0" name="LastUpdatedIp" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UMstMaximumConfigResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q269="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="UMstMaximumConfigResult" nillable="true" type="q269:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VMstMaximumConfigPeriod">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="MconfigPeriodId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VMstMaximumConfigPeriodResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q270="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="VMstMaximumConfigPeriodResult" nillable="true" type="q270:CollectionResponseOfVDC_ATV_MST_MAXIMUM_CONFIG_PERIOD_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SMstMaximumConfigPeriod">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="MconfigPeriodId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SMstMaximumConfigPeriodResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q271="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="SMstMaximumConfigPeriodResult" nillable="true" type="q271:ItemResponseOfVDC_ATS_MST_MAXIMUM_CONFIG_PERIOD_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DMstMaximumConfigPeriod">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="MconfigPeriodId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DMstMaximumConfigPeriodResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q272="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="DMstMaximumConfigPeriodResult" nillable="true" type="q272:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IMstMaximumConfigPeriod">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="FinishTime" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MaxQty" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="MconfigId" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="StartTime" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IMstMaximumConfigPeriodResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q273="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="IMstMaximumConfigPeriodResult" nillable="true" type="q273:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UMstMaximumConfigPeriod">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="MconfigPeriodId" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="FinishTime" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MaxQty" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="MconfigId" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="StartTime" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UMstMaximumConfigPeriodResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q274="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="UMstMaximumConfigPeriodResult" nillable="true" type="q274:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VMstMaximumControl">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="MctrlId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VMstMaximumControlResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q275="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="VMstMaximumControlResult" nillable="true" type="q275:CollectionResponseOfVDC_ATV_MST_MAXIMUM_CONTROL_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SMstMaximumControl">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="MctrlId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SMstMaximumControlResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q276="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="SMstMaximumControlResult" nillable="true" type="q276:ItemResponseOfVDC_ATS_MST_MAXIMUM_CONTROL_DTOT157PNd3" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DMstMaximumControl">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="MctrlId" nillable="true" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DMstMaximumControlResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q277="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="DMstMaximumControlResult" nillable="true" type="q277:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IMstMaximumControl">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ConsularCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AvailableQty" nillable="true" type="xs:long" />
+        <xs:element xmlns:q278="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="CtrlDate" nillable="true" type="q278:DateTimeOffset" />
+        <xs:element minOccurs="0" name="MaxQty" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="MconfigId" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="MconfigType" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="UsedQty" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="xs:string" />
+        <xs:element xmlns:q279="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="CreatedDate" nillable="true" type="q279:DateTimeOffset" />
+        <xs:element minOccurs="0" name="CreatedIp" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IMstMaximumControlResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q280="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="IMstMaximumControlResult" nillable="true" type="q280:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UMstMaximumControl">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="MctrlId" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="ConsularCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AvailableQty" nillable="true" type="xs:long" />
+        <xs:element xmlns:q281="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="CtrlDate" nillable="true" type="q281:DateTimeOffset" />
+        <xs:element minOccurs="0" name="MaxQty" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="MconfigId" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="MconfigType" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="UsedQty" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="LastUpdatedBy" nillable="true" type="xs:string" />
+        <xs:element xmlns:q282="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="LastUpdatedDate" nillable="true" type="q282:DateTimeOffset" />
+        <xs:element minOccurs="0" name="LastUpdatedIp" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UMstMaximumControlResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q283="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" minOccurs="0" name="UMstMaximumControlResult" nillable="true" type="q283:OperationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

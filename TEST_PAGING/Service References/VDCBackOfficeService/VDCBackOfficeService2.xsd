@@ -1,0 +1,2033 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://172.16.24.30/MFA_BackOfficeWebService/VDCBackOfficeService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/System" />
+  <xs:complexType name="ArrayOfVDC_ATV_MST_MAXIMUM_CONTROL_PERIOD_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VDC_ATV_MST_MAXIMUM_CONTROL_PERIOD_DTO" nillable="true" type="tns:VDC_ATV_MST_MAXIMUM_CONTROL_PERIOD_DTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVDC_ATV_MST_MAXIMUM_CONTROL_PERIOD_DTO" nillable="true" type="tns:ArrayOfVDC_ATV_MST_MAXIMUM_CONTROL_PERIOD_DTO" />
+  <xs:complexType name="VDC_ATV_MST_MAXIMUM_CONTROL_PERIOD_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AVAILABLE_QTY" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="FINISH_TIME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MAX_QTY" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="MCONFIG_PERIOD_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="MCTRL_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="MCTRL_PERIOD_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="START_TIME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="USED_QTY" nillable="true" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VDC_ATV_MST_MAXIMUM_CONTROL_PERIOD_DTO" nillable="true" type="tns:VDC_ATV_MST_MAXIMUM_CONTROL_PERIOD_DTO" />
+  <xs:complexType name="VDC_ATS_MST_MAXIMUM_CONTROL_PERIOD_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AVAILABLE_QTY" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="FINISH_TIME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MAX_QTY" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="MCONFIG_PERIOD_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="MCTRL_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="MCTRL_PERIOD_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="START_TIME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="USED_QTY" nillable="true" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VDC_ATS_MST_MAXIMUM_CONTROL_PERIOD_DTO" nillable="true" type="tns:VDC_ATS_MST_MAXIMUM_CONTROL_PERIOD_DTO" />
+  <xs:complexType name="ArrayOfVDC_ATV_MST_OCCUPATION_TYPE_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VDC_ATV_MST_OCCUPATION_TYPE_DTO" nillable="true" type="tns:VDC_ATV_MST_OCCUPATION_TYPE_DTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVDC_ATV_MST_OCCUPATION_TYPE_DTO" nillable="true" type="tns:ArrayOfVDC_ATV_MST_OCCUPATION_TYPE_DTO" />
+  <xs:complexType name="VDC_ATV_MST_OCCUPATION_TYPE_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DESCRIPTION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IS_ACTIVE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OCCUPATION_TYPE_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="OCCUPATION_TYPE_NAME" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VDC_ATV_MST_OCCUPATION_TYPE_DTO" nillable="true" type="tns:VDC_ATV_MST_OCCUPATION_TYPE_DTO" />
+  <xs:complexType name="VDC_ATS_MST_OCCUPATION_TYPE_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CREATED_BY" nillable="true" type="xs:string" />
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="CREATED_DATE" nillable="true" type="q1:DateTimeOffset" />
+      <xs:element minOccurs="0" name="CREATED_IP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DESCRIPTION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IS_ACTIVE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LAST_UPDATED_BY" nillable="true" type="xs:string" />
+      <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="LAST_UPDATED_DATE" nillable="true" type="q2:DateTimeOffset" />
+      <xs:element minOccurs="0" name="LAST_UPDATED_IP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OCCUPATION_TYPE_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="OCCUPATION_TYPE_NAME" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VDC_ATS_MST_OCCUPATION_TYPE_DTO" nillable="true" type="tns:VDC_ATS_MST_OCCUPATION_TYPE_DTO" />
+  <xs:complexType name="ArrayOfVDC_ATV_MST_PURPOSE_OF_VISIT_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VDC_ATV_MST_PURPOSE_OF_VISIT_DTO" nillable="true" type="tns:VDC_ATV_MST_PURPOSE_OF_VISIT_DTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVDC_ATV_MST_PURPOSE_OF_VISIT_DTO" nillable="true" type="tns:ArrayOfVDC_ATV_MST_PURPOSE_OF_VISIT_DTO" />
+  <xs:complexType name="VDC_ATV_MST_PURPOSE_OF_VISIT_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DESCRIPTION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IS_ACTIVE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PURPOSE_OF_VISIT_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="PURPOSE_OF_VISIT_NAME" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VDC_ATV_MST_PURPOSE_OF_VISIT_DTO" nillable="true" type="tns:VDC_ATV_MST_PURPOSE_OF_VISIT_DTO" />
+  <xs:complexType name="VDC_ATS_MST_PURPOSE_OF_VISIT_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CREATED_BY" nillable="true" type="xs:string" />
+      <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="CREATED_DATE" nillable="true" type="q3:DateTimeOffset" />
+      <xs:element minOccurs="0" name="CREATED_IP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DESCRIPTION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IS_ACTIVE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LAST_UPDATED_BY" nillable="true" type="xs:string" />
+      <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="LAST_UPDATED_DATE" nillable="true" type="q4:DateTimeOffset" />
+      <xs:element minOccurs="0" name="LAST_UPDATED_IP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PURPOSE_OF_VISIT_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="PURPOSE_OF_VISIT_NAME" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VDC_ATS_MST_PURPOSE_OF_VISIT_DTO" nillable="true" type="tns:VDC_ATS_MST_PURPOSE_OF_VISIT_DTO" />
+  <xs:complexType name="ArrayOfVDC_ATV_MST_RELATIONSHIP_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VDC_ATV_MST_RELATIONSHIP_DTO" nillable="true" type="tns:VDC_ATV_MST_RELATIONSHIP_DTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVDC_ATV_MST_RELATIONSHIP_DTO" nillable="true" type="tns:ArrayOfVDC_ATV_MST_RELATIONSHIP_DTO" />
+  <xs:complexType name="VDC_ATV_MST_RELATIONSHIP_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DESCRIPTION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IS_ACTIVE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RELATIONSHIP_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="RELATIONSHIP_NAME" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VDC_ATV_MST_RELATIONSHIP_DTO" nillable="true" type="tns:VDC_ATV_MST_RELATIONSHIP_DTO" />
+  <xs:complexType name="VDC_ATS_MST_RELATIONSHIP_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CREATED_BY" nillable="true" type="xs:string" />
+      <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="CREATED_DATE" nillable="true" type="q5:DateTimeOffset" />
+      <xs:element minOccurs="0" name="CREATED_IP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DESCRIPTION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IS_ACTIVE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LAST_UPDATED_BY" nillable="true" type="xs:string" />
+      <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="LAST_UPDATED_DATE" nillable="true" type="q6:DateTimeOffset" />
+      <xs:element minOccurs="0" name="LAST_UPDATED_IP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RELATIONSHIP_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="RELATIONSHIP_NAME" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VDC_ATS_MST_RELATIONSHIP_DTO" nillable="true" type="tns:VDC_ATS_MST_RELATIONSHIP_DTO" />
+  <xs:complexType name="ArrayOfVDC_ATV_MST_TITLE_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VDC_ATV_MST_TITLE_DTO" nillable="true" type="tns:VDC_ATV_MST_TITLE_DTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVDC_ATV_MST_TITLE_DTO" nillable="true" type="tns:ArrayOfVDC_ATV_MST_TITLE_DTO" />
+  <xs:complexType name="VDC_ATV_MST_TITLE_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DESCRIPTION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GENDER" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IS_ACTIVE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TITLE_ID" nillable="true" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VDC_ATV_MST_TITLE_DTO" nillable="true" type="tns:VDC_ATV_MST_TITLE_DTO" />
+  <xs:complexType name="VDC_ATS_MST_TITLE_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CREATED_BY" nillable="true" type="xs:string" />
+      <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="CREATED_DATE" nillable="true" type="q7:DateTimeOffset" />
+      <xs:element minOccurs="0" name="CREATED_IP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DESCRIPTION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GENDER" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IS_ACTIVE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LAST_UPDATED_BY" nillable="true" type="xs:string" />
+      <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="LAST_UPDATED_DATE" nillable="true" type="q8:DateTimeOffset" />
+      <xs:element minOccurs="0" name="LAST_UPDATED_IP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TITLE_ID" nillable="true" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VDC_ATS_MST_TITLE_DTO" nillable="true" type="tns:VDC_ATS_MST_TITLE_DTO" />
+  <xs:complexType name="ArrayOfVDC_ATV_MST_TRAVEL_DOC_TYPE_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VDC_ATV_MST_TRAVEL_DOC_TYPE_DTO" nillable="true" type="tns:VDC_ATV_MST_TRAVEL_DOC_TYPE_DTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVDC_ATV_MST_TRAVEL_DOC_TYPE_DTO" nillable="true" type="tns:ArrayOfVDC_ATV_MST_TRAVEL_DOC_TYPE_DTO" />
+  <xs:complexType name="VDC_ATV_MST_TRAVEL_DOC_TYPE_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="IS_ACTIVE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TDTCD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TDTENM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TDTTNM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TRAVEL_DOC_TYPE_ID" nillable="true" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VDC_ATV_MST_TRAVEL_DOC_TYPE_DTO" nillable="true" type="tns:VDC_ATV_MST_TRAVEL_DOC_TYPE_DTO" />
+  <xs:complexType name="VDC_ATS_MST_TRAVEL_DOC_TYPE_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CREATED_BY" nillable="true" type="xs:string" />
+      <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="CREATED_DATE" nillable="true" type="q9:DateTimeOffset" />
+      <xs:element minOccurs="0" name="CREATED_IP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IS_ACTIVE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LAST_UPDATED_BY" nillable="true" type="xs:string" />
+      <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="LAST_UPDATED_DATE" nillable="true" type="q10:DateTimeOffset" />
+      <xs:element minOccurs="0" name="LAST_UPDATED_IP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TDTCD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TDTENM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TDTTNM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TRAVEL_DOC_TYPE_ID" nillable="true" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VDC_ATS_MST_TRAVEL_DOC_TYPE_DTO" nillable="true" type="tns:VDC_ATS_MST_TRAVEL_DOC_TYPE_DTO" />
+  <xs:complexType name="ArrayOfVDC_ATV_MST_TRAVEL_TYPE_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VDC_ATV_MST_TRAVEL_TYPE_DTO" nillable="true" type="tns:VDC_ATV_MST_TRAVEL_TYPE_DTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVDC_ATV_MST_TRAVEL_TYPE_DTO" nillable="true" type="tns:ArrayOfVDC_ATV_MST_TRAVEL_TYPE_DTO" />
+  <xs:complexType name="VDC_ATV_MST_TRAVEL_TYPE_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="IS_ACTIVE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TRAVCD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TRAVEL_TYPE_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="TRAVENM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TRAVTNM" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VDC_ATV_MST_TRAVEL_TYPE_DTO" nillable="true" type="tns:VDC_ATV_MST_TRAVEL_TYPE_DTO" />
+  <xs:complexType name="VDC_ATS_MST_TRAVEL_TYPE_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CREATED_BY" nillable="true" type="xs:string" />
+      <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="CREATED_DATE" nillable="true" type="q11:DateTimeOffset" />
+      <xs:element minOccurs="0" name="CREATED_IP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IS_ACTIVE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LAST_UPDATED_BY" nillable="true" type="xs:string" />
+      <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="LAST_UPDATED_DATE" nillable="true" type="q12:DateTimeOffset" />
+      <xs:element minOccurs="0" name="LAST_UPDATED_IP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TRAVCD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TRAVEL_TYPE_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="TRAVENM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TRAVTNM" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VDC_ATS_MST_TRAVEL_TYPE_DTO" nillable="true" type="tns:VDC_ATS_MST_TRAVEL_TYPE_DTO" />
+  <xs:complexType name="ArrayOfVDC_ATV_MST_VISA_FEE_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VDC_ATV_MST_VISA_FEE_DTO" nillable="true" type="tns:VDC_ATV_MST_VISA_FEE_DTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVDC_ATV_MST_VISA_FEE_DTO" nillable="true" type="tns:ArrayOfVDC_ATV_MST_VISA_FEE_DTO" />
+  <xs:complexType name="VDC_ATV_MST_VISA_FEE_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CONSULAR_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CONSULAR_NAME_EN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CURRENCY_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CURRENCY_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DESCRIPTION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IS_ACTIVE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NO_OF_ENTRIES_TYPE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PAYMENT_RATE" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="VISA_FEE_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="VISA_FEE_TYPE_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="VISA_FEE_TYPE_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VISA_TYPE_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="VISA_TYPE_NAME" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VDC_ATV_MST_VISA_FEE_DTO" nillable="true" type="tns:VDC_ATV_MST_VISA_FEE_DTO" />
+  <xs:complexType name="VDC_ATS_MST_VISA_FEE_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CONSULAR_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CONSULAR_NAME_EN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CREATED_BY" nillable="true" type="xs:string" />
+      <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="CREATED_DATE" nillable="true" type="q13:DateTimeOffset" />
+      <xs:element minOccurs="0" name="CREATED_IP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CURRENCY_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CURRENCY_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DESCRIPTION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IS_ACTIVE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LAST_UPDATED_BY" nillable="true" type="xs:string" />
+      <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="LAST_UPDATED_DATE" nillable="true" type="q14:DateTimeOffset" />
+      <xs:element minOccurs="0" name="LAST_UPDATED_IP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NO_OF_ENTRIES_TYPE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PAYMENT_RATE" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="VISA_FEE_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="VISA_FEE_TYPE_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="VISA_FEE_TYPE_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VISA_TYPE_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="VISA_TYPE_NAME" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VDC_ATS_MST_VISA_FEE_DTO" nillable="true" type="tns:VDC_ATS_MST_VISA_FEE_DTO" />
+  <xs:complexType name="ArrayOfVDC_ATV_MST_VISA_FEE_TYPE_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VDC_ATV_MST_VISA_FEE_TYPE_DTO" nillable="true" type="tns:VDC_ATV_MST_VISA_FEE_TYPE_DTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVDC_ATV_MST_VISA_FEE_TYPE_DTO" nillable="true" type="tns:ArrayOfVDC_ATV_MST_VISA_FEE_TYPE_DTO" />
+  <xs:complexType name="VDC_ATV_MST_VISA_FEE_TYPE_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DESCRIPTION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IS_ACTIVE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VISA_FEE_TYPE_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="VISA_FEE_TYPE_NAME" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VDC_ATV_MST_VISA_FEE_TYPE_DTO" nillable="true" type="tns:VDC_ATV_MST_VISA_FEE_TYPE_DTO" />
+  <xs:complexType name="VDC_ATS_MST_VISA_FEE_TYPE_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CREATED_BY" nillable="true" type="xs:string" />
+      <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="CREATED_DATE" nillable="true" type="q15:DateTimeOffset" />
+      <xs:element minOccurs="0" name="CREATED_IP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DESCRIPTION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IS_ACTIVE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LAST_UPDATED_BY" nillable="true" type="xs:string" />
+      <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="LAST_UPDATED_DATE" nillable="true" type="q16:DateTimeOffset" />
+      <xs:element minOccurs="0" name="LAST_UPDATED_IP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VISA_FEE_TYPE_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="VISA_FEE_TYPE_NAME" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VDC_ATS_MST_VISA_FEE_TYPE_DTO" nillable="true" type="tns:VDC_ATS_MST_VISA_FEE_TYPE_DTO" />
+  <xs:complexType name="ArrayOfVDC_ATV_MST_VISA_SUB_TYPE_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VDC_ATV_MST_VISA_SUB_TYPE_DTO" nillable="true" type="tns:VDC_ATV_MST_VISA_SUB_TYPE_DTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVDC_ATV_MST_VISA_SUB_TYPE_DTO" nillable="true" type="tns:ArrayOfVDC_ATV_MST_VISA_SUB_TYPE_DTO" />
+  <xs:complexType name="VDC_ATV_MST_VISA_SUB_TYPE_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CATEGORY" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DESCRIPTION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IS_ACTIVE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VISA_SUB_TYPE_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="VISA_SUB_TYPE_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VISA_TYPE_ID" nillable="true" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VDC_ATV_MST_VISA_SUB_TYPE_DTO" nillable="true" type="tns:VDC_ATV_MST_VISA_SUB_TYPE_DTO" />
+  <xs:complexType name="VDC_ATS_MST_VISA_SUB_TYPE_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CATEGORY" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CREATED_BY" nillable="true" type="xs:string" />
+      <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="CREATED_DATE" nillable="true" type="q17:DateTimeOffset" />
+      <xs:element minOccurs="0" name="CREATED_IP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DESCRIPTION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IS_ACTIVE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LAST_UPDATED_BY" nillable="true" type="xs:string" />
+      <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="LAST_UPDATED_DATE" nillable="true" type="q18:DateTimeOffset" />
+      <xs:element minOccurs="0" name="LAST_UPDATED_IP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VISA_SUB_TYPE_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="VISA_SUB_TYPE_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VISA_TYPE_ID" nillable="true" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VDC_ATS_MST_VISA_SUB_TYPE_DTO" nillable="true" type="tns:VDC_ATS_MST_VISA_SUB_TYPE_DTO" />
+  <xs:complexType name="ArrayOfVDC_ATV_MST_VISA_TYPE_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VDC_ATV_MST_VISA_TYPE_DTO" nillable="true" type="tns:VDC_ATV_MST_VISA_TYPE_DTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVDC_ATV_MST_VISA_TYPE_DTO" nillable="true" type="tns:ArrayOfVDC_ATV_MST_VISA_TYPE_DTO" />
+  <xs:complexType name="VDC_ATV_MST_VISA_TYPE_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DESCRIPTION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IS_ACTIVE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VISA_TYPE_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="VISA_TYPE_PERMIT_DAY" nillable="true" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VDC_ATV_MST_VISA_TYPE_DTO" nillable="true" type="tns:VDC_ATV_MST_VISA_TYPE_DTO" />
+  <xs:complexType name="VDC_ATS_MST_VISA_TYPE_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CREATED_BY" nillable="true" type="xs:string" />
+      <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="CREATED_DATE" nillable="true" type="q19:DateTimeOffset" />
+      <xs:element minOccurs="0" name="CREATED_IP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DESCRIPTION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IS_ACTIVE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LAST_UPDATED_BY" nillable="true" type="xs:string" />
+      <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="LAST_UPDATED_DATE" nillable="true" type="q20:DateTimeOffset" />
+      <xs:element minOccurs="0" name="LAST_UPDATED_IP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VISA_TYPE_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="VISA_TYPE_PERMIT_DAY" nillable="true" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VDC_ATS_MST_VISA_TYPE_DTO" nillable="true" type="tns:VDC_ATS_MST_VISA_TYPE_DTO" />
+  <xs:complexType name="ArrayOfVDC_ATV_MST_WORK_DAY_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VDC_ATV_MST_WORK_DAY_DTO" nillable="true" type="tns:VDC_ATV_MST_WORK_DAY_DTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVDC_ATV_MST_WORK_DAY_DTO" nillable="true" type="tns:ArrayOfVDC_ATV_MST_WORK_DAY_DTO" />
+  <xs:complexType name="VDC_ATV_MST_WORK_DAY_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CONSULAR_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CONSULAR_NAME_EN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IS_ACTIVE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="WORK_DAY_DESCRIPTION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="WORK_DAY_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="WORK_FR" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="WORK_MO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="WORK_SA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="WORK_SU" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="WORK_TH" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="WORK_TU" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="WORK_WE" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VDC_ATV_MST_WORK_DAY_DTO" nillable="true" type="tns:VDC_ATV_MST_WORK_DAY_DTO" />
+  <xs:complexType name="VDC_ATS_MST_WORK_DAY_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CONSULAR_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CONSULAR_NAME_EN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CREATED_BY" nillable="true" type="xs:string" />
+      <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="CREATED_DATE" nillable="true" type="q21:DateTimeOffset" />
+      <xs:element minOccurs="0" name="CREATED_IP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IS_ACTIVE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LAST_UPDATED_BY" nillable="true" type="xs:string" />
+      <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="LAST_UPDATED_DATE" nillable="true" type="q22:DateTimeOffset" />
+      <xs:element minOccurs="0" name="LAST_UPDATED_IP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="WORK_DAY_DESCRIPTION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="WORK_DAY_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="WORK_FR" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="WORK_MO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="WORK_SA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="WORK_SU" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="WORK_TH" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="WORK_TU" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="WORK_WE" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VDC_ATS_MST_WORK_DAY_DTO" nillable="true" type="tns:VDC_ATS_MST_WORK_DAY_DTO" />
+  <xs:complexType name="ArrayOfVDC_ATV_MST_YEARLY_INCOME_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VDC_ATV_MST_YEARLY_INCOME_DTO" nillable="true" type="tns:VDC_ATV_MST_YEARLY_INCOME_DTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVDC_ATV_MST_YEARLY_INCOME_DTO" nillable="true" type="tns:ArrayOfVDC_ATV_MST_YEARLY_INCOME_DTO" />
+  <xs:complexType name="VDC_ATV_MST_YEARLY_INCOME_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="IS_ACTIVE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RANGE_DESC" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RANGE_VALUE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="YEARLY_INCOME_ID" nillable="true" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VDC_ATV_MST_YEARLY_INCOME_DTO" nillable="true" type="tns:VDC_ATV_MST_YEARLY_INCOME_DTO" />
+  <xs:complexType name="VDC_ATS_MST_YEARLY_INCOME_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CREATED_BY" nillable="true" type="xs:string" />
+      <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="CREATED_DATE" nillable="true" type="q23:DateTimeOffset" />
+      <xs:element minOccurs="0" name="CREATED_IP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IS_ACTIVE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LAST_UPDATED_BY" nillable="true" type="xs:string" />
+      <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="LAST_UPDATED_DATE" nillable="true" type="q24:DateTimeOffset" />
+      <xs:element minOccurs="0" name="LAST_UPDATED_IP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RANGE_DESC" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RANGE_VALUE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="YEARLY_INCOME_ID" nillable="true" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VDC_ATS_MST_YEARLY_INCOME_DTO" nillable="true" type="tns:VDC_ATS_MST_YEARLY_INCOME_DTO" />
+  <xs:complexType name="ArrayOfVDC_TYPE_ROLE_INFO_LIST_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VDC_TYPE_ROLE_INFO_LIST_DTO" nillable="true" type="tns:VDC_TYPE_ROLE_INFO_LIST_DTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVDC_TYPE_ROLE_INFO_LIST_DTO" nillable="true" type="tns:ArrayOfVDC_TYPE_ROLE_INFO_LIST_DTO" />
+  <xs:complexType name="VDC_TYPE_ROLE_INFO_LIST_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CREATED_BY" nillable="true" type="xs:string" />
+      <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="CREATED_DATE" nillable="true" type="q25:DateTimeOffset" />
+      <xs:element minOccurs="0" name="CREATED_IP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IS_ACTIVE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LAST_UPDATED_BY" nillable="true" type="xs:string" />
+      <xs:element xmlns:q26="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="LAST_UPDATED_DATE" nillable="true" type="q26:DateTimeOffset" />
+      <xs:element minOccurs="0" name="LAST_UPDATED_IP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ROLE_DESCRIPTION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ROLE_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="ROLE_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ROLE_TYPE_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ROLE_TYPE_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="ROLE_TYPE_NAME" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VDC_TYPE_ROLE_INFO_LIST_DTO" nillable="true" type="tns:VDC_TYPE_ROLE_INFO_LIST_DTO" />
+  <xs:complexType name="ArrayOfVDC_TYPE_PERMISSIONS_LIST_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VDC_TYPE_PERMISSIONS_LIST_DTO" nillable="true" type="tns:VDC_TYPE_PERMISSIONS_LIST_DTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVDC_TYPE_PERMISSIONS_LIST_DTO" nillable="true" type="tns:ArrayOfVDC_TYPE_PERMISSIONS_LIST_DTO" />
+  <xs:complexType name="VDC_TYPE_PERMISSIONS_LIST_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CAN_CONTROL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CAN_SEARCH" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CAN_VIEW" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CREATED_BY" nillable="true" type="xs:string" />
+      <xs:element xmlns:q27="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="CREATED_DATE" nillable="true" type="q27:DateTimeOffset" />
+      <xs:element minOccurs="0" name="CREATED_IP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LAST_UPDATED_BY" nillable="true" type="xs:string" />
+      <xs:element xmlns:q28="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="LAST_UPDATED_DATE" nillable="true" type="q28:DateTimeOffset" />
+      <xs:element minOccurs="0" name="LAST_UPDATED_IP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MENU_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MENU_DESCRIPTION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MENU_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="MENU_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MENU_ORDER" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="MENU_PARENT_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MENU_PATH" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MENU_TYPE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PERMISSION_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="ROLE_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="SHOW_DASHBOARD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SYSTEM_ID" nillable="true" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VDC_TYPE_PERMISSIONS_LIST_DTO" nillable="true" type="tns:VDC_TYPE_PERMISSIONS_LIST_DTO" />
+  <xs:complexType name="VDC_TYPE_ROLE_INFO_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CREATED_BY" nillable="true" type="xs:string" />
+      <xs:element xmlns:q29="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="CREATED_DATE" nillable="true" type="q29:DateTimeOffset" />
+      <xs:element minOccurs="0" name="CREATED_IP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IS_ACTIVE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LAST_UPDATED_BY" nillable="true" type="xs:string" />
+      <xs:element xmlns:q30="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="LAST_UPDATED_DATE" nillable="true" type="q30:DateTimeOffset" />
+      <xs:element minOccurs="0" name="LAST_UPDATED_IP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ROLE_DESCRIPTION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ROLE_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="ROLE_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ROLE_TYPE_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ROLE_TYPE_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="ROLE_TYPE_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VDC_TYPE_PERMISSIONS_LIST_DTO_LIST" nillable="true" type="tns:ArrayOfVDC_TYPE_PERMISSIONS_LIST_DTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VDC_TYPE_ROLE_INFO_DTO" nillable="true" type="tns:VDC_TYPE_ROLE_INFO_DTO" />
+  <xs:complexType name="VDC_RETURNED_OUTPUT_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="REFERENCE_NO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="STATUS_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="STATUS_MESSAGE" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VDC_RETURNED_OUTPUT_DTO" nillable="true" type="tns:VDC_RETURNED_OUTPUT_DTO" />
+  <xs:complexType name="ArrayOfVDC_TYPE_SET_TRANSACTION_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VDC_TYPE_SET_TRANSACTION_DTO" nillable="true" type="tns:VDC_TYPE_SET_TRANSACTION_DTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVDC_TYPE_SET_TRANSACTION_DTO" nillable="true" type="tns:ArrayOfVDC_TYPE_SET_TRANSACTION_DTO" />
+  <xs:complexType name="VDC_TYPE_SET_TRANSACTION_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="REFERENCE_NO" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="STATUS_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="STATUS_MESSAGE" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VDC_TYPE_SET_TRANSACTION_DTO" nillable="true" type="tns:VDC_TYPE_SET_TRANSACTION_DTO" />
+  <xs:complexType name="ArrayOfVDC_TYPE_USER_LIST_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VDC_TYPE_USER_LIST_DTO" nillable="true" type="tns:VDC_TYPE_USER_LIST_DTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVDC_TYPE_USER_LIST_DTO" nillable="true" type="tns:ArrayOfVDC_TYPE_USER_LIST_DTO" />
+  <xs:complexType name="VDC_TYPE_USER_LIST_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CONSULAR_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CONSULAR_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EMAIL" nillable="true" type="xs:string" />
+      <xs:element xmlns:q31="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="END_DATE" nillable="true" type="q31:DateTimeOffset" />
+      <xs:element minOccurs="0" name="FIRST_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IS_ACTIVE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LAST_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MIDDLE_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="POSITION" nillable="true" type="xs:string" />
+      <xs:element xmlns:q32="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="START_DATE" nillable="true" type="q32:DateTimeOffset" />
+      <xs:element minOccurs="0" name="TEL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="USER_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="USER_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="USER_PASSWORD" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VDC_TYPE_USER_LIST_DTO" nillable="true" type="tns:VDC_TYPE_USER_LIST_DTO" />
+  <xs:complexType name="ArrayOfVDC_TYPE_ROLE_LIST_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VDC_TYPE_ROLE_LIST_DTO" nillable="true" type="tns:VDC_TYPE_ROLE_LIST_DTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVDC_TYPE_ROLE_LIST_DTO" nillable="true" type="tns:ArrayOfVDC_TYPE_ROLE_LIST_DTO" />
+  <xs:complexType name="VDC_TYPE_ROLE_LIST_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ROLE_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="ROLE_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="USER_ROLE_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="USE_ROLE" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VDC_TYPE_ROLE_LIST_DTO" nillable="true" type="tns:VDC_TYPE_ROLE_LIST_DTO" />
+  <xs:complexType name="VDC_TYPE_USER_INFO_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CONSULAR_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EMAIL" nillable="true" type="xs:string" />
+      <xs:element xmlns:q33="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="END_DATE" nillable="true" type="q33:DateTimeOffset" />
+      <xs:element minOccurs="0" name="FIRST_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IS_ACTIVE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LAST_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LAST_UPDATED_BY" nillable="true" type="xs:string" />
+      <xs:element xmlns:q34="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="LAST_UPDATED_DATE" nillable="true" type="q34:DateTimeOffset" />
+      <xs:element minOccurs="0" name="LAST_UPDATED_IP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MIDDLE_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="POSITION_ID" nillable="true" type="xs:long" />
+      <xs:element xmlns:q35="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="START_DATE" nillable="true" type="q35:DateTimeOffset" />
+      <xs:element minOccurs="0" name="TEL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="USER_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="USER_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="USER_PASSWORD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VDC_TYPE_ROLE_LIST_DTO_LIST" nillable="true" type="tns:ArrayOfVDC_TYPE_ROLE_LIST_DTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VDC_TYPE_USER_INFO_DTO" nillable="true" type="tns:VDC_TYPE_USER_INFO_DTO" />
+  <xs:complexType name="ArrayOfVDC_ATV_MST_MESSAGE_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VDC_ATV_MST_MESSAGE_DTO" nillable="true" type="tns:VDC_ATV_MST_MESSAGE_DTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVDC_ATV_MST_MESSAGE_DTO" nillable="true" type="tns:ArrayOfVDC_ATV_MST_MESSAGE_DTO" />
+  <xs:complexType name="VDC_ATV_MST_MESSAGE_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DESCRIPTION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IS_ACTIVE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MESSAGE_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="MESSAGE_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MESSAGE_TYPE_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="MESSAGE_TYPE_NAME" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VDC_ATV_MST_MESSAGE_DTO" nillable="true" type="tns:VDC_ATV_MST_MESSAGE_DTO" />
+  <xs:complexType name="VDC_ATS_MST_MESSAGE_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CREATED_BY" nillable="true" type="xs:string" />
+      <xs:element xmlns:q36="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="CREATED_DATE" nillable="true" type="q36:DateTimeOffset" />
+      <xs:element minOccurs="0" name="CREATED_IP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DESCRIPTION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IS_ACTIVE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LAST_UPDATED_BY" nillable="true" type="xs:string" />
+      <xs:element xmlns:q37="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="LAST_UPDATED_DATE" nillable="true" type="q37:DateTimeOffset" />
+      <xs:element minOccurs="0" name="LAST_UPDATED_IP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MESSAGE_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="MESSAGE_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MESSAGE_TYPE_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="MESSAGE_TYPE_NAME" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VDC_ATS_MST_MESSAGE_DTO" nillable="true" type="tns:VDC_ATS_MST_MESSAGE_DTO" />
+  <xs:complexType name="ArrayOfMST_MESSAGE_TYPE_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MST_MESSAGE_TYPE_DTO" nillable="true" type="tns:MST_MESSAGE_TYPE_DTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMST_MESSAGE_TYPE_DTO" nillable="true" type="tns:ArrayOfMST_MESSAGE_TYPE_DTO" />
+  <xs:complexType name="MST_MESSAGE_TYPE_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CREATED_BY" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CREATED_DATETIME" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="CREATED_IP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DESCRIPTION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IS_ACTIVE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MESSAGE_TYPE_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MESSAGE_TYPE_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UPDATED_BY" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UPDATED_DATETIME" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="UPDATED_IP" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MST_MESSAGE_TYPE_DTO" nillable="true" type="tns:MST_MESSAGE_TYPE_DTO" />
+  <xs:complexType name="ArrayOfVDC_ATV_MST_CONSULAR_MAPPING_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VDC_ATV_MST_CONSULAR_MAPPING_DTO" nillable="true" type="tns:VDC_ATV_MST_CONSULAR_MAPPING_DTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVDC_ATV_MST_CONSULAR_MAPPING_DTO" nillable="true" type="tns:ArrayOfVDC_ATV_MST_CONSULAR_MAPPING_DTO" />
+  <xs:complexType name="VDC_ATV_MST_CONSULAR_MAPPING_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="APPROVE_MESSAGE_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="APPROVE_MESSAGE_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CONSULAR_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CONSULAR_MAPPING_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="CONSULAR_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="COUNTRY_OF_RESIDENCE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="COUNTRY_OF_RESIDENCE_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="INFO_MESSAGE_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="INFO_MESSAGE_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IS_ACTIVE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PASSPORT_COUNTRY_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PASSPORT_COUNTRY_NAME" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VDC_ATV_MST_CONSULAR_MAPPING_DTO" nillable="true" type="tns:VDC_ATV_MST_CONSULAR_MAPPING_DTO" />
+  <xs:complexType name="VDC_ATS_MST_CONSULAR_MAPPING_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="APPROVE_MESSAGE_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="APPROVE_MESSAGE_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CONSULAR_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CONSULAR_MAPPING_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="CONSULAR_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="COUNTRY_OF_RESIDENCE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="COUNTRY_OF_RESIDENCE_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CREATED_BY" nillable="true" type="xs:string" />
+      <xs:element xmlns:q38="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="CREATED_DATE" nillable="true" type="q38:DateTimeOffset" />
+      <xs:element minOccurs="0" name="CREATED_IP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="INFO_MESSAGE_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="INFO_MESSAGE_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IS_ACTIVE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LAST_UPDATED_BY" nillable="true" type="xs:string" />
+      <xs:element xmlns:q39="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="LAST_UPDATED_DATE" nillable="true" type="q39:DateTimeOffset" />
+      <xs:element minOccurs="0" name="LAST_UPDATED_IP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PASSPORT_COUNTRY_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PASSPORT_COUNTRY_NAME" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VDC_ATS_MST_CONSULAR_MAPPING_DTO" nillable="true" type="tns:VDC_ATS_MST_CONSULAR_MAPPING_DTO" />
+  <xs:complexType name="ArrayOfMST_AGENT_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MST_AGENT_DTO" nillable="true" type="tns:MST_AGENT_DTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMST_AGENT_DTO" nillable="true" type="tns:ArrayOfMST_AGENT_DTO" />
+  <xs:complexType name="MST_AGENT_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CONSULAR_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CONSULAR_NAME_EN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CONTENT_TYPE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="COUNTRY_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="COUNTRY_NAME_EN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EMAIL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PICTURE_PROFILE" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="REGISTER_COMMENT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="REGISTER_ID" type="xs:long" />
+      <xs:element xmlns:q40="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="REGISTER_INTERVIEW_DATE" nillable="true" type="q40:DateTimeOffset" />
+      <xs:element minOccurs="0" name="REGISTER_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="STATUS_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="STATUS_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TELEPHONE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="USER_ID" nillable="true" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MST_AGENT_DTO" nillable="true" type="tns:MST_AGENT_DTO" />
+  <xs:complexType name="VDC_MST_REGISTER_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CONSULAR_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CONTENT_TYPE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="COUNTRY_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="COUNTRY_OF_BIRTH_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CREATED_BY" nillable="true" type="xs:string" />
+      <xs:element xmlns:q41="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="CREATED_DATE" nillable="true" type="q41:DateTimeOffset" />
+      <xs:element minOccurs="0" name="CREATED_IP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DATE_OF_BIRTH" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="EMAIL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FILE_CONFIG" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FILE_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FILE_PATH" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FILE_TYPE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FIRST_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GENDER" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IS_ACTIVE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IS_ADDRESS_SAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LAST_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LAST_UPDATED_BY" nillable="true" type="xs:string" />
+      <xs:element xmlns:q42="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="LAST_UPDATED_DATE" nillable="true" type="q42:DateTimeOffset" />
+      <xs:element minOccurs="0" name="LAST_UPDATED_IP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MARITAL_STATUS_ID" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="MIDDLE_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NATIONALITY_AT_BIRTH_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NATIONALITY_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PICTURE_PROFILE" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="RATING" type="xs:int" />
+      <xs:element minOccurs="0" name="REGISTER_COMMENT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="REGISTER_ID" type="xs:long" />
+      <xs:element xmlns:q43="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="REGISTER_INTERVIEW_DATE" nillable="true" type="q43:DateTimeOffset" />
+      <xs:element minOccurs="0" name="REGISTER_STATUS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="REGISTER_TYPE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TELEPHONE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TELEPHONE_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TITLE_ID" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="USER_ID" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VDC_MST_REGISTER_DTO" nillable="true" type="tns:VDC_MST_REGISTER_DTO" />
+  <xs:complexType name="ArrayOfVDC_MST_REGISTER_DOC_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VDC_MST_REGISTER_DOC_DTO" nillable="true" type="tns:VDC_MST_REGISTER_DOC_DTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVDC_MST_REGISTER_DOC_DTO" nillable="true" type="tns:ArrayOfVDC_MST_REGISTER_DOC_DTO" />
+  <xs:complexType name="VDC_MST_REGISTER_DOC_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CONTENT_TYPE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CREATED_BY" nillable="true" type="xs:string" />
+      <xs:element xmlns:q44="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="CREATED_DATE" nillable="true" type="q44:DateTimeOffset" />
+      <xs:element minOccurs="0" name="CREATED_IP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DOCUMENT_FILE" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="DOCUMENT_FILE_BASE64" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DOCUMENT_ID" type="xs:int" />
+      <xs:element minOccurs="0" name="DOCUMENT_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FILE_CONFIG" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FILE_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FILE_PATH" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FILE_SIZE" type="xs:decimal" />
+      <xs:element minOccurs="0" name="LAST_UPDATED_BY" nillable="true" type="xs:string" />
+      <xs:element xmlns:q45="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="LAST_UPDATED_DATE" nillable="true" type="q45:DateTimeOffset" />
+      <xs:element minOccurs="0" name="LAST_UPDATED_IP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="REGISTER_DOC_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="REGISTER_ID" nillable="true" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VDC_MST_REGISTER_DOC_DTO" nillable="true" type="tns:VDC_MST_REGISTER_DOC_DTO" />
+  <xs:complexType name="ArrayOfMST_DOCUMENT_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MST_DOCUMENT_DTO" nillable="true" type="tns:MST_DOCUMENT_DTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMST_DOCUMENT_DTO" nillable="true" type="tns:ArrayOfMST_DOCUMENT_DTO" />
+  <xs:complexType name="MST_DOCUMENT_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CREATED_BY" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CREATED_DATETIME" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="CREATED_IP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DESCRIPTION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DOCUMENT_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IS_ACTIVE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IS_AGENT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IS_BACKOFFICE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IS_INDIVIDUAL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UPDATED_BY" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UPDATED_DATETIME" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="UPDATED_IP" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MST_DOCUMENT_DTO" nillable="true" type="tns:MST_DOCUMENT_DTO" />
+  <xs:complexType name="ArrayOfMST_DOCUMENT_LIST_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MST_DOCUMENT_LIST_DTO" nillable="true" type="tns:MST_DOCUMENT_LIST_DTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMST_DOCUMENT_LIST_DTO" nillable="true" type="tns:ArrayOfMST_DOCUMENT_LIST_DTO" />
+  <xs:complexType name="MST_DOCUMENT_LIST_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DOCUMENT_ID" type="xs:long" />
+      <xs:element minOccurs="0" name="DOCUMENT_NAME" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MST_DOCUMENT_LIST_DTO" nillable="true" type="tns:MST_DOCUMENT_LIST_DTO" />
+  <xs:complexType name="ArrayOfMST_MARITAL_STATUS_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MST_MARITAL_STATUS_DTO" nillable="true" type="tns:MST_MARITAL_STATUS_DTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMST_MARITAL_STATUS_DTO" nillable="true" type="tns:ArrayOfMST_MARITAL_STATUS_DTO" />
+  <xs:complexType name="MST_MARITAL_STATUS_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CREATED_BY" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CREATED_DATETIME" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="CREATED_IP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DESCRIPTION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IS_ACTIVE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MARITAL_STATUS_ID" type="xs:int" />
+      <xs:element minOccurs="0" name="MARITAL_STATUS_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UPDATED_BY" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UPDATED_DATETIME" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="UPDATED_IP" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MST_MARITAL_STATUS_DTO" nillable="true" type="tns:MST_MARITAL_STATUS_DTO" />
+  <xs:complexType name="ArrayOfMST_COUNTRY_LIST_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MST_COUNTRY_LIST_DTO" nillable="true" type="tns:MST_COUNTRY_LIST_DTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMST_COUNTRY_LIST_DTO" nillable="true" type="tns:ArrayOfMST_COUNTRY_LIST_DTO" />
+  <xs:complexType name="MST_COUNTRY_LIST_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="COUNTCD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="COUNTENM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="COUNTTNM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="COUNT_ID" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MST_COUNTRY_LIST_DTO" nillable="true" type="tns:MST_COUNTRY_LIST_DTO" />
+  <xs:complexType name="ArrayOfMST_NATION_LIST_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MST_NATION_LIST_DTO" nillable="true" type="tns:MST_NATION_LIST_DTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMST_NATION_LIST_DTO" nillable="true" type="tns:ArrayOfMST_NATION_LIST_DTO" />
+  <xs:complexType name="MST_NATION_LIST_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="NATIONCD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NATIONENM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NATIONTNM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NATION_ID" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MST_NATION_LIST_DTO" nillable="true" type="tns:MST_NATION_LIST_DTO" />
+  <xs:complexType name="ArrayOfVDC_MST_VISA_TYPE_LIST_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VDC_MST_VISA_TYPE_LIST_DTO" nillable="true" type="tns:VDC_MST_VISA_TYPE_LIST_DTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVDC_MST_VISA_TYPE_LIST_DTO" nillable="true" type="tns:ArrayOfVDC_MST_VISA_TYPE_LIST_DTO" />
+  <xs:complexType name="VDC_MST_VISA_TYPE_LIST_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CATEGORY" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VISA_SUB_TYPE_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VISA_SUB_TYPE_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VISA_TYPE_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VISA_TYPE_NAME" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VDC_MST_VISA_TYPE_LIST_DTO" nillable="true" type="tns:VDC_MST_VISA_TYPE_LIST_DTO" />
+  <xs:complexType name="ArrayOfMST_CONSULAR_LIST_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MST_CONSULAR_LIST_DTO" nillable="true" type="tns:MST_CONSULAR_LIST_DTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMST_CONSULAR_LIST_DTO" nillable="true" type="tns:ArrayOfMST_CONSULAR_LIST_DTO" />
+  <xs:complexType name="MST_CONSULAR_LIST_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CONSULAR_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CONSULAR_ID" type="xs:long" />
+      <xs:element minOccurs="0" name="CONSULAR_NAME_EN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CONSULAR_NAME_TH" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="COUNTRY_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IS_APPLY_ONLINE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IS_POST" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="POST_ADDRESS" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MST_CONSULAR_LIST_DTO" nillable="true" type="tns:MST_CONSULAR_LIST_DTO" />
+  <xs:complexType name="ArrayOfMST_YEARLY_INCOME_LIST_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MST_YEARLY_INCOME_LIST_DTO" nillable="true" type="tns:MST_YEARLY_INCOME_LIST_DTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMST_YEARLY_INCOME_LIST_DTO" nillable="true" type="tns:ArrayOfMST_YEARLY_INCOME_LIST_DTO" />
+  <xs:complexType name="MST_YEARLY_INCOME_LIST_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="RANGE_VALUE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="YEARLY_INCOME_ID" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MST_YEARLY_INCOME_LIST_DTO" nillable="true" type="tns:MST_YEARLY_INCOME_LIST_DTO" />
+  <xs:complexType name="ArrayOfMST_OCCUPATION_TYPE_LIST_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MST_OCCUPATION_TYPE_LIST_DTO" nillable="true" type="tns:MST_OCCUPATION_TYPE_LIST_DTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMST_OCCUPATION_TYPE_LIST_DTO" nillable="true" type="tns:ArrayOfMST_OCCUPATION_TYPE_LIST_DTO" />
+  <xs:complexType name="MST_OCCUPATION_TYPE_LIST_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="OCCUPATION_TYPE_ID" type="xs:long" />
+      <xs:element minOccurs="0" name="OCCUPATION_TYPE_NAME" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MST_OCCUPATION_TYPE_LIST_DTO" nillable="true" type="tns:MST_OCCUPATION_TYPE_LIST_DTO" />
+  <xs:complexType name="ArrayOfMST_DOCUMENT_MAPPING_LIST_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MST_DOCUMENT_MAPPING_LIST_DTO" nillable="true" type="tns:MST_DOCUMENT_MAPPING_LIST_DTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMST_DOCUMENT_MAPPING_LIST_DTO" nillable="true" type="tns:ArrayOfMST_DOCUMENT_MAPPING_LIST_DTO" />
+  <xs:complexType name="MST_DOCUMENT_MAPPING_LIST_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DOCUMENT_ID" type="xs:long" />
+      <xs:element minOccurs="0" name="DOCUMENT_NAME" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MST_DOCUMENT_MAPPING_LIST_DTO" nillable="true" type="tns:MST_DOCUMENT_MAPPING_LIST_DTO" />
+  <xs:complexType name="ArrayOfMST_RELATIONSHIP_LIST_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MST_RELATIONSHIP_LIST_DTO" nillable="true" type="tns:MST_RELATIONSHIP_LIST_DTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMST_RELATIONSHIP_LIST_DTO" nillable="true" type="tns:ArrayOfMST_RELATIONSHIP_LIST_DTO" />
+  <xs:complexType name="MST_RELATIONSHIP_LIST_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="RELATIONSHIP_ID" type="xs:long" />
+      <xs:element minOccurs="0" name="RELATIONSHIP_NAME" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MST_RELATIONSHIP_LIST_DTO" nillable="true" type="tns:MST_RELATIONSHIP_LIST_DTO" />
+  <xs:complexType name="ArrayOfMST_TITLE_LIST_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MST_TITLE_LIST_DTO" nillable="true" type="tns:MST_TITLE_LIST_DTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMST_TITLE_LIST_DTO" nillable="true" type="tns:ArrayOfMST_TITLE_LIST_DTO" />
+  <xs:complexType name="MST_TITLE_LIST_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="GENDER" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TITLE_ID" type="xs:long" />
+      <xs:element minOccurs="0" name="TITLE_NAME" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MST_TITLE_LIST_DTO" nillable="true" type="tns:MST_TITLE_LIST_DTO" />
+  <xs:complexType name="ArrayOfMST_PURPOSE_OF_VISIT_LIST_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MST_PURPOSE_OF_VISIT_LIST_DTO" nillable="true" type="tns:MST_PURPOSE_OF_VISIT_LIST_DTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMST_PURPOSE_OF_VISIT_LIST_DTO" nillable="true" type="tns:ArrayOfMST_PURPOSE_OF_VISIT_LIST_DTO" />
+  <xs:complexType name="MST_PURPOSE_OF_VISIT_LIST_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="PURPOSE_OF_VISIT_ID" type="xs:long" />
+      <xs:element minOccurs="0" name="PURPOSE_OF_VISIT_NAME" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MST_PURPOSE_OF_VISIT_LIST_DTO" nillable="true" type="tns:MST_PURPOSE_OF_VISIT_LIST_DTO" />
+  <xs:complexType name="ArrayOfMST_TRAVEL_DOC_TYPE_LIST_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MST_TRAVEL_DOC_TYPE_LIST_DTO" nillable="true" type="tns:MST_TRAVEL_DOC_TYPE_LIST_DTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMST_TRAVEL_DOC_TYPE_LIST_DTO" nillable="true" type="tns:ArrayOfMST_TRAVEL_DOC_TYPE_LIST_DTO" />
+  <xs:complexType name="MST_TRAVEL_DOC_TYPE_LIST_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="TDTCD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TDTENM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TDTTNM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TRAVEL_DOC_TYPE_ID" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MST_TRAVEL_DOC_TYPE_LIST_DTO" nillable="true" type="tns:MST_TRAVEL_DOC_TYPE_LIST_DTO" />
+  <xs:complexType name="ArrayOfMST_CONTINENT_LIST_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MST_CONTINENT_LIST_DTO" nillable="true" type="tns:MST_CONTINENT_LIST_DTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMST_CONTINENT_LIST_DTO" nillable="true" type="tns:ArrayOfMST_CONTINENT_LIST_DTO" />
+  <xs:complexType name="MST_CONTINENT_LIST_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CONTINENTCD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CONTINENTENM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CONTINENTTNM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CONTINENT_ID" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MST_CONTINENT_LIST_DTO" nillable="true" type="tns:MST_CONTINENT_LIST_DTO" />
+  <xs:complexType name="ArrayOfMST_TRAVEL_TYPE_LIST_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MST_TRAVEL_TYPE_LIST_DTO" nillable="true" type="tns:MST_TRAVEL_TYPE_LIST_DTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMST_TRAVEL_TYPE_LIST_DTO" nillable="true" type="tns:ArrayOfMST_TRAVEL_TYPE_LIST_DTO" />
+  <xs:complexType name="MST_TRAVEL_TYPE_LIST_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="TRAVCD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TRAVEL_TYPE_ID" type="xs:long" />
+      <xs:element minOccurs="0" name="TRAVENM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TRAVTNM" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MST_TRAVEL_TYPE_LIST_DTO" nillable="true" type="tns:MST_TRAVEL_TYPE_LIST_DTO" />
+  <xs:complexType name="ArrayOfMST_VISA_SUB_TYPE_LIST_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MST_VISA_SUB_TYPE_LIST_DTO" nillable="true" type="tns:MST_VISA_SUB_TYPE_LIST_DTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMST_VISA_SUB_TYPE_LIST_DTO" nillable="true" type="tns:ArrayOfMST_VISA_SUB_TYPE_LIST_DTO" />
+  <xs:complexType name="MST_VISA_SUB_TYPE_LIST_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="VISA_SUB_TYPE_ID" type="xs:long" />
+      <xs:element minOccurs="0" name="VISA_SUB_TYPE_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VISA_TYPE_ID" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MST_VISA_SUB_TYPE_LIST_DTO" nillable="true" type="tns:MST_VISA_SUB_TYPE_LIST_DTO" />
+  <xs:complexType name="ArrayOfMST_PROCESS_STATUS_LIST_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MST_PROCESS_STATUS_LIST_DTO" nillable="true" type="tns:MST_PROCESS_STATUS_LIST_DTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMST_PROCESS_STATUS_LIST_DTO" nillable="true" type="tns:ArrayOfMST_PROCESS_STATUS_LIST_DTO" />
+  <xs:complexType name="MST_PROCESS_STATUS_LIST_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="IS_ACTIVE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PROCESS_ID" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="PROCESS_STATUS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PROCESS_STATUS_ID" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="PROCESS_STATUS_NAME" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MST_PROCESS_STATUS_LIST_DTO" nillable="true" type="tns:MST_PROCESS_STATUS_LIST_DTO" />
+  <xs:complexType name="ArrayOfMST_WATCHLIST_TYPE_LIST_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MST_WATCHLIST_TYPE_LIST_DTO" nillable="true" type="tns:MST_WATCHLIST_TYPE_LIST_DTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMST_WATCHLIST_TYPE_LIST_DTO" nillable="true" type="tns:ArrayOfMST_WATCHLIST_TYPE_LIST_DTO" />
+  <xs:complexType name="MST_WATCHLIST_TYPE_LIST_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DESCRIPTION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IS_ACTIVE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="WATCHLIST_TYPE_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="WATCHLIST_TYPE_NAME" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MST_WATCHLIST_TYPE_LIST_DTO" nillable="true" type="tns:MST_WATCHLIST_TYPE_LIST_DTO" />
+  <xs:complexType name="ArrayOfMST_ACCOMMODATION_LIST_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MST_ACCOMMODATION_LIST_DTO" nillable="true" type="tns:MST_ACCOMMODATION_LIST_DTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMST_ACCOMMODATION_LIST_DTO" nillable="true" type="tns:ArrayOfMST_ACCOMMODATION_LIST_DTO" />
+  <xs:complexType name="MST_ACCOMMODATION_LIST_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ACCOMMODATION_ID" type="xs:long" />
+      <xs:element minOccurs="0" name="ACCOMMODATION_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ORDER" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MST_ACCOMMODATION_LIST_DTO" nillable="true" type="tns:MST_ACCOMMODATION_LIST_DTO" />
+  <xs:complexType name="ArrayOfMST_PASSPORT_TYPE_LIST_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MST_PASSPORT_TYPE_LIST_DTO" nillable="true" type="tns:MST_PASSPORT_TYPE_LIST_DTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMST_PASSPORT_TYPE_LIST_DTO" nillable="true" type="tns:ArrayOfMST_PASSPORT_TYPE_LIST_DTO" />
+  <xs:complexType name="MST_PASSPORT_TYPE_LIST_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="PASSPORT_TYPE_ID" type="xs:long" />
+      <xs:element minOccurs="0" name="PASSPORT_TYPE_NAME" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MST_PASSPORT_TYPE_LIST_DTO" nillable="true" type="tns:MST_PASSPORT_TYPE_LIST_DTO" />
+  <xs:complexType name="ArrayOfVISA_TRACK_STATUS_LIST_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VISA_TRACK_STATUS_LIST_DTO" nillable="true" type="tns:VISA_TRACK_STATUS_LIST_DTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVISA_TRACK_STATUS_LIST_DTO" nillable="true" type="tns:ArrayOfVISA_TRACK_STATUS_LIST_DTO" />
+  <xs:complexType name="VISA_TRACK_STATUS_LIST_DTO">
+    <xs:sequence>
+      <xs:element xmlns:q46="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="APPLICATION_DATE" nillable="true" type="q46:DateTimeOffset" />
+      <xs:element minOccurs="0" name="APPLICATION_ID" type="xs:long" />
+      <xs:element minOccurs="0" name="APPLICATION_NO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BOOKING_NO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FULL_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NATIONALITY_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NATIONALITY_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PROCESS_DATE" type="xs:dateTime" />
+      <xs:element xmlns:q47="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="PROCESS_DATE_offset" nillable="true" type="q47:DateTimeOffset" />
+      <xs:element minOccurs="0" name="PROCESS_ID" type="xs:int" />
+      <xs:element minOccurs="0" name="PROCESS_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PROCESS_STATUS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PROCESS_STATUS_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TRAVEL_DOC_NO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TRAVEL_DOC_TYPE_ID" type="xs:long" />
+      <xs:element minOccurs="0" name="TRAVEL_DOC_TYPE_NAME" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VISA_TRACK_STATUS_LIST_DTO" nillable="true" type="tns:VISA_TRACK_STATUS_LIST_DTO" />
+  <xs:complexType name="VDC_APPLICATION_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="APPLICATION_ID" type="xs:int" />
+      <xs:element minOccurs="0" name="BIRTH_PLACE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BOOKING_DATE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BOOKING_NO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CREATED_BY" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CREATED_DATETIME" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="CREATED_IP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DATE_OF_BIRTH" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DOC_QTY" type="xs:int" />
+      <xs:element minOccurs="0" name="EXPIREY_DATE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FAMILY_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FIRST_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FORMAL_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MARITAL_STATUS_ID" type="xs:int" />
+      <xs:element minOccurs="0" name="MIDDLE_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MINOR_CHILDREN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NATIONALITY_AT_BIRTH" type="xs:int" />
+      <xs:element minOccurs="0" name="NATIONALITY_ID" type="xs:int" />
+      <xs:element minOccurs="0" name="NATIONALITY_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OCCUPATION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PASSPORT_DATE_OF_ISSUE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PASSPORT_ISSUED_AT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PASSPORT_NO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PAYMENT_STATUS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PAYMENT_STATUS_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="REFERENCE_NO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RETURN_STATUS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="STATUS_ID" type="xs:int" />
+      <xs:element minOccurs="0" name="STATUS_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SUBMISSION_ID" type="xs:int" />
+      <xs:element minOccurs="0" name="SUBMISSION_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TITLE_ID" type="xs:int" />
+      <xs:element minOccurs="0" name="TITLE_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TYPE_OF_TRAVEL_DOCUMENT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UPDATED_BY" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UPDATED_DATETIME" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="UPDATED_IP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VISA_FEE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VISA_TYPE_ID" type="xs:int" />
+      <xs:element minOccurs="0" name="VISA_TYPE_NAME" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VDC_APPLICATION_DTO" nillable="true" type="tns:VDC_APPLICATION_DTO" />
+  <xs:complexType name="ArrayOfVDC_APPLICATION_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VDC_APPLICATION_DTO" nillable="true" type="tns:VDC_APPLICATION_DTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVDC_APPLICATION_DTO" nillable="true" type="tns:ArrayOfVDC_APPLICATION_DTO" />
+  <xs:complexType name="VDC_TYPE_APPLICATION_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ACCOMMODATION_ID" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="ACCOMMODATION_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ACCOMMODATION_S_ID" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="ACCOMMODATION_S_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ADDITIONAL_PLACE_OF_STAY" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ADDITIONAL_PLACE_OF_STAY_DETAI" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ADDR_LIST" nillable="true" type="tns:ArrayOfVDC_TYPE_APPLICATION_ADDR_DTO" />
+      <xs:element minOccurs="0" name="ADD_ON_DOCUMENT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="APPLICANT_EMAIL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="APPLICANT_MOBILE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="APPLICANT_TEL" nillable="true" type="xs:string" />
+      <xs:element xmlns:q48="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="APPLICATION_DATE" nillable="true" type="q48:DateTimeOffset" />
+      <xs:element minOccurs="0" name="APPLICATION_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="APPLICATION_TYPE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="APPLICATION_TYPE_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="APPROVE_COMMENT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="APPROVE_LIST" nillable="true" type="tns:ArrayOfVDC_TYPE_APPROVE_HISTORY_DTO" />
+      <xs:element minOccurs="0" name="APPROVE_STATUS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="APPROVE_STATUS_NAME" nillable="true" type="xs:string" />
+      <xs:element xmlns:q49="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="ARRIVAL_DATE_IN_THAI" nillable="true" type="q49:DateTimeOffset" />
+      <xs:element xmlns:q50="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="BOOKING_DATE" nillable="true" type="q50:DateTimeOffset" />
+      <xs:element minOccurs="0" name="BOOKING_FINISH_TIME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BOOKING_NO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BOOKING_START_TIME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CITY_OF_BIRTH" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CONSULAR_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CONSULAR_NAME_EN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="COUNTRY_OF_BIRTH_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="COUNTRY_OF_BIRTH_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="COUNTRY_OF_TRAVEL_VALID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="COUNTRY_OF_TRAVEL_VALID_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="COUNTRY_OF_TRAVEL_VALID_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CREATED_BY" nillable="true" type="xs:string" />
+      <xs:element xmlns:q51="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="CREATED_DATE" nillable="true" type="q51:DateTimeOffset" />
+      <xs:element minOccurs="0" name="CREATED_IP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CURRENCY_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CURRENCY_SYMBOL" nillable="true" type="xs:string" />
+      <xs:element xmlns:q52="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="DATE_OF_BIRTH" nillable="true" type="q52:DateTimeOffset" />
+      <xs:element xmlns:q53="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="DEPARTURE_DATE" nillable="true" type="q53:DateTimeOffset" />
+      <xs:element minOccurs="0" name="DOCUMENT_QTY" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="DOC_LIST" nillable="true" type="tns:ArrayOfVDC_TYPE_APPLICATION_DOC_DTO" />
+      <xs:element minOccurs="0" name="DURATION_OF_PROPOSED_STAY" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="FAMILY_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FIRST_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FLIGHT_NO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FORMER_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FULL_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FULL_NAME_NATIVE_ALPHABET" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GENDER" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GUARANTOR_FAMILY_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GUARANTOR_FIRST_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GUARANTOR_FULL_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GUARANTOR_MIDDLE_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GUARANTOR_TITLE_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="GUARANTOR_TITLE_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HAVE_EVER_APPLIED_THAI_VISA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HAVE_EVER_VISITED_THAI" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HOLD_OTHER_NATIONALITY" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="INSTITUTE_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="INTERVIEW_COMMENT" nillable="true" type="xs:string" />
+      <xs:element xmlns:q54="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="INTERVIEW_DATE" nillable="true" type="q54:DateTimeOffset" />
+      <xs:element minOccurs="0" name="INTERVIEW_FINISH_TIME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="INTERVIEW_START_TIME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="INTERVIEW_STATUS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IS_ADDRESS_SAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IS_PAYMENT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IS_SAME_AS_PROFILE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LANGUAGE_SPEAK" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LAST_UPDATED_BY" nillable="true" type="xs:string" />
+      <xs:element xmlns:q55="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="LAST_UPDATED_DATE" nillable="true" type="q55:DateTimeOffset" />
+      <xs:element minOccurs="0" name="LAST_UPDATED_IP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MARITAL_STATUS_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="MARITAL_STATUS_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MIDDLE_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NATIONALITY_AT_BIRTH_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NATIONALITY_AT_BIRTH_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NATIONALITY_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NATIONALITY_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NEXT_PORT_OF_DESTINATION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NO_OF_ENTRIES_REQUESTED" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="NO_OF_ENTRIES_TYPE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OCCUPATION_TYPE_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="OCCUPATION_TYPE_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OTHER_NATIONALITY_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OTHER_NATIONALITY_NAME" nillable="true" type="xs:string" />
+      <xs:element xmlns:q56="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="PASSPORT_COLLECTION_DATE" nillable="true" type="q56:DateTimeOffset" />
+      <xs:element minOccurs="0" name="PASSPORT_COLLECTION_TIME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PASSPORT_HOLDER_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PASSPORT_HOLDER_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PASSPORT_TYPE_ID" nillable="true" type="xs:int" />
+      <xs:element xmlns:q57="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="PAYMENT_DATE" nillable="true" type="q57:DateTimeOffset" />
+      <xs:element minOccurs="0" name="PAY_LIST" nillable="true" type="tns:ArrayOfVDC_TYPE_APPLICATION_PAY_DTO" />
+      <xs:element minOccurs="0" name="PERMANENT_RESIDENT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PLACE_OF_STAY" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PLACE_OF_STAY_ADDR" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PLACE_OF_STAY_AMPUR_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PLACE_OF_STAY_AMPUR_CODE_S" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PLACE_OF_STAY_AMPUR_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PLACE_OF_STAY_AMPUR_NAME_S" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PLACE_OF_STAY_APARTMENT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PLACE_OF_STAY_CITY" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PLACE_OF_STAY_COUNTRY_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PLACE_OF_STAY_COUNTRY_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PLACE_OF_STAY_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PLACE_OF_STAY_NAME_S" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PLACE_OF_STAY_PROVINCE_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PLACE_OF_STAY_PROVINCE_CODE_S" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PLACE_OF_STAY_PROVINCE_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PLACE_OF_STAY_PROVINCE_NAME_S" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PLACE_OF_STAY_TAMBON_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PLACE_OF_STAY_TAMBON_CODE_S" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PLACE_OF_STAY_TAMBON_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PLACE_OF_STAY_TAMBON_NAME_S" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PLACE_OF_STAY_TEL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PLACE_OF_STAY_TEL_S" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PLACE_OF_STAY_ZIPCODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PLACE_OF_STAY_ZIPCODE_S" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PORT_TYPE_ID" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="PORT_TYPE_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="POST_BACK_TYPE" nillable="true" type="xs:string" />
+      <xs:element xmlns:q58="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="PREVIOUS_VISIT_DATE" nillable="true" type="q58:DateTimeOffset" />
+      <xs:element xmlns:q59="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="PROCESS_DATE" nillable="true" type="q59:DateTimeOffset" />
+      <xs:element minOccurs="0" name="PROCESS_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="PROCESS_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PROCESS_STATUS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PROCESS_STATUS_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="PROCESS_STATUS_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PURPOSE_OF_VISIT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PURPOSE_OF_VISIT_DETAIL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PURPOSE_OF_VISIT_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="PURPOSE_OF_VISIT_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RATING" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="RECEIPT_NO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RECEIVE_NO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="REFERENCE_NO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="REGISTER_EMAIL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="REGISTER_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="RELATIONSHIP_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="RELATIONSHIP_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SEND_APP_TYPE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SPONSOR_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="STATE_OF_BIRTH" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SUBMISSION_INTERVIEW_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SUBMISSION_INTERVIEW_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SUB_VISA_TYPE_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="TITLE_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="TITLE_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TOTAL_PAYMENT_VALUE" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="TRAVELING_ON_GROUP_TOUR" nillable="true" type="xs:string" />
+      <xs:element xmlns:q60="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="TRAVEL_DOC_EXPIRY_DATE" nillable="true" type="q60:DateTimeOffset" />
+      <xs:element minOccurs="0" name="TRAVEL_DOC_ISSUED_AT" nillable="true" type="xs:string" />
+      <xs:element xmlns:q61="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="TRAVEL_DOC_ISSUED_DATE" nillable="true" type="q61:DateTimeOffset" />
+      <xs:element minOccurs="0" name="TRAVEL_DOC_NO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TRAVEL_DOC_TYPE_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="TRAVEL_DOC_TYPE_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TRAVEL_TYPE_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="TRAVEL_TYPE_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TYPE_OF_FLIGHT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VERIFY_COMMENT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VERIFY_STATUS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VISA_DURATION_DAYS" nillable="true" type="xs:int" />
+      <xs:element xmlns:q62="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="VISA_EXPIRY_DATE" nillable="true" type="q62:DateTimeOffset" />
+      <xs:element minOccurs="0" name="VISA_ISSUED_AT" nillable="true" type="xs:string" />
+      <xs:element xmlns:q63="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="VISA_ISSUED_DATE" nillable="true" type="q63:DateTimeOffset" />
+      <xs:element minOccurs="0" name="VISA_NO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VISA_REMARKS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VISA_SUB_TYPE_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VISA_TYPE_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="VISA_TYPE_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="YEARLY_INCOME_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="YEARLY_INCOME_RATE_VALUE" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VDC_TYPE_APPLICATION_DTO" nillable="true" type="tns:VDC_TYPE_APPLICATION_DTO" />
+  <xs:complexType name="ArrayOfVDC_TYPE_APPLICATION_ADDR_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VDC_TYPE_APPLICATION_ADDR_DTO" nillable="true" type="tns:VDC_TYPE_APPLICATION_ADDR_DTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVDC_TYPE_APPLICATION_ADDR_DTO" nillable="true" type="tns:ArrayOfVDC_TYPE_APPLICATION_ADDR_DTO" />
+  <xs:complexType name="VDC_TYPE_APPLICATION_ADDR_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ADDR" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ADDR_TYPE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ADDR_TYPE_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="APPLICATION_ADDR_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="APPLICATION_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="CITY" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="COUNTRY_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="COUNTRY_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="POST_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="STATE" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VDC_TYPE_APPLICATION_ADDR_DTO" nillable="true" type="tns:VDC_TYPE_APPLICATION_ADDR_DTO" />
+  <xs:complexType name="ArrayOfVDC_TYPE_APPROVE_HISTORY_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VDC_TYPE_APPROVE_HISTORY_DTO" nillable="true" type="tns:VDC_TYPE_APPROVE_HISTORY_DTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVDC_TYPE_APPROVE_HISTORY_DTO" nillable="true" type="tns:ArrayOfVDC_TYPE_APPROVE_HISTORY_DTO" />
+  <xs:complexType name="VDC_TYPE_APPROVE_HISTORY_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CONSULAR_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CONSULAR_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DICISION_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DICISION_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="REMARK" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="REQUESTOR_NAME" nillable="true" type="xs:string" />
+      <xs:element xmlns:q64="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="REQUEST_DATE" nillable="true" type="q64:DateTimeOffset" />
+      <xs:element minOccurs="0" name="VISA_TYPE_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VISA_TYPE_NAME" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VDC_TYPE_APPROVE_HISTORY_DTO" nillable="true" type="tns:VDC_TYPE_APPROVE_HISTORY_DTO" />
+  <xs:complexType name="ArrayOfVDC_TYPE_APPLICATION_DOC_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VDC_TYPE_APPLICATION_DOC_DTO" nillable="true" type="tns:VDC_TYPE_APPLICATION_DOC_DTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVDC_TYPE_APPLICATION_DOC_DTO" nillable="true" type="tns:ArrayOfVDC_TYPE_APPLICATION_DOC_DTO" />
+  <xs:complexType name="VDC_TYPE_APPLICATION_DOC_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="APPLICATION_DOC_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="APPLICATION_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="CONTENT_TYPE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DOCUMENT_FILE" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="DOCUMENT_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="DOCUMENT_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FILE_CONFIG" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FILE_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FILE_PATH" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FILE_SIZE" nillable="true" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VDC_TYPE_APPLICATION_DOC_DTO" nillable="true" type="tns:VDC_TYPE_APPLICATION_DOC_DTO" />
+  <xs:complexType name="ArrayOfVDC_TYPE_APPLICATION_PAY_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VDC_TYPE_APPLICATION_PAY_DTO" nillable="true" type="tns:VDC_TYPE_APPLICATION_PAY_DTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVDC_TYPE_APPLICATION_PAY_DTO" nillable="true" type="tns:ArrayOfVDC_TYPE_APPLICATION_PAY_DTO" />
+  <xs:complexType name="VDC_TYPE_APPLICATION_PAY_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="APPLICATION_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="APPLICATION_PAYMENT_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="CURRENCY_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CURRENCY_SYMBOL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PAYMENT_VALUE" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="VISA_FEE_TYPE_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="VISA_FEE_TYPE_NAME" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VDC_TYPE_APPLICATION_PAY_DTO" nillable="true" type="tns:VDC_TYPE_APPLICATION_PAY_DTO" />
+  <xs:complexType name="ArrayOfVDC_TYPE_BOOKING_LIST_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VDC_TYPE_BOOKING_LIST_DTO" nillable="true" type="tns:VDC_TYPE_BOOKING_LIST_DTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVDC_TYPE_BOOKING_LIST_DTO" nillable="true" type="tns:ArrayOfVDC_TYPE_BOOKING_LIST_DTO" />
+  <xs:complexType name="VDC_TYPE_BOOKING_LIST_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AVAILABLE_QTY" nillable="true" type="xs:long" />
+      <xs:element xmlns:q65="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="BOOKING_DATE" nillable="true" type="q65:DateTimeOffset" />
+      <xs:element minOccurs="0" name="BOOKING_DATE_TIME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BOOKING_NO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FINISH_TIME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MCTRL_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="MCTRL_PERIOD_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="START_TIME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="STATUS_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="STATUS_MSG" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VDC_TYPE_BOOKING_LIST_DTO" nillable="true" type="tns:VDC_TYPE_BOOKING_LIST_DTO" />
+  <xs:complexType name="ArrayOfVDC_TYPE_APPLICATION_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VDC_TYPE_APPLICATION_DTO" nillable="true" type="tns:VDC_TYPE_APPLICATION_DTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVDC_TYPE_APPLICATION_DTO" nillable="true" type="tns:ArrayOfVDC_TYPE_APPLICATION_DTO" />
+  <xs:complexType name="VDC_APPLICATION_INFO_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="APPLICATION_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="EMAIL_ADDRESS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FULL_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LAST_UPDATED_BY" nillable="true" type="xs:string" />
+      <xs:element xmlns:q66="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="LAST_UPDATED_DATE" nillable="true" type="q66:DateTimeOffset" />
+      <xs:element minOccurs="0" name="LAST_UPDATED_IP" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VDC_APPLICATION_INFO_DTO" nillable="true" type="tns:VDC_APPLICATION_INFO_DTO" />
+  <xs:complexType name="ArrayOfVDC_REC_AT_DATA_TABLE_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VDC_REC_AT_DATA_TABLE_DTO" nillable="true" type="tns:VDC_REC_AT_DATA_TABLE_DTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVDC_REC_AT_DATA_TABLE_DTO" nillable="true" type="tns:ArrayOfVDC_REC_AT_DATA_TABLE_DTO" />
+  <xs:complexType name="VDC_REC_AT_DATA_TABLE_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="COLUMN_DISPLAY" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="COLUMN_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="COLUMN_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DATA_LENGTH" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="DATA_TYPE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FUNCTION_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="INPUT_TYPE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="KEY_COLUMN_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="KEY_TABLE_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="KEY_TYPE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OUTPUT_TYPE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TABLE_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VARIABLE_INFO" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VDC_REC_AT_DATA_TABLE_DTO" nillable="true" type="tns:VDC_REC_AT_DATA_TABLE_DTO" />
+  <xs:complexType name="ArrayOfVDC_REC_DATA_TABLE_LIST_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VDC_REC_DATA_TABLE_LIST_DTO" nillable="true" type="tns:VDC_REC_DATA_TABLE_LIST_DTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVDC_REC_DATA_TABLE_LIST_DTO" nillable="true" type="tns:ArrayOfVDC_REC_DATA_TABLE_LIST_DTO" />
+  <xs:complexType name="VDC_REC_DATA_TABLE_LIST_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="TABLE_NAME" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VDC_REC_DATA_TABLE_LIST_DTO" nillable="true" type="tns:VDC_REC_DATA_TABLE_LIST_DTO" />
+  <xs:complexType name="ArrayOfVDC_REC_REF_DATA_TABLE_LIST_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VDC_REC_REF_DATA_TABLE_LIST_DTO" nillable="true" type="tns:VDC_REC_REF_DATA_TABLE_LIST_DTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVDC_REC_REF_DATA_TABLE_LIST_DTO" nillable="true" type="tns:ArrayOfVDC_REC_REF_DATA_TABLE_LIST_DTO" />
+  <xs:complexType name="VDC_REC_REF_DATA_TABLE_LIST_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="TABLE_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TEXT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VALUE" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VDC_REC_REF_DATA_TABLE_LIST_DTO" nillable="true" type="tns:VDC_REC_REF_DATA_TABLE_LIST_DTO" />
+  <xs:complexType name="ArrayOfVDC_REC_TABLE_INPUT_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VDC_REC_TABLE_INPUT_DTO" nillable="true" type="tns:VDC_REC_TABLE_INPUT_DTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVDC_REC_TABLE_INPUT_DTO" nillable="true" type="tns:ArrayOfVDC_REC_TABLE_INPUT_DTO" />
+  <xs:complexType name="VDC_REC_TABLE_INPUT_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="COLUMN_DISPLAY" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="COLUMN_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="COLUMN_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="COLUMN_USER_VIEW" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="COMMENTS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DATA_LENGTH" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="DATA_TYPE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DELETE_MODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="INPUT_TYPE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="INSERT_MODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="KEY_COLUMN_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="KEY_TABLE_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="KEY_TYPE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NULLABLE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ORDER_NO" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="OUTPUT_TYPE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="REQUIRE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TABLE_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TOOL_MODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UPDATE_MODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VARIABLE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VIEW_MODE" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VDC_REC_TABLE_INPUT_DTO" nillable="true" type="tns:VDC_REC_TABLE_INPUT_DTO" />
+  <xs:complexType name="ArrayOfVDC_ATV_MST_COUNTRY_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VDC_ATV_MST_COUNTRY_DTO" nillable="true" type="tns:VDC_ATV_MST_COUNTRY_DTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVDC_ATV_MST_COUNTRY_DTO" nillable="true" type="tns:ArrayOfVDC_ATV_MST_COUNTRY_DTO" />
+  <xs:complexType name="VDC_ATV_MST_COUNTRY_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CONTINENTCD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CONTINENTENM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="COUNTENM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="COUNTTNM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="COUNT_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="HEALTHCTL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IS_ACTIVE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NATIONENM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NATIONTNM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SALARY" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="VISAFLAG" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VDC_ATV_MST_COUNTRY_DTO" nillable="true" type="tns:VDC_ATV_MST_COUNTRY_DTO" />
+  <xs:complexType name="VDC_ATS_MST_COUNTRY_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ABBCOUNT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CONTINENTCD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CONTINENTENM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="COUNTCD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="COUNTENM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="COUNTTNM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="COUNT_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="CREATED_BY" nillable="true" type="xs:string" />
+      <xs:element xmlns:q67="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="CREATED_DATE" nillable="true" type="q67:DateTimeOffset" />
+      <xs:element minOccurs="0" name="CREATED_IP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HEALTHCTL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IS_ACTIVE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LAST_UPDATED_BY" nillable="true" type="xs:string" />
+      <xs:element xmlns:q68="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="LAST_UPDATED_DATE" nillable="true" type="q68:DateTimeOffset" />
+      <xs:element minOccurs="0" name="LAST_UPDATED_IP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NATIONENM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NATIONTNM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SALARY" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="VISAFLAG" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VDC_ATS_MST_COUNTRY_DTO" nillable="true" type="tns:VDC_ATS_MST_COUNTRY_DTO" />
+  <xs:complexType name="ArrayOfVDC_ATV_MST_CONSULAR_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VDC_ATV_MST_CONSULAR_DTO" nillable="true" type="tns:VDC_ATV_MST_CONSULAR_DTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVDC_ATV_MST_CONSULAR_DTO" nillable="true" type="tns:ArrayOfVDC_ATV_MST_CONSULAR_DTO" />
+  <xs:complexType name="VDC_ATV_MST_CONSULAR_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CONSULAR_ADDRESS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CONSULAR_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CONSULAR_EMAIL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CONSULAR_FAX" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CONSULAR_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="CONSULAR_NAME_EN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CONSULAR_NAME_TH" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CONSULAR_POST_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CONSULAR_TEL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IS_ACTIVE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IS_APPLY_ONLINE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IS_POST" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="POST_ADDRESS" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VDC_ATV_MST_CONSULAR_DTO" nillable="true" type="tns:VDC_ATV_MST_CONSULAR_DTO" />
+  <xs:complexType name="VDC_ATS_MST_CONSULAR_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CONSULAR_ADDRESS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CONSULAR_ADDRESS_FORMAT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CONSULAR_CLOSE_SERVICE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CONSULAR_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CONSULAR_EMAIL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CONSULAR_FAX" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CONSULAR_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="CONSULAR_MAP" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="CONSULAR_NAME_CITY" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CONSULAR_NAME_EN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CONSULAR_NAME_TH" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CONSULAR_OPEN_SERVICE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CONSULAR_PARENT_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CONSULAR_POST_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CONSULAR_TEL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CONSULAR_TYPE_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="COUNTRY_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="COUNTTNM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CREATED_BY" nillable="true" type="xs:string" />
+      <xs:element xmlns:q69="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="CREATED_DATE" nillable="true" type="q69:DateTimeOffset" />
+      <xs:element minOccurs="0" name="CREATED_IP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IS_ACTIVE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IS_APPLY_ONLINE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IS_POST" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LAST_UPDATED_BY" nillable="true" type="xs:string" />
+      <xs:element xmlns:q70="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="LAST_UPDATED_DATE" nillable="true" type="q70:DateTimeOffset" />
+      <xs:element minOccurs="0" name="LAST_UPDATED_IP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MIN_VISA_STICKER" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="POST_ADDRESS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TIMEZONE_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TIMEZONE_NAME" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VDC_ATS_MST_CONSULAR_DTO" nillable="true" type="tns:VDC_ATS_MST_CONSULAR_DTO" />
+  <xs:complexType name="ArrayOfVDC_ATV_MST_CONSULAR_TYPE_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VDC_ATV_MST_CONSULAR_TYPE_DTO" nillable="true" type="tns:VDC_ATV_MST_CONSULAR_TYPE_DTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVDC_ATV_MST_CONSULAR_TYPE_DTO" nillable="true" type="tns:ArrayOfVDC_ATV_MST_CONSULAR_TYPE_DTO" />
+  <xs:complexType name="VDC_ATV_MST_CONSULAR_TYPE_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CONSULAR_TYPE_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CONSULAR_TYPE_DESC" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CONSULAR_TYPE_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="CONSULAR_TYPE_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IS_ACTIVE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TYPE_PREFIX" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VDC_ATV_MST_CONSULAR_TYPE_DTO" nillable="true" type="tns:VDC_ATV_MST_CONSULAR_TYPE_DTO" />
+  <xs:complexType name="VDC_ATS_MST_CONSULAR_TYPE_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CONSULAR_TYPE_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CONSULAR_TYPE_DESC" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CONSULAR_TYPE_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="CONSULAR_TYPE_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CREATED_BY" nillable="true" type="xs:string" />
+      <xs:element xmlns:q71="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="CREATED_DATE" nillable="true" type="q71:DateTimeOffset" />
+      <xs:element minOccurs="0" name="CREATED_IP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IS_ACTIVE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LAST_UPDATED_BY" nillable="true" type="xs:string" />
+      <xs:element xmlns:q72="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="LAST_UPDATED_DATE" nillable="true" type="q72:DateTimeOffset" />
+      <xs:element minOccurs="0" name="LAST_UPDATED_IP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TYPE_PREFIX" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VDC_ATS_MST_CONSULAR_TYPE_DTO" nillable="true" type="tns:VDC_ATS_MST_CONSULAR_TYPE_DTO" />
+  <xs:complexType name="ArrayOfVDC_ATV_MST_CONTINENT_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VDC_ATV_MST_CONTINENT_DTO" nillable="true" type="tns:VDC_ATV_MST_CONTINENT_DTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVDC_ATV_MST_CONTINENT_DTO" nillable="true" type="tns:ArrayOfVDC_ATV_MST_CONTINENT_DTO" />
+  <xs:complexType name="VDC_ATV_MST_CONTINENT_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CONTINENTCD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CONTINENTENM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CONTINENTTNM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CONTINENT_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="IS_ACTIVE" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VDC_ATV_MST_CONTINENT_DTO" nillable="true" type="tns:VDC_ATV_MST_CONTINENT_DTO" />
+  <xs:complexType name="VDC_ATS_MST_CONTINENT_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CONTINENTCD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CONTINENTENM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CONTINENTTNM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CONTINENT_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="CREATED_BY" nillable="true" type="xs:string" />
+      <xs:element xmlns:q73="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="CREATED_DATE" nillable="true" type="q73:DateTimeOffset" />
+      <xs:element minOccurs="0" name="CREATED_IP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IS_ACTIVE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LAST_UPDATED_BY" nillable="true" type="xs:string" />
+      <xs:element xmlns:q74="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="LAST_UPDATED_DATE" nillable="true" type="q74:DateTimeOffset" />
+      <xs:element minOccurs="0" name="LAST_UPDATED_IP" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VDC_ATS_MST_CONTINENT_DTO" nillable="true" type="tns:VDC_ATS_MST_CONTINENT_DTO" />
+  <xs:complexType name="ArrayOfVDC_ATV_MST_CURRENCY_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VDC_ATV_MST_CURRENCY_DTO" nillable="true" type="tns:VDC_ATV_MST_CURRENCY_DTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVDC_ATV_MST_CURRENCY_DTO" nillable="true" type="tns:ArrayOfVDC_ATV_MST_CURRENCY_DTO" />
+  <xs:complexType name="VDC_ATV_MST_CURRENCY_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="COUNTRY_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CURRENCY_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CURRENCY_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="CURRENCY_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CURRENCY_SYMBOL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IS_ACTIVE" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VDC_ATV_MST_CURRENCY_DTO" nillable="true" type="tns:VDC_ATV_MST_CURRENCY_DTO" />
+  <xs:complexType name="VDC_ATS_MST_CURRENCY_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="COUNTRY_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CREATED_BY" nillable="true" type="xs:string" />
+      <xs:element xmlns:q75="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="CREATED_DATE" nillable="true" type="q75:DateTimeOffset" />
+      <xs:element minOccurs="0" name="CREATED_IP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CURRENCY_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CURRENCY_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="CURRENCY_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CURRENCY_SYMBOL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IS_ACTIVE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LAST_UPDATED_BY" nillable="true" type="xs:string" />
+      <xs:element xmlns:q76="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="LAST_UPDATED_DATE" nillable="true" type="q76:DateTimeOffset" />
+      <xs:element minOccurs="0" name="LAST_UPDATED_IP" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VDC_ATS_MST_CURRENCY_DTO" nillable="true" type="tns:VDC_ATS_MST_CURRENCY_DTO" />
+  <xs:complexType name="ArrayOfVDC_ATV_MST_DOCUMENT_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VDC_ATV_MST_DOCUMENT_DTO" nillable="true" type="tns:VDC_ATV_MST_DOCUMENT_DTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVDC_ATV_MST_DOCUMENT_DTO" nillable="true" type="tns:ArrayOfVDC_ATV_MST_DOCUMENT_DTO" />
+  <xs:complexType name="VDC_ATV_MST_DOCUMENT_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DESCRIPTION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DOCUMENT_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="DOCUMENT_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IS_ACTIVE" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VDC_ATV_MST_DOCUMENT_DTO" nillable="true" type="tns:VDC_ATV_MST_DOCUMENT_DTO" />
+  <xs:complexType name="VDC_ATS_MST_DOCUMENT_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CREATED_BY" nillable="true" type="xs:string" />
+      <xs:element xmlns:q77="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="CREATED_DATE" nillable="true" type="q77:DateTimeOffset" />
+      <xs:element minOccurs="0" name="CREATED_IP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DESCRIPTION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DOCUMENT_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="DOCUMENT_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IS_ACTIVE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LAST_UPDATED_BY" nillable="true" type="xs:string" />
+      <xs:element xmlns:q78="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="LAST_UPDATED_DATE" nillable="true" type="q78:DateTimeOffset" />
+      <xs:element minOccurs="0" name="LAST_UPDATED_IP" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VDC_ATS_MST_DOCUMENT_DTO" nillable="true" type="tns:VDC_ATS_MST_DOCUMENT_DTO" />
+  <xs:complexType name="ArrayOfVDC_ATV_MST_DOCUMENT_MAPPING_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VDC_ATV_MST_DOCUMENT_MAPPING_DTO" nillable="true" type="tns:VDC_ATV_MST_DOCUMENT_MAPPING_DTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVDC_ATV_MST_DOCUMENT_MAPPING_DTO" nillable="true" type="tns:ArrayOfVDC_ATV_MST_DOCUMENT_MAPPING_DTO" />
+  <xs:complexType name="VDC_ATV_MST_DOCUMENT_MAPPING_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CONSULAR_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CONSULAR_NAME_EN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DOCUMENT_DESCRIPTION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DOCUMENT_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="DOCUMENT_MAPPING_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="DOCUMENT_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IS_ACTIVE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MODULE_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NO_OF_ENTRIES_TYPE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NO_OF_ENTRIES_TYPE_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ORDER_NO" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="PURPOSE_OF_VISIT_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="PURPOSE_OF_VISIT_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VISA_SUB_TYPE_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="VISA_SUB_TYPE_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VISA_TYPE_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="VISA_TYPE_NAME" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VDC_ATV_MST_DOCUMENT_MAPPING_DTO" nillable="true" type="tns:VDC_ATV_MST_DOCUMENT_MAPPING_DTO" />
+  <xs:complexType name="VDC_ATS_MST_DOCUMENT_MAPPING_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CONSULAR_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CONSULAR_NAME_EN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CREATED_BY" nillable="true" type="xs:string" />
+      <xs:element xmlns:q79="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="CREATED_DATE" nillable="true" type="q79:DateTimeOffset" />
+      <xs:element minOccurs="0" name="CREATED_IP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DOCUMENT_DESCRIPTION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DOCUMENT_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="DOCUMENT_MAPPING_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="DOCUMENT_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IS_ACTIVE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LAST_UPDATED_BY" nillable="true" type="xs:string" />
+      <xs:element xmlns:q80="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="LAST_UPDATED_DATE" nillable="true" type="q80:DateTimeOffset" />
+      <xs:element minOccurs="0" name="LAST_UPDATED_IP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MODULE_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NO_OF_ENTRIES_TYPE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NO_OF_ENTRIES_TYPE_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ORDER_NO" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="PURPOSE_OF_VISIT_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="PURPOSE_OF_VISIT_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VISA_SUB_TYPE_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="VISA_SUB_TYPE_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VISA_TYPE_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="VISA_TYPE_NAME" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VDC_ATS_MST_DOCUMENT_MAPPING_DTO" nillable="true" type="tns:VDC_ATS_MST_DOCUMENT_MAPPING_DTO" />
+  <xs:complexType name="ArrayOfVDC_ATV_MST_HOLIDAY_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VDC_ATV_MST_HOLIDAY_DTO" nillable="true" type="tns:VDC_ATV_MST_HOLIDAY_DTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVDC_ATV_MST_HOLIDAY_DTO" nillable="true" type="tns:ArrayOfVDC_ATV_MST_HOLIDAY_DTO" />
+  <xs:complexType name="VDC_ATV_MST_HOLIDAY_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CONSULAR_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CONSULAR_NAME_EN" nillable="true" type="xs:string" />
+      <xs:element xmlns:q81="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="HOLIDAY_DATE" nillable="true" type="q81:DateTimeOffset" />
+      <xs:element minOccurs="0" name="HOLIDAY_DESCRIPTION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HOLIDAY_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="HOLIDAY_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HOLIDAY_YEAR" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="IS_ACTIVE" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VDC_ATV_MST_HOLIDAY_DTO" nillable="true" type="tns:VDC_ATV_MST_HOLIDAY_DTO" />
+  <xs:complexType name="VDC_ATS_MST_HOLIDAY_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CONSULAR_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CONSULAR_NAME_EN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CREATED_BY" nillable="true" type="xs:string" />
+      <xs:element xmlns:q82="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="CREATED_DATE" nillable="true" type="q82:DateTimeOffset" />
+      <xs:element minOccurs="0" name="CREATED_IP" nillable="true" type="xs:string" />
+      <xs:element xmlns:q83="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="HOLIDAY_DATE" nillable="true" type="q83:DateTimeOffset" />
+      <xs:element minOccurs="0" name="HOLIDAY_DESCRIPTION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HOLIDAY_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="HOLIDAY_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HOLIDAY_YEAR" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="IS_ACTIVE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LAST_UPDATED_BY" nillable="true" type="xs:string" />
+      <xs:element xmlns:q84="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="LAST_UPDATED_DATE" nillable="true" type="q84:DateTimeOffset" />
+      <xs:element minOccurs="0" name="LAST_UPDATED_IP" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VDC_ATS_MST_HOLIDAY_DTO" nillable="true" type="tns:VDC_ATS_MST_HOLIDAY_DTO" />
+  <xs:complexType name="ArrayOfVDC_ATV_MST_MARITAL_STATUS_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VDC_ATV_MST_MARITAL_STATUS_DTO" nillable="true" type="tns:VDC_ATV_MST_MARITAL_STATUS_DTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVDC_ATV_MST_MARITAL_STATUS_DTO" nillable="true" type="tns:ArrayOfVDC_ATV_MST_MARITAL_STATUS_DTO" />
+  <xs:complexType name="VDC_ATV_MST_MARITAL_STATUS_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DESCRIPTION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IS_ACTIVE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MARITAL_STATUS_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="NAME" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VDC_ATV_MST_MARITAL_STATUS_DTO" nillable="true" type="tns:VDC_ATV_MST_MARITAL_STATUS_DTO" />
+  <xs:complexType name="VDC_ATS_MST_MARITAL_STATUS_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CREATED_BY" nillable="true" type="xs:string" />
+      <xs:element xmlns:q85="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="CREATED_DATE" nillable="true" type="q85:DateTimeOffset" />
+      <xs:element minOccurs="0" name="CREATED_IP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DESCRIPTION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IS_ACTIVE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LAST_UPDATED_BY" nillable="true" type="xs:string" />
+      <xs:element xmlns:q86="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="LAST_UPDATED_DATE" nillable="true" type="q86:DateTimeOffset" />
+      <xs:element minOccurs="0" name="LAST_UPDATED_IP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MARITAL_STATUS_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="NAME" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VDC_ATS_MST_MARITAL_STATUS_DTO" nillable="true" type="tns:VDC_ATS_MST_MARITAL_STATUS_DTO" />
+  <xs:complexType name="ArrayOfVDC_ATV_MST_MAXIMUM_CONFIG_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VDC_ATV_MST_MAXIMUM_CONFIG_DTO" nillable="true" type="tns:VDC_ATV_MST_MAXIMUM_CONFIG_DTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVDC_ATV_MST_MAXIMUM_CONFIG_DTO" nillable="true" type="tns:ArrayOfVDC_ATV_MST_MAXIMUM_CONFIG_DTO" />
+  <xs:complexType name="VDC_ATV_MST_MAXIMUM_CONFIG_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CONSULAR_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CONSULAR_NAME_EN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DESCRIPTION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IS_ACTIVE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MAX_QTY" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="MCONFIG_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="MCONFIG_TYPE" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VDC_ATV_MST_MAXIMUM_CONFIG_DTO" nillable="true" type="tns:VDC_ATV_MST_MAXIMUM_CONFIG_DTO" />
+  <xs:complexType name="VDC_ATS_MST_MAXIMUM_CONFIG_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CONSULAR_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CONSULAR_NAME_EN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CREATED_BY" nillable="true" type="xs:string" />
+      <xs:element xmlns:q87="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="CREATED_DATE" nillable="true" type="q87:DateTimeOffset" />
+      <xs:element minOccurs="0" name="CREATED_IP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DESCRIPTION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IS_ACTIVE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LAST_UPDATED_BY" nillable="true" type="xs:string" />
+      <xs:element xmlns:q88="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="LAST_UPDATED_DATE" nillable="true" type="q88:DateTimeOffset" />
+      <xs:element minOccurs="0" name="LAST_UPDATED_IP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MAX_QTY" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="MCONFIG_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="MCONFIG_TYPE" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VDC_ATS_MST_MAXIMUM_CONFIG_DTO" nillable="true" type="tns:VDC_ATS_MST_MAXIMUM_CONFIG_DTO" />
+  <xs:complexType name="ArrayOfVDC_ATV_MST_MAXIMUM_CONFIG_PERIOD_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VDC_ATV_MST_MAXIMUM_CONFIG_PERIOD_DTO" nillable="true" type="tns:VDC_ATV_MST_MAXIMUM_CONFIG_PERIOD_DTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVDC_ATV_MST_MAXIMUM_CONFIG_PERIOD_DTO" nillable="true" type="tns:ArrayOfVDC_ATV_MST_MAXIMUM_CONFIG_PERIOD_DTO" />
+  <xs:complexType name="VDC_ATV_MST_MAXIMUM_CONFIG_PERIOD_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="FINISH_TIME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MAX_QTY" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="MCONFIG_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="MCONFIG_PERIOD_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="START_TIME" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VDC_ATV_MST_MAXIMUM_CONFIG_PERIOD_DTO" nillable="true" type="tns:VDC_ATV_MST_MAXIMUM_CONFIG_PERIOD_DTO" />
+  <xs:complexType name="VDC_ATS_MST_MAXIMUM_CONFIG_PERIOD_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="FINISH_TIME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MAX_QTY" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="MCONFIG_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="MCONFIG_PERIOD_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="START_TIME" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VDC_ATS_MST_MAXIMUM_CONFIG_PERIOD_DTO" nillable="true" type="tns:VDC_ATS_MST_MAXIMUM_CONFIG_PERIOD_DTO" />
+  <xs:complexType name="ArrayOfVDC_ATV_MST_MAXIMUM_CONTROL_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VDC_ATV_MST_MAXIMUM_CONTROL_DTO" nillable="true" type="tns:VDC_ATV_MST_MAXIMUM_CONTROL_DTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVDC_ATV_MST_MAXIMUM_CONTROL_DTO" nillable="true" type="tns:ArrayOfVDC_ATV_MST_MAXIMUM_CONTROL_DTO" />
+  <xs:complexType name="VDC_ATV_MST_MAXIMUM_CONTROL_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AVAILABLE_QTY" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="CONSULAR_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CONSULAR_NAME_EN" nillable="true" type="xs:string" />
+      <xs:element xmlns:q89="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="CTRL_DATE" nillable="true" type="q89:DateTimeOffset" />
+      <xs:element minOccurs="0" name="MAX_QTY" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="MCONFIG_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="MCONFIG_TYPE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MCTRL_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="USED_QTY" nillable="true" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VDC_ATV_MST_MAXIMUM_CONTROL_DTO" nillable="true" type="tns:VDC_ATV_MST_MAXIMUM_CONTROL_DTO" />
+  <xs:complexType name="VDC_ATS_MST_MAXIMUM_CONTROL_DTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AVAILABLE_QTY" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="CONSULAR_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CONSULAR_NAME_EN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CREATED_BY" nillable="true" type="xs:string" />
+      <xs:element xmlns:q90="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="CREATED_DATE" nillable="true" type="q90:DateTimeOffset" />
+      <xs:element minOccurs="0" name="CREATED_IP" nillable="true" type="xs:string" />
+      <xs:element xmlns:q91="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="CTRL_DATE" nillable="true" type="q91:DateTimeOffset" />
+      <xs:element minOccurs="0" name="LAST_UPDATED_BY" nillable="true" type="xs:string" />
+      <xs:element xmlns:q92="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="LAST_UPDATED_DATE" nillable="true" type="q92:DateTimeOffset" />
+      <xs:element minOccurs="0" name="LAST_UPDATED_IP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MAX_QTY" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="MCONFIG_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="MCONFIG_TYPE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MCTRL_ID" nillable="true" type="xs:long" />
+      <xs:element minOccurs="0" name="USED_QTY" nillable="true" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VDC_ATS_MST_MAXIMUM_CONTROL_DTO" nillable="true" type="tns:VDC_ATS_MST_MAXIMUM_CONTROL_DTO" />
+</xs:schema>

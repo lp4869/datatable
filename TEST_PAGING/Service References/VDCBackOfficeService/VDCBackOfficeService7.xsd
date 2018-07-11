@@ -1,0 +1,1963 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://172.16.24.30/MFA_BackOfficeWebService/VDCBackOfficeService.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+  <xs:import schemaLocation="http://172.16.24.30/MFA_BackOfficeWebService/VDCBackOfficeService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/System" />
+  <xs:import schemaLocation="http://172.16.24.30/MFA_BackOfficeWebService/VDCBackOfficeService.svc?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto.Partial" />
+  <xs:complexType name="CollectionResponseOfVDC_ATV_MST_MAXIMUM_CONTROL_PERIOD_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="CollectionResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="VDC_ATV_MST_MAXIMUM_CONTROL_PERIOD_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ItemCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+          <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+          <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Results" nillable="true" type="q1:ArrayOfVDC_ATV_MST_MAXIMUM_CONTROL_PERIOD_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CollectionResponseOfVDC_ATV_MST_MAXIMUM_CONTROL_PERIOD_DTOT157PNd3" nillable="true" type="tns:CollectionResponseOfVDC_ATV_MST_MAXIMUM_CONTROL_PERIOD_DTOT157PNd3" />
+  <xs:complexType name="AbstractResponse">
+    <xs:sequence>
+      <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="BeginTimestamp" type="q2:DateTimeOffset" />
+      <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="EndTimestamp" type="q3:DateTimeOffset" />
+      <xs:element minOccurs="0" name="IsSuccessful" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MessageCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AbstractResponse" nillable="true" type="tns:AbstractResponse" />
+  <xs:complexType name="ItemResponseOfVDC_ATS_MST_MAXIMUM_CONTROL_PERIOD_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ItemResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="VDC_ATS_MST_MAXIMUM_CONTROL_PERIOD_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Result" nillable="true" type="q4:VDC_ATS_MST_MAXIMUM_CONTROL_PERIOD_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ItemResponseOfVDC_ATS_MST_MAXIMUM_CONTROL_PERIOD_DTOT157PNd3" nillable="true" type="tns:ItemResponseOfVDC_ATS_MST_MAXIMUM_CONTROL_PERIOD_DTOT157PNd3" />
+  <xs:complexType name="OperationResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="OperationResponse" nillable="true" type="tns:OperationResponse" />
+  <xs:complexType name="CollectionResponseOfVDC_ATV_MST_OCCUPATION_TYPE_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="CollectionResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="VDC_ATV_MST_OCCUPATION_TYPE_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ItemCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+          <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+          <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Results" nillable="true" type="q5:ArrayOfVDC_ATV_MST_OCCUPATION_TYPE_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CollectionResponseOfVDC_ATV_MST_OCCUPATION_TYPE_DTOT157PNd3" nillable="true" type="tns:CollectionResponseOfVDC_ATV_MST_OCCUPATION_TYPE_DTOT157PNd3" />
+  <xs:complexType name="ItemResponseOfVDC_ATS_MST_OCCUPATION_TYPE_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ItemResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="VDC_ATS_MST_OCCUPATION_TYPE_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Result" nillable="true" type="q6:VDC_ATS_MST_OCCUPATION_TYPE_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ItemResponseOfVDC_ATS_MST_OCCUPATION_TYPE_DTOT157PNd3" nillable="true" type="tns:ItemResponseOfVDC_ATS_MST_OCCUPATION_TYPE_DTOT157PNd3" />
+  <xs:complexType name="CollectionResponseOfVDC_ATV_MST_PURPOSE_OF_VISIT_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="CollectionResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="VDC_ATV_MST_PURPOSE_OF_VISIT_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ItemCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+          <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+          <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Results" nillable="true" type="q7:ArrayOfVDC_ATV_MST_PURPOSE_OF_VISIT_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CollectionResponseOfVDC_ATV_MST_PURPOSE_OF_VISIT_DTOT157PNd3" nillable="true" type="tns:CollectionResponseOfVDC_ATV_MST_PURPOSE_OF_VISIT_DTOT157PNd3" />
+  <xs:complexType name="ItemResponseOfVDC_ATS_MST_PURPOSE_OF_VISIT_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ItemResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="VDC_ATS_MST_PURPOSE_OF_VISIT_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Result" nillable="true" type="q8:VDC_ATS_MST_PURPOSE_OF_VISIT_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ItemResponseOfVDC_ATS_MST_PURPOSE_OF_VISIT_DTOT157PNd3" nillable="true" type="tns:ItemResponseOfVDC_ATS_MST_PURPOSE_OF_VISIT_DTOT157PNd3" />
+  <xs:complexType name="CollectionResponseOfVDC_ATV_MST_RELATIONSHIP_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="CollectionResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="VDC_ATV_MST_RELATIONSHIP_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ItemCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+          <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+          <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Results" nillable="true" type="q9:ArrayOfVDC_ATV_MST_RELATIONSHIP_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CollectionResponseOfVDC_ATV_MST_RELATIONSHIP_DTOT157PNd3" nillable="true" type="tns:CollectionResponseOfVDC_ATV_MST_RELATIONSHIP_DTOT157PNd3" />
+  <xs:complexType name="ItemResponseOfVDC_ATS_MST_RELATIONSHIP_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ItemResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="VDC_ATS_MST_RELATIONSHIP_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Result" nillable="true" type="q10:VDC_ATS_MST_RELATIONSHIP_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ItemResponseOfVDC_ATS_MST_RELATIONSHIP_DTOT157PNd3" nillable="true" type="tns:ItemResponseOfVDC_ATS_MST_RELATIONSHIP_DTOT157PNd3" />
+  <xs:complexType name="CollectionResponseOfVDC_ATV_MST_TITLE_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="CollectionResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="VDC_ATV_MST_TITLE_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ItemCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+          <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+          <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Results" nillable="true" type="q11:ArrayOfVDC_ATV_MST_TITLE_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CollectionResponseOfVDC_ATV_MST_TITLE_DTOT157PNd3" nillable="true" type="tns:CollectionResponseOfVDC_ATV_MST_TITLE_DTOT157PNd3" />
+  <xs:complexType name="ItemResponseOfVDC_ATS_MST_TITLE_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ItemResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="VDC_ATS_MST_TITLE_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Result" nillable="true" type="q12:VDC_ATS_MST_TITLE_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ItemResponseOfVDC_ATS_MST_TITLE_DTOT157PNd3" nillable="true" type="tns:ItemResponseOfVDC_ATS_MST_TITLE_DTOT157PNd3" />
+  <xs:complexType name="CollectionResponseOfVDC_ATV_MST_TRAVEL_DOC_TYPE_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="CollectionResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="VDC_ATV_MST_TRAVEL_DOC_TYPE_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ItemCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+          <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+          <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Results" nillable="true" type="q13:ArrayOfVDC_ATV_MST_TRAVEL_DOC_TYPE_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CollectionResponseOfVDC_ATV_MST_TRAVEL_DOC_TYPE_DTOT157PNd3" nillable="true" type="tns:CollectionResponseOfVDC_ATV_MST_TRAVEL_DOC_TYPE_DTOT157PNd3" />
+  <xs:complexType name="ItemResponseOfVDC_ATS_MST_TRAVEL_DOC_TYPE_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ItemResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="VDC_ATS_MST_TRAVEL_DOC_TYPE_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Result" nillable="true" type="q14:VDC_ATS_MST_TRAVEL_DOC_TYPE_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ItemResponseOfVDC_ATS_MST_TRAVEL_DOC_TYPE_DTOT157PNd3" nillable="true" type="tns:ItemResponseOfVDC_ATS_MST_TRAVEL_DOC_TYPE_DTOT157PNd3" />
+  <xs:complexType name="CollectionResponseOfVDC_ATV_MST_TRAVEL_TYPE_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="CollectionResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="VDC_ATV_MST_TRAVEL_TYPE_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ItemCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+          <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+          <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Results" nillable="true" type="q15:ArrayOfVDC_ATV_MST_TRAVEL_TYPE_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CollectionResponseOfVDC_ATV_MST_TRAVEL_TYPE_DTOT157PNd3" nillable="true" type="tns:CollectionResponseOfVDC_ATV_MST_TRAVEL_TYPE_DTOT157PNd3" />
+  <xs:complexType name="ItemResponseOfVDC_ATS_MST_TRAVEL_TYPE_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ItemResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="VDC_ATS_MST_TRAVEL_TYPE_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Result" nillable="true" type="q16:VDC_ATS_MST_TRAVEL_TYPE_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ItemResponseOfVDC_ATS_MST_TRAVEL_TYPE_DTOT157PNd3" nillable="true" type="tns:ItemResponseOfVDC_ATS_MST_TRAVEL_TYPE_DTOT157PNd3" />
+  <xs:complexType name="CollectionResponseOfVDC_ATV_MST_VISA_FEE_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="CollectionResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="VDC_ATV_MST_VISA_FEE_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ItemCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+          <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+          <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Results" nillable="true" type="q17:ArrayOfVDC_ATV_MST_VISA_FEE_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CollectionResponseOfVDC_ATV_MST_VISA_FEE_DTOT157PNd3" nillable="true" type="tns:CollectionResponseOfVDC_ATV_MST_VISA_FEE_DTOT157PNd3" />
+  <xs:complexType name="ItemResponseOfVDC_ATS_MST_VISA_FEE_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ItemResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="VDC_ATS_MST_VISA_FEE_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Result" nillable="true" type="q18:VDC_ATS_MST_VISA_FEE_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ItemResponseOfVDC_ATS_MST_VISA_FEE_DTOT157PNd3" nillable="true" type="tns:ItemResponseOfVDC_ATS_MST_VISA_FEE_DTOT157PNd3" />
+  <xs:complexType name="CollectionResponseOfVDC_ATV_MST_VISA_FEE_TYPE_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="CollectionResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="VDC_ATV_MST_VISA_FEE_TYPE_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ItemCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+          <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+          <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Results" nillable="true" type="q19:ArrayOfVDC_ATV_MST_VISA_FEE_TYPE_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CollectionResponseOfVDC_ATV_MST_VISA_FEE_TYPE_DTOT157PNd3" nillable="true" type="tns:CollectionResponseOfVDC_ATV_MST_VISA_FEE_TYPE_DTOT157PNd3" />
+  <xs:complexType name="ItemResponseOfVDC_ATS_MST_VISA_FEE_TYPE_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ItemResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="VDC_ATS_MST_VISA_FEE_TYPE_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Result" nillable="true" type="q20:VDC_ATS_MST_VISA_FEE_TYPE_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ItemResponseOfVDC_ATS_MST_VISA_FEE_TYPE_DTOT157PNd3" nillable="true" type="tns:ItemResponseOfVDC_ATS_MST_VISA_FEE_TYPE_DTOT157PNd3" />
+  <xs:complexType name="CollectionResponseOfVDC_ATV_MST_VISA_SUB_TYPE_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="CollectionResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="VDC_ATV_MST_VISA_SUB_TYPE_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ItemCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+          <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+          <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Results" nillable="true" type="q21:ArrayOfVDC_ATV_MST_VISA_SUB_TYPE_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CollectionResponseOfVDC_ATV_MST_VISA_SUB_TYPE_DTOT157PNd3" nillable="true" type="tns:CollectionResponseOfVDC_ATV_MST_VISA_SUB_TYPE_DTOT157PNd3" />
+  <xs:complexType name="ItemResponseOfVDC_ATS_MST_VISA_SUB_TYPE_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ItemResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="VDC_ATS_MST_VISA_SUB_TYPE_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Result" nillable="true" type="q22:VDC_ATS_MST_VISA_SUB_TYPE_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ItemResponseOfVDC_ATS_MST_VISA_SUB_TYPE_DTOT157PNd3" nillable="true" type="tns:ItemResponseOfVDC_ATS_MST_VISA_SUB_TYPE_DTOT157PNd3" />
+  <xs:complexType name="CollectionResponseOfVDC_ATV_MST_VISA_TYPE_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="CollectionResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="VDC_ATV_MST_VISA_TYPE_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ItemCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+          <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+          <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Results" nillable="true" type="q23:ArrayOfVDC_ATV_MST_VISA_TYPE_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CollectionResponseOfVDC_ATV_MST_VISA_TYPE_DTOT157PNd3" nillable="true" type="tns:CollectionResponseOfVDC_ATV_MST_VISA_TYPE_DTOT157PNd3" />
+  <xs:complexType name="ItemResponseOfVDC_ATS_MST_VISA_TYPE_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ItemResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="VDC_ATS_MST_VISA_TYPE_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Result" nillable="true" type="q24:VDC_ATS_MST_VISA_TYPE_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ItemResponseOfVDC_ATS_MST_VISA_TYPE_DTOT157PNd3" nillable="true" type="tns:ItemResponseOfVDC_ATS_MST_VISA_TYPE_DTOT157PNd3" />
+  <xs:complexType name="CollectionResponseOfVDC_ATV_MST_WORK_DAY_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="CollectionResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="VDC_ATV_MST_WORK_DAY_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ItemCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+          <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+          <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Results" nillable="true" type="q25:ArrayOfVDC_ATV_MST_WORK_DAY_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CollectionResponseOfVDC_ATV_MST_WORK_DAY_DTOT157PNd3" nillable="true" type="tns:CollectionResponseOfVDC_ATV_MST_WORK_DAY_DTOT157PNd3" />
+  <xs:complexType name="ItemResponseOfVDC_ATS_MST_WORK_DAY_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ItemResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="VDC_ATS_MST_WORK_DAY_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element xmlns:q26="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Result" nillable="true" type="q26:VDC_ATS_MST_WORK_DAY_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ItemResponseOfVDC_ATS_MST_WORK_DAY_DTOT157PNd3" nillable="true" type="tns:ItemResponseOfVDC_ATS_MST_WORK_DAY_DTOT157PNd3" />
+  <xs:complexType name="CollectionResponseOfVDC_ATV_MST_YEARLY_INCOME_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="CollectionResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="VDC_ATV_MST_YEARLY_INCOME_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ItemCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+          <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+          <xs:element xmlns:q27="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Results" nillable="true" type="q27:ArrayOfVDC_ATV_MST_YEARLY_INCOME_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CollectionResponseOfVDC_ATV_MST_YEARLY_INCOME_DTOT157PNd3" nillable="true" type="tns:CollectionResponseOfVDC_ATV_MST_YEARLY_INCOME_DTOT157PNd3" />
+  <xs:complexType name="ItemResponseOfVDC_ATS_MST_YEARLY_INCOME_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ItemResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="VDC_ATS_MST_YEARLY_INCOME_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element xmlns:q28="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Result" nillable="true" type="q28:VDC_ATS_MST_YEARLY_INCOME_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ItemResponseOfVDC_ATS_MST_YEARLY_INCOME_DTOT157PNd3" nillable="true" type="tns:ItemResponseOfVDC_ATS_MST_YEARLY_INCOME_DTOT157PNd3" />
+  <xs:complexType name="CollectionResponseOfVDC_TYPE_ROLE_INFO_LIST_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="CollectionResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="VDC_TYPE_ROLE_INFO_LIST_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ItemCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+          <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+          <xs:element xmlns:q29="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Results" nillable="true" type="q29:ArrayOfVDC_TYPE_ROLE_INFO_LIST_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CollectionResponseOfVDC_TYPE_ROLE_INFO_LIST_DTOT157PNd3" nillable="true" type="tns:CollectionResponseOfVDC_TYPE_ROLE_INFO_LIST_DTOT157PNd3" />
+  <xs:complexType name="CollectionResponseOfVDC_TYPE_PERMISSIONS_LIST_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="CollectionResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="VDC_TYPE_PERMISSIONS_LIST_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ItemCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+          <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+          <xs:element xmlns:q30="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Results" nillable="true" type="q30:ArrayOfVDC_TYPE_PERMISSIONS_LIST_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CollectionResponseOfVDC_TYPE_PERMISSIONS_LIST_DTOT157PNd3" nillable="true" type="tns:CollectionResponseOfVDC_TYPE_PERMISSIONS_LIST_DTOT157PNd3" />
+  <xs:complexType name="ItemResponseOfVDC_TYPE_ROLE_INFO_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ItemResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="VDC_TYPE_ROLE_INFO_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element xmlns:q31="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Result" nillable="true" type="q31:VDC_TYPE_ROLE_INFO_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ItemResponseOfVDC_TYPE_ROLE_INFO_DTOT157PNd3" nillable="true" type="tns:ItemResponseOfVDC_TYPE_ROLE_INFO_DTOT157PNd3" />
+  <xs:complexType name="ItemResponseOfVDC_RETURNED_OUTPUT_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ItemResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="VDC_RETURNED_OUTPUT_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element xmlns:q32="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Result" nillable="true" type="q32:VDC_RETURNED_OUTPUT_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ItemResponseOfVDC_RETURNED_OUTPUT_DTOT157PNd3" nillable="true" type="tns:ItemResponseOfVDC_RETURNED_OUTPUT_DTOT157PNd3" />
+  <xs:complexType name="CollectionResponseOfVDC_TYPE_SET_TRANSACTION_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="CollectionResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="VDC_TYPE_SET_TRANSACTION_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ItemCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+          <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+          <xs:element xmlns:q33="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Results" nillable="true" type="q33:ArrayOfVDC_TYPE_SET_TRANSACTION_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CollectionResponseOfVDC_TYPE_SET_TRANSACTION_DTOT157PNd3" nillable="true" type="tns:CollectionResponseOfVDC_TYPE_SET_TRANSACTION_DTOT157PNd3" />
+  <xs:complexType name="CollectionResponseOfVDC_TYPE_USER_LIST_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="CollectionResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="VDC_TYPE_USER_LIST_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ItemCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+          <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+          <xs:element xmlns:q34="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Results" nillable="true" type="q34:ArrayOfVDC_TYPE_USER_LIST_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CollectionResponseOfVDC_TYPE_USER_LIST_DTOT157PNd3" nillable="true" type="tns:CollectionResponseOfVDC_TYPE_USER_LIST_DTOT157PNd3" />
+  <xs:complexType name="CollectionResponseOfVDC_TYPE_ROLE_LIST_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="CollectionResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="VDC_TYPE_ROLE_LIST_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ItemCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+          <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+          <xs:element xmlns:q35="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Results" nillable="true" type="q35:ArrayOfVDC_TYPE_ROLE_LIST_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CollectionResponseOfVDC_TYPE_ROLE_LIST_DTOT157PNd3" nillable="true" type="tns:CollectionResponseOfVDC_TYPE_ROLE_LIST_DTOT157PNd3" />
+  <xs:complexType name="ItemResponseOfVDC_TYPE_USER_INFO_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ItemResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="VDC_TYPE_USER_INFO_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element xmlns:q36="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Result" nillable="true" type="q36:VDC_TYPE_USER_INFO_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ItemResponseOfVDC_TYPE_USER_INFO_DTOT157PNd3" nillable="true" type="tns:ItemResponseOfVDC_TYPE_USER_INFO_DTOT157PNd3" />
+  <xs:complexType name="CollectionResponseOfVDC_ATV_MST_MESSAGE_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="CollectionResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="VDC_ATV_MST_MESSAGE_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ItemCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+          <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+          <xs:element xmlns:q37="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Results" nillable="true" type="q37:ArrayOfVDC_ATV_MST_MESSAGE_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CollectionResponseOfVDC_ATV_MST_MESSAGE_DTOT157PNd3" nillable="true" type="tns:CollectionResponseOfVDC_ATV_MST_MESSAGE_DTOT157PNd3" />
+  <xs:complexType name="ItemResponseOfVDC_ATS_MST_MESSAGE_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ItemResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="VDC_ATS_MST_MESSAGE_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element xmlns:q38="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Result" nillable="true" type="q38:VDC_ATS_MST_MESSAGE_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ItemResponseOfVDC_ATS_MST_MESSAGE_DTOT157PNd3" nillable="true" type="tns:ItemResponseOfVDC_ATS_MST_MESSAGE_DTOT157PNd3" />
+  <xs:complexType name="CollectionResponseOfMST_MESSAGE_TYPE_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="CollectionResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="MST_MESSAGE_TYPE_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ItemCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+          <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+          <xs:element xmlns:q39="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Results" nillable="true" type="q39:ArrayOfMST_MESSAGE_TYPE_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CollectionResponseOfMST_MESSAGE_TYPE_DTOT157PNd3" nillable="true" type="tns:CollectionResponseOfMST_MESSAGE_TYPE_DTOT157PNd3" />
+  <xs:complexType name="CollectionResponseOfVDC_ATV_MST_CONSULAR_MAPPING_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="CollectionResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="VDC_ATV_MST_CONSULAR_MAPPING_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ItemCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+          <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+          <xs:element xmlns:q40="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Results" nillable="true" type="q40:ArrayOfVDC_ATV_MST_CONSULAR_MAPPING_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CollectionResponseOfVDC_ATV_MST_CONSULAR_MAPPING_DTOT157PNd3" nillable="true" type="tns:CollectionResponseOfVDC_ATV_MST_CONSULAR_MAPPING_DTOT157PNd3" />
+  <xs:complexType name="ItemResponseOfVDC_ATS_MST_CONSULAR_MAPPING_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ItemResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="VDC_ATS_MST_CONSULAR_MAPPING_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element xmlns:q41="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Result" nillable="true" type="q41:VDC_ATS_MST_CONSULAR_MAPPING_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ItemResponseOfVDC_ATS_MST_CONSULAR_MAPPING_DTOT157PNd3" nillable="true" type="tns:ItemResponseOfVDC_ATS_MST_CONSULAR_MAPPING_DTOT157PNd3" />
+  <xs:complexType name="CollectionResponseOfMST_AGENT_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="CollectionResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="MST_AGENT_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ItemCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+          <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+          <xs:element xmlns:q42="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Results" nillable="true" type="q42:ArrayOfMST_AGENT_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CollectionResponseOfMST_AGENT_DTOT157PNd3" nillable="true" type="tns:CollectionResponseOfMST_AGENT_DTOT157PNd3" />
+  <xs:complexType name="ItemResponseOfMST_AGENT_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ItemResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="MST_AGENT_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element xmlns:q43="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Result" nillable="true" type="q43:MST_AGENT_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ItemResponseOfMST_AGENT_DTOT157PNd3" nillable="true" type="tns:ItemResponseOfMST_AGENT_DTOT157PNd3" />
+  <xs:complexType name="ItemResponseOfstring">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ItemResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="string" Namespace="http://www.w3.org/2001/XMLSchema" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Result" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ItemResponseOfstring" nillable="true" type="tns:ItemResponseOfstring" />
+  <xs:complexType name="CollectionResponseOfMST_DOCUMENT_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="CollectionResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="MST_DOCUMENT_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ItemCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+          <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+          <xs:element xmlns:q44="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Results" nillable="true" type="q44:ArrayOfMST_DOCUMENT_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CollectionResponseOfMST_DOCUMENT_DTOT157PNd3" nillable="true" type="tns:CollectionResponseOfMST_DOCUMENT_DTOT157PNd3" />
+  <xs:complexType name="CollectionResponseOfMST_DOCUMENT_LIST_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="CollectionResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="MST_DOCUMENT_LIST_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ItemCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+          <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+          <xs:element xmlns:q45="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Results" nillable="true" type="q45:ArrayOfMST_DOCUMENT_LIST_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CollectionResponseOfMST_DOCUMENT_LIST_DTOT157PNd3" nillable="true" type="tns:CollectionResponseOfMST_DOCUMENT_LIST_DTOT157PNd3" />
+  <xs:complexType name="CollectionResponseOfMST_MARITAL_STATUS_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="CollectionResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="MST_MARITAL_STATUS_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ItemCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+          <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+          <xs:element xmlns:q46="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Results" nillable="true" type="q46:ArrayOfMST_MARITAL_STATUS_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CollectionResponseOfMST_MARITAL_STATUS_DTOT157PNd3" nillable="true" type="tns:CollectionResponseOfMST_MARITAL_STATUS_DTOT157PNd3" />
+  <xs:complexType name="CollectionResponseOfMST_COUNTRY_LIST_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="CollectionResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="MST_COUNTRY_LIST_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ItemCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+          <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+          <xs:element xmlns:q47="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Results" nillable="true" type="q47:ArrayOfMST_COUNTRY_LIST_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CollectionResponseOfMST_COUNTRY_LIST_DTOT157PNd3" nillable="true" type="tns:CollectionResponseOfMST_COUNTRY_LIST_DTOT157PNd3" />
+  <xs:complexType name="CollectionResponseOfMST_NATION_LIST_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="CollectionResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="MST_NATION_LIST_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ItemCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+          <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+          <xs:element xmlns:q48="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Results" nillable="true" type="q48:ArrayOfMST_NATION_LIST_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CollectionResponseOfMST_NATION_LIST_DTOT157PNd3" nillable="true" type="tns:CollectionResponseOfMST_NATION_LIST_DTOT157PNd3" />
+  <xs:complexType name="CollectionResponseOfVDC_MST_VISA_TYPE_LIST_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="CollectionResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="VDC_MST_VISA_TYPE_LIST_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ItemCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+          <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+          <xs:element xmlns:q49="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Results" nillable="true" type="q49:ArrayOfVDC_MST_VISA_TYPE_LIST_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CollectionResponseOfVDC_MST_VISA_TYPE_LIST_DTOT157PNd3" nillable="true" type="tns:CollectionResponseOfVDC_MST_VISA_TYPE_LIST_DTOT157PNd3" />
+  <xs:complexType name="CollectionResponseOfMST_CONSULAR_LIST_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="CollectionResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="MST_CONSULAR_LIST_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ItemCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+          <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+          <xs:element xmlns:q50="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Results" nillable="true" type="q50:ArrayOfMST_CONSULAR_LIST_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CollectionResponseOfMST_CONSULAR_LIST_DTOT157PNd3" nillable="true" type="tns:CollectionResponseOfMST_CONSULAR_LIST_DTOT157PNd3" />
+  <xs:complexType name="CollectionResponseOfMST_YEARLY_INCOME_LIST_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="CollectionResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="MST_YEARLY_INCOME_LIST_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ItemCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+          <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+          <xs:element xmlns:q51="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Results" nillable="true" type="q51:ArrayOfMST_YEARLY_INCOME_LIST_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CollectionResponseOfMST_YEARLY_INCOME_LIST_DTOT157PNd3" nillable="true" type="tns:CollectionResponseOfMST_YEARLY_INCOME_LIST_DTOT157PNd3" />
+  <xs:complexType name="CollectionResponseOfMST_OCCUPATION_TYPE_LIST_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="CollectionResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="MST_OCCUPATION_TYPE_LIST_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ItemCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+          <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+          <xs:element xmlns:q52="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Results" nillable="true" type="q52:ArrayOfMST_OCCUPATION_TYPE_LIST_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CollectionResponseOfMST_OCCUPATION_TYPE_LIST_DTOT157PNd3" nillable="true" type="tns:CollectionResponseOfMST_OCCUPATION_TYPE_LIST_DTOT157PNd3" />
+  <xs:complexType name="CollectionResponseOfMST_DOCUMENT_MAPPING_LIST_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="CollectionResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="MST_DOCUMENT_MAPPING_LIST_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ItemCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+          <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+          <xs:element xmlns:q53="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Results" nillable="true" type="q53:ArrayOfMST_DOCUMENT_MAPPING_LIST_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CollectionResponseOfMST_DOCUMENT_MAPPING_LIST_DTOT157PNd3" nillable="true" type="tns:CollectionResponseOfMST_DOCUMENT_MAPPING_LIST_DTOT157PNd3" />
+  <xs:complexType name="CollectionResponseOfMST_RELATIONSHIP_LIST_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="CollectionResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="MST_RELATIONSHIP_LIST_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ItemCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+          <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+          <xs:element xmlns:q54="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Results" nillable="true" type="q54:ArrayOfMST_RELATIONSHIP_LIST_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CollectionResponseOfMST_RELATIONSHIP_LIST_DTOT157PNd3" nillable="true" type="tns:CollectionResponseOfMST_RELATIONSHIP_LIST_DTOT157PNd3" />
+  <xs:complexType name="CollectionResponseOfMST_TITLE_LIST_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="CollectionResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="MST_TITLE_LIST_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ItemCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+          <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+          <xs:element xmlns:q55="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Results" nillable="true" type="q55:ArrayOfMST_TITLE_LIST_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CollectionResponseOfMST_TITLE_LIST_DTOT157PNd3" nillable="true" type="tns:CollectionResponseOfMST_TITLE_LIST_DTOT157PNd3" />
+  <xs:complexType name="CollectionResponseOfMST_PURPOSE_OF_VISIT_LIST_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="CollectionResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="MST_PURPOSE_OF_VISIT_LIST_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ItemCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+          <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+          <xs:element xmlns:q56="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Results" nillable="true" type="q56:ArrayOfMST_PURPOSE_OF_VISIT_LIST_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CollectionResponseOfMST_PURPOSE_OF_VISIT_LIST_DTOT157PNd3" nillable="true" type="tns:CollectionResponseOfMST_PURPOSE_OF_VISIT_LIST_DTOT157PNd3" />
+  <xs:complexType name="CollectionResponseOfMST_TRAVEL_DOC_TYPE_LIST_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="CollectionResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="MST_TRAVEL_DOC_TYPE_LIST_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ItemCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+          <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+          <xs:element xmlns:q57="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Results" nillable="true" type="q57:ArrayOfMST_TRAVEL_DOC_TYPE_LIST_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CollectionResponseOfMST_TRAVEL_DOC_TYPE_LIST_DTOT157PNd3" nillable="true" type="tns:CollectionResponseOfMST_TRAVEL_DOC_TYPE_LIST_DTOT157PNd3" />
+  <xs:complexType name="CollectionResponseOfMST_CONTINENT_LIST_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="CollectionResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="MST_CONTINENT_LIST_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ItemCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+          <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+          <xs:element xmlns:q58="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Results" nillable="true" type="q58:ArrayOfMST_CONTINENT_LIST_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CollectionResponseOfMST_CONTINENT_LIST_DTOT157PNd3" nillable="true" type="tns:CollectionResponseOfMST_CONTINENT_LIST_DTOT157PNd3" />
+  <xs:complexType name="CollectionResponseOfMST_TRAVEL_TYPE_LIST_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="CollectionResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="MST_TRAVEL_TYPE_LIST_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ItemCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+          <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+          <xs:element xmlns:q59="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Results" nillable="true" type="q59:ArrayOfMST_TRAVEL_TYPE_LIST_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CollectionResponseOfMST_TRAVEL_TYPE_LIST_DTOT157PNd3" nillable="true" type="tns:CollectionResponseOfMST_TRAVEL_TYPE_LIST_DTOT157PNd3" />
+  <xs:complexType name="CollectionResponseOfMST_VISA_SUB_TYPE_LIST_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="CollectionResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="MST_VISA_SUB_TYPE_LIST_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ItemCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+          <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+          <xs:element xmlns:q60="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Results" nillable="true" type="q60:ArrayOfMST_VISA_SUB_TYPE_LIST_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CollectionResponseOfMST_VISA_SUB_TYPE_LIST_DTOT157PNd3" nillable="true" type="tns:CollectionResponseOfMST_VISA_SUB_TYPE_LIST_DTOT157PNd3" />
+  <xs:complexType name="CollectionResponseOfMST_PROCESS_STATUS_LIST_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="CollectionResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="MST_PROCESS_STATUS_LIST_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ItemCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+          <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+          <xs:element xmlns:q61="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Results" nillable="true" type="q61:ArrayOfMST_PROCESS_STATUS_LIST_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CollectionResponseOfMST_PROCESS_STATUS_LIST_DTOT157PNd3" nillable="true" type="tns:CollectionResponseOfMST_PROCESS_STATUS_LIST_DTOT157PNd3" />
+  <xs:complexType name="CollectionResponseOfMST_WATCHLIST_TYPE_LIST_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="CollectionResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="MST_WATCHLIST_TYPE_LIST_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ItemCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+          <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+          <xs:element xmlns:q62="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Results" nillable="true" type="q62:ArrayOfMST_WATCHLIST_TYPE_LIST_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CollectionResponseOfMST_WATCHLIST_TYPE_LIST_DTOT157PNd3" nillable="true" type="tns:CollectionResponseOfMST_WATCHLIST_TYPE_LIST_DTOT157PNd3" />
+  <xs:complexType name="CollectionResponseOfMST_ACCOMMODATION_LIST_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="CollectionResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="MST_ACCOMMODATION_LIST_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ItemCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+          <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+          <xs:element xmlns:q63="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Results" nillable="true" type="q63:ArrayOfMST_ACCOMMODATION_LIST_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CollectionResponseOfMST_ACCOMMODATION_LIST_DTOT157PNd3" nillable="true" type="tns:CollectionResponseOfMST_ACCOMMODATION_LIST_DTOT157PNd3" />
+  <xs:complexType name="CollectionResponseOfMST_PASSPORT_TYPE_LIST_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="CollectionResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="MST_PASSPORT_TYPE_LIST_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ItemCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+          <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+          <xs:element xmlns:q64="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Results" nillable="true" type="q64:ArrayOfMST_PASSPORT_TYPE_LIST_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CollectionResponseOfMST_PASSPORT_TYPE_LIST_DTOT157PNd3" nillable="true" type="tns:CollectionResponseOfMST_PASSPORT_TYPE_LIST_DTOT157PNd3" />
+  <xs:complexType name="CollectionResponseOfVISA_TRACK_STATUS_LIST_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="CollectionResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="VISA_TRACK_STATUS_LIST_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ItemCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+          <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+          <xs:element xmlns:q65="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Results" nillable="true" type="q65:ArrayOfVISA_TRACK_STATUS_LIST_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CollectionResponseOfVISA_TRACK_STATUS_LIST_DTOT157PNd3" nillable="true" type="tns:CollectionResponseOfVISA_TRACK_STATUS_LIST_DTOT157PNd3" />
+  <xs:complexType name="CollectionResponseOfMST_EMAIL_LIST_DTO7DnQPvLx">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="CollectionResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="MST_EMAIL_LIST_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto.Partial" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ItemCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+          <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+          <xs:element xmlns:q66="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto.Partial" minOccurs="0" name="Results" nillable="true" type="q66:ArrayOfMST_EMAIL_LIST_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CollectionResponseOfMST_EMAIL_LIST_DTO7DnQPvLx" nillable="true" type="tns:CollectionResponseOfMST_EMAIL_LIST_DTO7DnQPvLx" />
+  <xs:complexType name="ItemResponseOfVDC_APPLICATION_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ItemResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="VDC_APPLICATION_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element xmlns:q67="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Result" nillable="true" type="q67:VDC_APPLICATION_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ItemResponseOfVDC_APPLICATION_DTOT157PNd3" nillable="true" type="tns:ItemResponseOfVDC_APPLICATION_DTOT157PNd3" />
+  <xs:complexType name="CollectionResponseOfVDC_APPLICATION_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="CollectionResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="VDC_APPLICATION_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ItemCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+          <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+          <xs:element xmlns:q68="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Results" nillable="true" type="q68:ArrayOfVDC_APPLICATION_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CollectionResponseOfVDC_APPLICATION_DTOT157PNd3" nillable="true" type="tns:CollectionResponseOfVDC_APPLICATION_DTOT157PNd3" />
+  <xs:complexType name="ItemResponseOfVDC_TYPE_APPLICATION_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ItemResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="VDC_TYPE_APPLICATION_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element xmlns:q69="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Result" nillable="true" type="q69:VDC_TYPE_APPLICATION_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ItemResponseOfVDC_TYPE_APPLICATION_DTOT157PNd3" nillable="true" type="tns:ItemResponseOfVDC_TYPE_APPLICATION_DTOT157PNd3" />
+  <xs:complexType name="ItemResponseOfVDC_TYPE_APPLICATION_DOC_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ItemResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="VDC_TYPE_APPLICATION_DOC_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element xmlns:q70="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Result" nillable="true" type="q70:VDC_TYPE_APPLICATION_DOC_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ItemResponseOfVDC_TYPE_APPLICATION_DOC_DTOT157PNd3" nillable="true" type="tns:ItemResponseOfVDC_TYPE_APPLICATION_DOC_DTOT157PNd3" />
+  <xs:complexType name="CollectionResponseOfVDC_TYPE_BOOKING_LIST_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="CollectionResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="VDC_TYPE_BOOKING_LIST_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ItemCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+          <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+          <xs:element xmlns:q71="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Results" nillable="true" type="q71:ArrayOfVDC_TYPE_BOOKING_LIST_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CollectionResponseOfVDC_TYPE_BOOKING_LIST_DTOT157PNd3" nillable="true" type="tns:CollectionResponseOfVDC_TYPE_BOOKING_LIST_DTOT157PNd3" />
+  <xs:complexType name="CollectionResponseOfVDC_TYPE_APPLICATION_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="CollectionResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="VDC_TYPE_APPLICATION_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ItemCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+          <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+          <xs:element xmlns:q72="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Results" nillable="true" type="q72:ArrayOfVDC_TYPE_APPLICATION_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CollectionResponseOfVDC_TYPE_APPLICATION_DTOT157PNd3" nillable="true" type="tns:CollectionResponseOfVDC_TYPE_APPLICATION_DTOT157PNd3" />
+  <xs:complexType name="CollectionResponseOfVDC_REC_AT_DATA_TABLE_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="CollectionResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="VDC_REC_AT_DATA_TABLE_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ItemCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+          <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+          <xs:element xmlns:q73="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Results" nillable="true" type="q73:ArrayOfVDC_REC_AT_DATA_TABLE_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CollectionResponseOfVDC_REC_AT_DATA_TABLE_DTOT157PNd3" nillable="true" type="tns:CollectionResponseOfVDC_REC_AT_DATA_TABLE_DTOT157PNd3" />
+  <xs:complexType name="CollectionResponseOfVDC_REC_DATA_TABLE_LIST_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="CollectionResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="VDC_REC_DATA_TABLE_LIST_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ItemCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+          <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+          <xs:element xmlns:q74="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Results" nillable="true" type="q74:ArrayOfVDC_REC_DATA_TABLE_LIST_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CollectionResponseOfVDC_REC_DATA_TABLE_LIST_DTOT157PNd3" nillable="true" type="tns:CollectionResponseOfVDC_REC_DATA_TABLE_LIST_DTOT157PNd3" />
+  <xs:complexType name="CollectionResponseOfVDC_REC_REF_DATA_TABLE_LIST_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="CollectionResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="VDC_REC_REF_DATA_TABLE_LIST_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ItemCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+          <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+          <xs:element xmlns:q75="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Results" nillable="true" type="q75:ArrayOfVDC_REC_REF_DATA_TABLE_LIST_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CollectionResponseOfVDC_REC_REF_DATA_TABLE_LIST_DTOT157PNd3" nillable="true" type="tns:CollectionResponseOfVDC_REC_REF_DATA_TABLE_LIST_DTOT157PNd3" />
+  <xs:complexType name="CollectionResponseOfVDC_REC_TABLE_INPUT_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="CollectionResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="VDC_REC_TABLE_INPUT_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ItemCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+          <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+          <xs:element xmlns:q76="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Results" nillable="true" type="q76:ArrayOfVDC_REC_TABLE_INPUT_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CollectionResponseOfVDC_REC_TABLE_INPUT_DTOT157PNd3" nillable="true" type="tns:CollectionResponseOfVDC_REC_TABLE_INPUT_DTOT157PNd3" />
+  <xs:complexType name="CollectionResponseOfVDC_ATV_MST_COUNTRY_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="CollectionResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="VDC_ATV_MST_COUNTRY_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ItemCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+          <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+          <xs:element xmlns:q77="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Results" nillable="true" type="q77:ArrayOfVDC_ATV_MST_COUNTRY_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CollectionResponseOfVDC_ATV_MST_COUNTRY_DTOT157PNd3" nillable="true" type="tns:CollectionResponseOfVDC_ATV_MST_COUNTRY_DTOT157PNd3" />
+  <xs:complexType name="ItemResponseOfVDC_ATS_MST_COUNTRY_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ItemResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="VDC_ATS_MST_COUNTRY_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element xmlns:q78="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Result" nillable="true" type="q78:VDC_ATS_MST_COUNTRY_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ItemResponseOfVDC_ATS_MST_COUNTRY_DTOT157PNd3" nillable="true" type="tns:ItemResponseOfVDC_ATS_MST_COUNTRY_DTOT157PNd3" />
+  <xs:complexType name="CollectionResponseOfVDC_ATV_MST_CONSULAR_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="CollectionResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="VDC_ATV_MST_CONSULAR_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ItemCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+          <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+          <xs:element xmlns:q79="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Results" nillable="true" type="q79:ArrayOfVDC_ATV_MST_CONSULAR_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CollectionResponseOfVDC_ATV_MST_CONSULAR_DTOT157PNd3" nillable="true" type="tns:CollectionResponseOfVDC_ATV_MST_CONSULAR_DTOT157PNd3" />
+  <xs:complexType name="ItemResponseOfVDC_ATS_MST_CONSULAR_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ItemResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="VDC_ATS_MST_CONSULAR_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element xmlns:q80="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Result" nillable="true" type="q80:VDC_ATS_MST_CONSULAR_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ItemResponseOfVDC_ATS_MST_CONSULAR_DTOT157PNd3" nillable="true" type="tns:ItemResponseOfVDC_ATS_MST_CONSULAR_DTOT157PNd3" />
+  <xs:complexType name="CollectionResponseOfVDC_ATV_MST_CONSULAR_TYPE_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="CollectionResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="VDC_ATV_MST_CONSULAR_TYPE_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ItemCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+          <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+          <xs:element xmlns:q81="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Results" nillable="true" type="q81:ArrayOfVDC_ATV_MST_CONSULAR_TYPE_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CollectionResponseOfVDC_ATV_MST_CONSULAR_TYPE_DTOT157PNd3" nillable="true" type="tns:CollectionResponseOfVDC_ATV_MST_CONSULAR_TYPE_DTOT157PNd3" />
+  <xs:complexType name="ItemResponseOfVDC_ATS_MST_CONSULAR_TYPE_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ItemResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="VDC_ATS_MST_CONSULAR_TYPE_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element xmlns:q82="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Result" nillable="true" type="q82:VDC_ATS_MST_CONSULAR_TYPE_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ItemResponseOfVDC_ATS_MST_CONSULAR_TYPE_DTOT157PNd3" nillable="true" type="tns:ItemResponseOfVDC_ATS_MST_CONSULAR_TYPE_DTOT157PNd3" />
+  <xs:complexType name="CollectionResponseOfVDC_ATV_MST_CONTINENT_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="CollectionResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="VDC_ATV_MST_CONTINENT_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ItemCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+          <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+          <xs:element xmlns:q83="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Results" nillable="true" type="q83:ArrayOfVDC_ATV_MST_CONTINENT_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CollectionResponseOfVDC_ATV_MST_CONTINENT_DTOT157PNd3" nillable="true" type="tns:CollectionResponseOfVDC_ATV_MST_CONTINENT_DTOT157PNd3" />
+  <xs:complexType name="ItemResponseOfVDC_ATS_MST_CONTINENT_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ItemResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="VDC_ATS_MST_CONTINENT_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element xmlns:q84="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Result" nillable="true" type="q84:VDC_ATS_MST_CONTINENT_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ItemResponseOfVDC_ATS_MST_CONTINENT_DTOT157PNd3" nillable="true" type="tns:ItemResponseOfVDC_ATS_MST_CONTINENT_DTOT157PNd3" />
+  <xs:complexType name="CollectionResponseOfVDC_ATV_MST_CURRENCY_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="CollectionResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="VDC_ATV_MST_CURRENCY_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ItemCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+          <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+          <xs:element xmlns:q85="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Results" nillable="true" type="q85:ArrayOfVDC_ATV_MST_CURRENCY_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CollectionResponseOfVDC_ATV_MST_CURRENCY_DTOT157PNd3" nillable="true" type="tns:CollectionResponseOfVDC_ATV_MST_CURRENCY_DTOT157PNd3" />
+  <xs:complexType name="ItemResponseOfVDC_ATS_MST_CURRENCY_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ItemResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="VDC_ATS_MST_CURRENCY_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element xmlns:q86="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Result" nillable="true" type="q86:VDC_ATS_MST_CURRENCY_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ItemResponseOfVDC_ATS_MST_CURRENCY_DTOT157PNd3" nillable="true" type="tns:ItemResponseOfVDC_ATS_MST_CURRENCY_DTOT157PNd3" />
+  <xs:complexType name="CollectionResponseOfVDC_ATV_MST_DOCUMENT_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="CollectionResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="VDC_ATV_MST_DOCUMENT_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ItemCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+          <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+          <xs:element xmlns:q87="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Results" nillable="true" type="q87:ArrayOfVDC_ATV_MST_DOCUMENT_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CollectionResponseOfVDC_ATV_MST_DOCUMENT_DTOT157PNd3" nillable="true" type="tns:CollectionResponseOfVDC_ATV_MST_DOCUMENT_DTOT157PNd3" />
+  <xs:complexType name="ItemResponseOfVDC_ATS_MST_DOCUMENT_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ItemResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="VDC_ATS_MST_DOCUMENT_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element xmlns:q88="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Result" nillable="true" type="q88:VDC_ATS_MST_DOCUMENT_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ItemResponseOfVDC_ATS_MST_DOCUMENT_DTOT157PNd3" nillable="true" type="tns:ItemResponseOfVDC_ATS_MST_DOCUMENT_DTOT157PNd3" />
+  <xs:complexType name="CollectionResponseOfVDC_ATV_MST_DOCUMENT_MAPPING_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="CollectionResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="VDC_ATV_MST_DOCUMENT_MAPPING_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ItemCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+          <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+          <xs:element xmlns:q89="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Results" nillable="true" type="q89:ArrayOfVDC_ATV_MST_DOCUMENT_MAPPING_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CollectionResponseOfVDC_ATV_MST_DOCUMENT_MAPPING_DTOT157PNd3" nillable="true" type="tns:CollectionResponseOfVDC_ATV_MST_DOCUMENT_MAPPING_DTOT157PNd3" />
+  <xs:complexType name="ItemResponseOfVDC_ATS_MST_DOCUMENT_MAPPING_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ItemResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="VDC_ATS_MST_DOCUMENT_MAPPING_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element xmlns:q90="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Result" nillable="true" type="q90:VDC_ATS_MST_DOCUMENT_MAPPING_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ItemResponseOfVDC_ATS_MST_DOCUMENT_MAPPING_DTOT157PNd3" nillable="true" type="tns:ItemResponseOfVDC_ATS_MST_DOCUMENT_MAPPING_DTOT157PNd3" />
+  <xs:complexType name="CollectionResponseOfVDC_ATV_MST_HOLIDAY_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="CollectionResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="VDC_ATV_MST_HOLIDAY_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ItemCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+          <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+          <xs:element xmlns:q91="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Results" nillable="true" type="q91:ArrayOfVDC_ATV_MST_HOLIDAY_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CollectionResponseOfVDC_ATV_MST_HOLIDAY_DTOT157PNd3" nillable="true" type="tns:CollectionResponseOfVDC_ATV_MST_HOLIDAY_DTOT157PNd3" />
+  <xs:complexType name="ItemResponseOfVDC_ATS_MST_HOLIDAY_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ItemResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="VDC_ATS_MST_HOLIDAY_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element xmlns:q92="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Result" nillable="true" type="q92:VDC_ATS_MST_HOLIDAY_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ItemResponseOfVDC_ATS_MST_HOLIDAY_DTOT157PNd3" nillable="true" type="tns:ItemResponseOfVDC_ATS_MST_HOLIDAY_DTOT157PNd3" />
+  <xs:complexType name="CollectionResponseOfVDC_ATV_MST_MARITAL_STATUS_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="CollectionResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="VDC_ATV_MST_MARITAL_STATUS_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ItemCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+          <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+          <xs:element xmlns:q93="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Results" nillable="true" type="q93:ArrayOfVDC_ATV_MST_MARITAL_STATUS_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CollectionResponseOfVDC_ATV_MST_MARITAL_STATUS_DTOT157PNd3" nillable="true" type="tns:CollectionResponseOfVDC_ATV_MST_MARITAL_STATUS_DTOT157PNd3" />
+  <xs:complexType name="ItemResponseOfVDC_ATS_MST_MARITAL_STATUS_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ItemResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="VDC_ATS_MST_MARITAL_STATUS_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element xmlns:q94="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Result" nillable="true" type="q94:VDC_ATS_MST_MARITAL_STATUS_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ItemResponseOfVDC_ATS_MST_MARITAL_STATUS_DTOT157PNd3" nillable="true" type="tns:ItemResponseOfVDC_ATS_MST_MARITAL_STATUS_DTOT157PNd3" />
+  <xs:complexType name="CollectionResponseOfVDC_ATV_MST_MAXIMUM_CONFIG_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="CollectionResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="VDC_ATV_MST_MAXIMUM_CONFIG_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ItemCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+          <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+          <xs:element xmlns:q95="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Results" nillable="true" type="q95:ArrayOfVDC_ATV_MST_MAXIMUM_CONFIG_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CollectionResponseOfVDC_ATV_MST_MAXIMUM_CONFIG_DTOT157PNd3" nillable="true" type="tns:CollectionResponseOfVDC_ATV_MST_MAXIMUM_CONFIG_DTOT157PNd3" />
+  <xs:complexType name="ItemResponseOfVDC_ATS_MST_MAXIMUM_CONFIG_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ItemResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="VDC_ATS_MST_MAXIMUM_CONFIG_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element xmlns:q96="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Result" nillable="true" type="q96:VDC_ATS_MST_MAXIMUM_CONFIG_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ItemResponseOfVDC_ATS_MST_MAXIMUM_CONFIG_DTOT157PNd3" nillable="true" type="tns:ItemResponseOfVDC_ATS_MST_MAXIMUM_CONFIG_DTOT157PNd3" />
+  <xs:complexType name="CollectionResponseOfVDC_ATV_MST_MAXIMUM_CONFIG_PERIOD_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="CollectionResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="VDC_ATV_MST_MAXIMUM_CONFIG_PERIOD_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ItemCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+          <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+          <xs:element xmlns:q97="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Results" nillable="true" type="q97:ArrayOfVDC_ATV_MST_MAXIMUM_CONFIG_PERIOD_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CollectionResponseOfVDC_ATV_MST_MAXIMUM_CONFIG_PERIOD_DTOT157PNd3" nillable="true" type="tns:CollectionResponseOfVDC_ATV_MST_MAXIMUM_CONFIG_PERIOD_DTOT157PNd3" />
+  <xs:complexType name="ItemResponseOfVDC_ATS_MST_MAXIMUM_CONFIG_PERIOD_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ItemResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="VDC_ATS_MST_MAXIMUM_CONFIG_PERIOD_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element xmlns:q98="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Result" nillable="true" type="q98:VDC_ATS_MST_MAXIMUM_CONFIG_PERIOD_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ItemResponseOfVDC_ATS_MST_MAXIMUM_CONFIG_PERIOD_DTOT157PNd3" nillable="true" type="tns:ItemResponseOfVDC_ATS_MST_MAXIMUM_CONFIG_PERIOD_DTOT157PNd3" />
+  <xs:complexType name="CollectionResponseOfVDC_ATV_MST_MAXIMUM_CONTROL_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="CollectionResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="VDC_ATV_MST_MAXIMUM_CONTROL_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ItemCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageCount" type="xs:int" />
+          <xs:element minOccurs="0" name="PageIndex" type="xs:int" />
+          <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+          <xs:element xmlns:q99="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Results" nillable="true" type="q99:ArrayOfVDC_ATV_MST_MAXIMUM_CONTROL_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CollectionResponseOfVDC_ATV_MST_MAXIMUM_CONTROL_DTOT157PNd3" nillable="true" type="tns:CollectionResponseOfVDC_ATV_MST_MAXIMUM_CONTROL_DTOT157PNd3" />
+  <xs:complexType name="ItemResponseOfVDC_ATS_MST_MAXIMUM_CONTROL_DTOT157PNd3">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ItemResponseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/CWN.Lib.Extensions" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="VDC_ATS_MST_MAXIMUM_CONTROL_DTO" Namespace="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:AbstractResponse">
+        <xs:sequence>
+          <xs:element xmlns:q100="http://schemas.datacontract.org/2004/07/VDC.Dataservice.DataContact.Dto" minOccurs="0" name="Result" nillable="true" type="q100:VDC_ATS_MST_MAXIMUM_CONTROL_DTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ItemResponseOfVDC_ATS_MST_MAXIMUM_CONTROL_DTOT157PNd3" nillable="true" type="tns:ItemResponseOfVDC_ATS_MST_MAXIMUM_CONTROL_DTOT157PNd3" />
+</xs:schema>
