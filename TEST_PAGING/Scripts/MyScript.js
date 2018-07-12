@@ -9,7 +9,7 @@
             dataType: "json",
             url: '/home/dataTable',
             type: 'post',
-            data: { "ConsularMappingId": null }
+           // data: { "ConsularMappingId": null }
         }),
         "columns": [
             {

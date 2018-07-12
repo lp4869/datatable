@@ -17,17 +17,21 @@ namespace TEST_PAGING.Controllers
             return View();
         }
         [HttpPost]
-        public JsonResult dataTable(String ConsularMappingId)
+        public JsonResult dataTable(Datatable model)
         {
             string json = string.Empty;
             VDC_ATV_MST_CONSULAR serv = new VDC_ATV_MST_CONSULAR();
-            var result = serv.GetAllDATA(ConsularMappingId);
+            // action inside a standard controller
+            int filteredResultsCount;
+            int totalResultsCount;
+            var res = serv.YourCustomSearchFunc(model, out filteredResultsCount, out totalResultsCount);
+            
       
-            int tempCount = result.Count();
+ 
             var aa = new {
-                recordsFiltered = tempCount,
-                recordsTotal = tempCount,
-                data = result
+                recordsFiltered = filteredResultsCount,
+                recordsTotal = totalResultsCount,
+                data = res
             };
             var jsonResult = Json(aa, JsonRequestBehavior.AllowGet);
             //  jsonResult.MaxJsonLength = int.MaxValue;

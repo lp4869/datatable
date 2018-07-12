@@ -6,26 +6,79 @@ using TEST_PAGING.VDCBackOfficeService;
 
 namespace TEST_PAGING.Models
 {
-
     public class Datatable
     {
-        //public int draw { get; set; }
-        //public int recordsTotal { get; set; }
-        //public int recordsFiltered { get; set; }
-        public List<VDC_ATV_MST_CONSULAR_MAPPING_DTO> data { get; set; }
+        // properties are not capital due to json mapping
+        public int draw { get; set; }
+        public int start { get; set; }
+        public int length { get; set; }
+        public List<Column> columns { get; set; }
+        public Search search { get; set; }
+        public List<Order> order { get; set; }
+    }
+
+    public class Column
+    {
+        public string data { get; set; }
+        public string name { get; set; }
+        public bool searchable { get; set; }
+        public bool orderable { get; set; }
+        public Search search { get; set; }
+    }
+
+    public class Search
+    {
+        public string value { get; set; }
+        public string regex { get; set; }
+    }
+
+    public class Order
+    {
+        public int column { get; set; }
+        public string dir { get; set; }
     }
     public class VDC_ATV_MST_CONSULAR
     {
-        public List<VDC_ATV_MST_CONSULAR_MAPPING_DTO> GetAllDATA(String ConsularMappingId)
+        public IList<VDC_ATV_MST_CONSULAR_MAPPING_DTO> YourCustomSearchFunc(Datatable model, out int filteredResultsCount, out int totalResultsCount)
+        {
+            var searchBy = (model.search != null) ? model.search.value : null;
+            var take = model.length;
+            var skip = model.start;
+
+            string sortBy = "";
+            bool sortDir = true;
+
+            if (model.order != null)
+            {
+                // in this example we just default sort on the 1st column
+                sortBy = model.columns[model.order[0].column].data;
+                sortDir = model.order[0].dir.ToLower() == "asc";
+            }
+
+            // search the dbase taking into consideration table sorting and paging
+            var result = GetAllDATA(searchBy, take, skip, sortBy, sortDir, out filteredResultsCount, out totalResultsCount);
+            if (result == null)
+            {
+                // empty collection...
+                return new List<VDC_ATV_MST_CONSULAR_MAPPING_DTO>();
+            }
+            return result;
+        }
+        private List<VDC_ATV_MST_CONSULAR_MAPPING_DTO> GetAllDATA(string searchBy, int take, int skip, string sortBy, bool sortDir, out int filteredResultsCount, out int totalResultsCount)
         {
             List<VDC_ATV_MST_CONSULAR_MAPPING_DTO> result = new List<VDC_ATV_MST_CONSULAR_MAPPING_DTO>();
+           // var whereClause = BuildDynamicWhereClause(Db, searchBy);
+
+            if (String.IsNullOrEmpty(searchBy))
+            {
+                // if we have an empty search then just order the results by Id ascending
+                sortBy = "Id";
+                sortDir = true;
+            }
             using (VDCBackOfficeServiceClient serv = new VDCBackOfficeServiceClient())
             {
                 long? ConsularMapping = null;
-                if (!String.IsNullOrEmpty(ConsularMappingId))
-                {
-                    ConsularMapping = Int32.Parse(ConsularMappingId);
-                }
+
                 var ClientResult = serv.VMstConsularMapping(ConsularMapping);
                 if (ClientResult.IsSuccessful)
                 {
@@ -47,7 +100,8 @@ namespace TEST_PAGING.Models
                         }).ToList();
                     }
                 }
-                // json = new System.Web.Script.Serialization.JavaScriptSerializer().Serialize(result);
+                filteredResultsCount = result.Count();
+                totalResultsCount = result.Count();
             }
             return result;
         }
