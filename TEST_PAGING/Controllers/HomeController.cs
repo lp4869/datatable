@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Web;
+using Microsoft.Reporting.WebForms;
 using System.Web.Mvc;
 using TEST_PAGING.Models;
 using TEST_PAGING.VDCBackOfficeService;
@@ -47,11 +47,40 @@ namespace TEST_PAGING.Controllers
             return View();
         }
 
-        public ActionResult Contact()
+        public FileResult Print()
         {
-            ViewBag.Message = "Your contact page.";
+            
+           // var result = watchList.GetApplicantPrint(target);
+            ReportViewer ReportViewer1 = new ReportViewer();
+            ReportViewer1.ProcessingMode = ProcessingMode.Local;
+            ReportViewer1.LocalReport.ReportPath = Server.MapPath("~/Report/Example.rdlc");
+     
 
-            return View();
+           // ReportDataSource datasource = new ReportDataSource("DataSet1", dt);
+            ReportViewer1.LocalReport.DataSources.Clear();
+           // ReportViewer1.LocalReport.DataSources.Add(datasource);
+            Warning[] warnings;
+            string[] streamids;
+            string mimeType;
+            string encoding;
+            string filenameExtension;
+
+
+            byte[] bytes = ReportViewer1.LocalReport.Render("PDF", null, out mimeType, out encoding, out filenameExtension, out streamids, out warnings);
+
+            //var res = new PrintApplication();
+
+
+
+            //res.pdf = Convert.ToBase64String(bytes, 0, bytes.Length);
+            string ReportName = "Example.pdf";
+
+            
+
+
+
+
+            return File(bytes, System.Net.Mime.MediaTypeNames.Application.Octet, ReportName);
         }
     }
 }
